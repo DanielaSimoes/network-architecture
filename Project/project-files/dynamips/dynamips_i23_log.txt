@@ -1,0 +1,39 @@
+May 08 16:06:13.477 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 08 16:06:13.477 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 64124.
+May 08 16:06:13.604 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 16:06:13.616 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
+May 08 16:06:13.616 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
+May 08 16:06:13.621 HYPERVISOR: exec_cmd: vm create R2 4 c3745 
+May 08 16:06:13.621 VM: VM R2 created.
+May 08 16:06:13.629 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5003 
+May 08 16:06:13.634 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+May 08 16:06:13.640 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+May 08 16:06:13.647 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+May 08 16:06:13.653 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+May 08 16:06:13.658 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 16:06:13.671 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60b22838 
+May 08 16:06:13.688 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/cristianacarvalho/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.image.bin 
+May 08 16:06:13.692 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c404.a1a8.0000 
+May 08 16:06:13.696 HYPERVISOR: exec_cmd: vm set_config R2 configs/i4_startup-config.cfg 
+May 08 16:06:14.507 HYPERVISOR: exec_cmd: nio create_udp udp-88e7f76f-5941-4fb1-8570-be171e831bea 10011 127.0.0.1 10010 
+May 08 16:06:14.515 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-88e7f76f-5941-4fb1-8570-be171e831bea 
+May 08 16:06:14.527 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 16:06:14.582 HYPERVISOR: exec_cmd: nio create_udp udp-d8ef6691-8e19-49bf-9f3d-24dc7a2ebbc8 10013 127.0.0.1 10012 
+May 08 16:06:14.594 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-d8ef6691-8e19-49bf-9f3d-24dc7a2ebbc8 
+May 08 16:06:14.606 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 16:08:55.358 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
+May 08 16:08:55.372 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c7200-jk9o3s-mz.123-8.T.image.bin-256.ghost 
+May 08 16:08:55.387 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 16:08:55.398 HYPERVISOR: exec_cmd: vm start R2 
+May 08 16:44:33.289 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 16:44:33.299 HYPERVISOR: exec_cmd: vm stop R2 
+May 08 16:44:33.401 VM: VM R2 shutdown.
+May 08 16:44:33.420 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 08 16:54:17.415 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 08 16:54:18.793 HYPERVISOR: exec_cmd: vm get_status R2 
+May 08 16:54:18.806 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 08 16:54:18.815 HYPERVISOR: exec_cmd: vm delete R2 
+May 08 16:54:18.815 VM: VM R2 destroyed.
+May 08 16:54:18.833 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 16:54:18.859 HYPERVISOR: Stopped.
+May 08 16:54:18.859 GENERAL: reset done.

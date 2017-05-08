@@ -1,0 +1,21 @@
+May 08 17:18:28.873 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 08 17:18:28.873 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 65089.
+May 08 17:18:29.037 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 17:18:29.059 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
+May 08 17:18:29.059 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
+May 08 17:18:29.076 HYPERVISOR: exec_cmd: ethsw create Edificio2 
+May 08 17:18:30.018 HYPERVISOR: exec_cmd: nio create_udp udp-db7b8f82-e57f-4cce-8311-2e26bec1c4a0 10038 127.0.0.1 10039 
+May 08 17:18:30.032 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-db7b8f82-e57f-4cce-8311-2e26bec1c4a0 
+May 08 17:18:30.057 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edificio2 udp-db7b8f82-e57f-4cce-8311-2e26bec1c4a0 1 
+May 08 17:18:30.067 HYPERVISOR: exec_cmd: nio create_udp udp-560fa825-3a9d-47ab-9b08-5100865f45b2 10040 127.0.0.1 10041 
+May 08 17:18:30.073 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-560fa825-3a9d-47ab-9b08-5100865f45b2 
+May 08 17:18:30.106 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edificio2 udp-560fa825-3a9d-47ab-9b08-5100865f45b2 1 
+May 08 17:18:30.120 HYPERVISOR: exec_cmd: nio create_udp udp-040b0b25-86cb-4226-9e5c-d953f407e84a 10042 127.0.0.1 10043 
+May 08 17:18:30.129 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-040b0b25-86cb-4226-9e5c-d953f407e84a 
+May 08 17:18:30.137 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edificio2 udp-040b0b25-86cb-4226-9e5c-d953f407e84a 1 
+May 08 17:18:30.150 HYPERVISOR: exec_cmd: nio create_udp udp-9ce5a1c2-3516-4c0f-8e04-ff5800c4f5b7 10044 127.0.0.1 10045 
+May 08 17:18:30.166 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-9ce5a1c2-3516-4c0f-8e04-ff5800c4f5b7 
+May 08 17:18:30.206 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edificio2 udp-9ce5a1c2-3516-4c0f-8e04-ff5800c4f5b7 1 
+May 08 17:18:30.250 HYPERVISOR: exec_cmd: nio create_udp udp-9df03313-bfaa-4e54-9f3d-bfe14ab9fa35 10046 127.0.0.1 10047 
+May 08 17:18:30.275 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-9df03313-bfaa-4e54-9f3d-bfe14ab9fa35 
+May 08 17:18:30.298 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edificio2 udp-9df03313-bfaa-4e54-9f3d-bfe14ab9fa35 1 

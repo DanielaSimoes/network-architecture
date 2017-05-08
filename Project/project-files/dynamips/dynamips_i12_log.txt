@@ -1,0 +1,29 @@
+May 08 17:28:40.845 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 08 17:28:40.846 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 65258.
+May 08 17:28:41.002 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 17:28:41.012 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
+May 08 17:28:41.012 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
+May 08 17:28:41.019 HYPERVISOR: exec_cmd: vm create Chicago 11 c3745 
+May 08 17:28:41.019 VM: VM Chicago created.
+May 08 17:28:41.025 HYPERVISOR: exec_cmd: vm set_con_tcp_port Chicago 5016 
+May 08 17:28:41.035 HYPERVISOR: exec_cmd: c3745 get_mac_addr Chicago 
+May 08 17:28:41.044 HYPERVISOR: exec_cmd: vm set_ram Chicago 256 
+May 08 17:28:41.055 HYPERVISOR: exec_cmd: vm set_ios Chicago /Users/cristianacarvalho/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.image.bin 
+May 08 17:28:41.065 HYPERVISOR: exec_cmd: vm set_nvram Chicago 256 
+May 08 17:28:41.072 HYPERVISOR: exec_cmd: vm get_status Chicago 
+May 08 17:28:41.085 HYPERVISOR: exec_cmd: vm set_idle_pc Chicago 0x60b22838 
+May 08 17:28:41.092 HYPERVISOR: exec_cmd: c3745 set_mac_addr Chicago c40b.a992.0000 
+May 08 17:28:41.101 HYPERVISOR: exec_cmd: vm set_disk0 Chicago 0 
+May 08 17:28:41.109 HYPERVISOR: exec_cmd: vm set_config Chicago configs/i11_startup-config.cfg 
+May 08 17:29:23.900 HYPERVISOR: exec_cmd: vm extract_config Chicago 
+May 08 17:49:52.646 HYPERVISOR: exec_cmd: vm extract_config Chicago 
+May 08 17:51:22.173 HYPERVISOR: exec_cmd: vm extract_config Chicago 
+May 08 17:53:54.344 HYPERVISOR: exec_cmd: vm extract_config Chicago 
+May 08 18:00:55.746 HYPERVISOR: exec_cmd: vm extract_config Chicago 
+May 08 18:01:25.552 HYPERVISOR: exec_cmd: vm get_status Chicago 
+May 08 18:01:25.562 HYPERVISOR: exec_cmd: vm extract_config Chicago 
+May 08 18:01:25.574 HYPERVISOR: exec_cmd: vm delete Chicago 
+May 08 18:01:25.574 VM: VM Chicago destroyed.
+May 08 18:01:25.584 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 18:01:25.862 HYPERVISOR: Stopped.
+May 08 18:01:25.862 GENERAL: reset done.
