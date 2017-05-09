@@ -1,0 +1,29 @@
+conf t
+
+ip routing
+
+interface f 1/1
+no switchport
+ip address 192.168.100.2 255.255.255.0
+ip ospf 10 area 0
+no shutdown
+
+interface f 1/2
+no switchport
+ip address 192.168.101.2 255.255.255.0
+ip ospf 10 area 0
+no shutdown
+
+interface f 1/0
+switchport mode trunk
+switchport trunk encapsulation dot1q
+no shutdown
+
+interface vlan 1
+ip address 192.168.0.2 255.255.252.0
+ip ospf 10 area 0
+no shutdown
+
+end
+
+wr
