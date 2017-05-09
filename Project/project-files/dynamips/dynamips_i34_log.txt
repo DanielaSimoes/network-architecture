@@ -1,0 +1,45 @@
+May 08 16:44:10.066 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 08 16:44:10.066 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 64422.
+May 08 16:44:10.090 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 16:44:10.091 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
+May 08 16:44:10.091 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
+May 08 16:44:10.093 HYPERVISOR: exec_cmd: vm create ESW3 12 c3745 
+May 08 16:44:10.093 VM: VM ESW3 created.
+May 08 16:44:10.094 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW3 5013 
+May 08 16:44:10.096 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW3 
+May 08 16:44:10.098 HYPERVISOR: exec_cmd: vm set_nvram ESW3 256 
+May 08 16:44:10.099 HYPERVISOR: exec_cmd: vm set_ios ESW3 /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+May 08 16:44:10.100 HYPERVISOR: exec_cmd: vm set_ram ESW3 256 
+May 08 16:44:10.102 HYPERVISOR: exec_cmd: vm set_disk0 ESW3 1 
+May 08 16:44:10.103 HYPERVISOR: exec_cmd: vm get_status ESW3 
+May 08 16:44:10.105 HYPERVISOR: exec_cmd: vm set_idle_pc ESW3 0x60b22838 
+May 08 16:44:10.107 HYPERVISOR: exec_cmd: vm get_status ESW3 
+May 08 16:44:10.109 HYPERVISOR: exec_cmd: vm slot_add_binding ESW3 1 0 NM-16ESW 
+May 08 16:44:10.113 HYPERVISOR: exec_cmd: vm set_config ESW3 configs/i12_startup-config.cfg 
+May 08 16:44:21.141 HYPERVISOR: exec_cmd: nio create_udp udp-9e050efe-9b3f-4261-9ba8-79cd60f2b9dd 10051 127.0.0.1 10050 
+May 08 16:44:21.152 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW3 1 0 udp-9e050efe-9b3f-4261-9ba8-79cd60f2b9dd 
+May 08 16:44:21.156 HYPERVISOR: exec_cmd: vm get_status ESW3 
+May 08 16:44:28.463 HYPERVISOR: exec_cmd: vm set_ghost_status ESW3 2 
+May 08 16:44:28.465 HYPERVISOR: exec_cmd: vm set_ghost_file ESW3 c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
+May 08 16:44:28.466 HYPERVISOR: exec_cmd: vm get_status ESW3 
+May 08 16:44:28.469 HYPERVISOR: exec_cmd: vm start ESW3 
+May 08 16:44:32.380 HYPERVISOR: exec_cmd: vm get_status ESW3 
+May 08 16:44:32.387 HYPERVISOR: exec_cmd: vm stop ESW3 
+May 08 16:44:33.561 VM: VM ESW3 shutdown.
+May 08 16:44:33.563 HYPERVISOR: exec_cmd: vm extract_config ESW3 
+May 08 16:44:45.742 HYPERVISOR: exec_cmd: vm get_status ESW3 
+May 08 16:44:45.754 HYPERVISOR: exec_cmd: vm start ESW3 
+May 08 16:46:15.986 HYPERVISOR: exec_cmd: nio bind_filter udp-9e050efe-9b3f-4261-9ba8-79cd60f2b9dd 2 capture 
+May 08 16:46:15.989 HYPERVISOR: exec_cmd: nio setup_filter udp-9e050efe-9b3f-4261-9ba8-79cd60f2b9dd 2 en10mb /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/captures/ESW3_FastEthernet1-0_to_Edifico1_1.pcap 
+May 08 16:54:14.435 HYPERVISOR: exec_cmd: vm get_status ESW3 
+May 08 16:54:14.447 HYPERVISOR: exec_cmd: vm stop ESW3 
+May 08 16:54:14.531 VM: VM ESW3 shutdown.
+May 08 16:54:14.533 HYPERVISOR: exec_cmd: vm extract_config ESW3 
+May 08 16:54:17.425 HYPERVISOR: exec_cmd: vm extract_config ESW3 
+May 08 16:54:18.797 HYPERVISOR: exec_cmd: vm get_status ESW3 
+May 08 16:54:18.809 HYPERVISOR: exec_cmd: vm extract_config ESW3 
+May 08 16:54:18.821 HYPERVISOR: exec_cmd: vm delete ESW3 
+May 08 16:54:18.821 VM: VM ESW3 destroyed.
+May 08 16:54:18.836 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 16:54:19.004 HYPERVISOR: Stopped.
+May 08 16:54:19.005 GENERAL: reset done.

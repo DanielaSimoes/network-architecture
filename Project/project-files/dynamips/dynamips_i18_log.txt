@@ -1,0 +1,10 @@
+May 08 14:12:38.265 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 08 14:12:38.265 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63170.
+May 08 14:12:38.293 HYPERVISOR: exec_cmd: hypervisor version 
+May 08 14:12:38.294 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
+May 08 14:12:38.294 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
+May 08 14:12:38.295 HYPERVISOR: exec_cmd: ethsw create SW12 
+May 08 14:22:49.772 HYPERVISOR: exec_cmd: ethsw delete SW12 
+May 08 14:22:49.781 HYPERVISOR: exec_cmd: hypervisor stop 
+May 08 14:22:49.991 HYPERVISOR: Stopped.
+May 08 14:22:49.991 GENERAL: reset done.
