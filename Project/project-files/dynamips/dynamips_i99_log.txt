@@ -1,0 +1,48 @@
+May 09 16:50:58.509 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 09 16:50:58.512 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55590.
+May 09 16:50:58.564 HYPERVISOR: exec_cmd: hypervisor version 
+May 09 16:50:58.574 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
+May 09 16:50:58.574 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
+May 09 16:50:58.581 HYPERVISOR: exec_cmd: vm create ESW1 1 c3745 
+May 09 16:50:58.581 VM: VM ESW1 created.
+May 09 16:50:58.588 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5000 
+May 09 16:50:58.592 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW1 
+May 09 16:50:58.594 HYPERVISOR: exec_cmd: vm set_ios ESW1 /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+May 09 16:50:58.598 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+May 09 16:50:58.600 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:50:58.603 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60b22838 
+May 09 16:50:58.612 HYPERVISOR: exec_cmd: c3745 set_mac_addr ESW1 c401.a1a1.0000 
+May 09 16:50:58.616 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
+May 09 16:50:58.620 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:50:58.625 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+May 09 16:50:58.629 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+May 09 16:50:58.632 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i1_startup-config.cfg 
+May 09 16:50:59.260 HYPERVISOR: exec_cmd: nio create_udp udp-16c1c8ba-73fb-450a-90d9-a784799cd7f6 10001 127.0.0.1 10000 
+May 09 16:50:59.272 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 4 udp-16c1c8ba-73fb-450a-90d9-a784799cd7f6 
+May 09 16:50:59.276 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:50:59.327 HYPERVISOR: exec_cmd: nio create_udp udp-5735deba-45d9-43bb-8d0f-a58e020ae3ae 10005 127.0.0.1 10004 
+May 09 16:50:59.337 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-5735deba-45d9-43bb-8d0f-a58e020ae3ae 
+May 09 16:50:59.345 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:50:59.372 HYPERVISOR: exec_cmd: nio create_udp udp-031d7414-4fd9-4ab0-a3db-6ea4806fbd03 10008 127.0.0.1 10009 
+May 09 16:50:59.389 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 2 udp-031d7414-4fd9-4ab0-a3db-6ea4806fbd03 
+May 09 16:50:59.396 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:50:59.431 HYPERVISOR: exec_cmd: nio create_udp udp-951ef7fb-e560-440a-9650-2a4b33f466e6 10012 127.0.0.1 10013 
+May 09 16:50:59.455 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 3 udp-951ef7fb-e560-440a-9650-2a4b33f466e6 
+May 09 16:50:59.467 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:50:59.641 HYPERVISOR: exec_cmd: nio create_udp udp-c77e7a92-eb07-4f2e-b5c6-808ba8b57523 10027 127.0.0.1 10026 
+May 09 16:50:59.646 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 6 udp-c77e7a92-eb07-4f2e-b5c6-808ba8b57523 
+May 09 16:50:59.657 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:50:59.946 HYPERVISOR: exec_cmd: nio create_udp udp-f7365abb-2e04-4765-9ea6-597090fe32a9 10051 127.0.0.1 10050 
+May 09 16:50:59.949 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-f7365abb-2e04-4765-9ea6-597090fe32a9 
+May 09 16:50:59.953 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:51:00.069 HYPERVISOR: exec_cmd: nio create_udp udp-55f70105-7157-44cd-ac2d-50978868b762 10059 127.0.0.1 10058 
+May 09 16:51:00.073 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 5 udp-55f70105-7157-44cd-ac2d-50978868b762 
+May 09 16:51:00.075 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 17:22:09.280 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+May 09 17:22:11.860 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 17:22:11.871 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+May 09 17:22:11.882 HYPERVISOR: exec_cmd: vm delete ESW1 
+May 09 17:22:11.882 VM: VM ESW1 destroyed.
+May 09 17:22:11.892 HYPERVISOR: exec_cmd: hypervisor stop 
+May 09 17:22:12.309 HYPERVISOR: Stopped.
+May 09 17:22:12.310 GENERAL: reset done.

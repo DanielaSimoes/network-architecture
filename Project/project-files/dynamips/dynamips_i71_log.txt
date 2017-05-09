@@ -1,0 +1,47 @@
+May 09 16:26:59.701 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 09 16:26:59.705 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55107.
+May 09 16:26:59.753 HYPERVISOR: exec_cmd: hypervisor version 
+May 09 16:26:59.757 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
+May 09 16:26:59.757 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
+May 09 16:26:59.764 HYPERVISOR: exec_cmd: vm create ESW1 1 c3745 
+May 09 16:26:59.764 VM: VM ESW1 created.
+May 09 16:26:59.769 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5000 
+May 09 16:26:59.776 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW1 
+May 09 16:26:59.780 HYPERVISOR: exec_cmd: vm set_ios ESW1 /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+May 09 16:26:59.784 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
+May 09 16:26:59.787 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:26:59.791 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60b22838 
+May 09 16:26:59.795 HYPERVISOR: exec_cmd: c3745 set_mac_addr ESW1 c401.a1a1.0000 
+May 09 16:26:59.799 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
+May 09 16:26:59.803 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:26:59.807 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
+May 09 16:26:59.811 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
+May 09 16:26:59.815 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i1_startup-config.cfg 
+May 09 16:27:00.431 HYPERVISOR: exec_cmd: nio create_udp udp-0d01be74-17c4-4bb4-a900-2c52315786b3 10001 127.0.0.1 10000 
+May 09 16:27:00.442 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 4 udp-0d01be74-17c4-4bb4-a900-2c52315786b3 
+May 09 16:27:00.445 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:27:00.461 HYPERVISOR: exec_cmd: nio create_udp udp-3020f6c0-6392-4b44-a293-52f755b0d97c 10002 127.0.0.1 10003 
+May 09 16:27:00.480 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 2 udp-3020f6c0-6392-4b44-a293-52f755b0d97c 
+May 09 16:27:00.488 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:27:00.502 HYPERVISOR: exec_cmd: nio create_udp udp-a3c0ea9e-6996-439d-9f8d-ecbf97756aaf 10004 127.0.0.1 10005 
+May 09 16:27:00.517 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 3 udp-a3c0ea9e-6996-439d-9f8d-ecbf97756aaf 
+May 09 16:27:00.531 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:27:00.556 HYPERVISOR: exec_cmd: nio create_udp udp-004e7516-5318-4efe-9655-f915f3dbfb71 10011 127.0.0.1 10010 
+May 09 16:27:00.561 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-004e7516-5318-4efe-9655-f915f3dbfb71 
+May 09 16:27:00.564 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:27:00.770 HYPERVISOR: exec_cmd: nio create_udp udp-13e6a4e6-133c-465b-9c11-3ebac945e86e 10029 127.0.0.1 10028 
+May 09 16:27:00.774 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 6 udp-13e6a4e6-133c-465b-9c11-3ebac945e86e 
+May 09 16:27:00.790 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:27:01.038 HYPERVISOR: exec_cmd: nio create_udp udp-9a69e21d-978d-4965-8ce2-4056aa7c879c 10051 127.0.0.1 10050 
+May 09 16:27:01.040 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-9a69e21d-978d-4965-8ce2-4056aa7c879c 
+May 09 16:27:01.044 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:27:01.136 HYPERVISOR: exec_cmd: nio create_udp udp-38811eb0-9297-4094-85da-d6052f4368dd 10059 127.0.0.1 10058 
+May 09 16:27:01.142 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 5 udp-38811eb0-9297-4094-85da-d6052f4368dd 
+May 09 16:27:01.150 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:47:13.704 HYPERVISOR: exec_cmd: vm get_status ESW1 
+May 09 16:47:13.713 HYPERVISOR: exec_cmd: vm extract_config ESW1 
+May 09 16:47:13.725 HYPERVISOR: exec_cmd: vm delete ESW1 
+May 09 16:47:13.725 VM: VM ESW1 destroyed.
+May 09 16:47:13.735 HYPERVISOR: exec_cmd: hypervisor stop 
+May 09 16:47:14.098 HYPERVISOR: Stopped.
+May 09 16:47:14.102 GENERAL: reset done.

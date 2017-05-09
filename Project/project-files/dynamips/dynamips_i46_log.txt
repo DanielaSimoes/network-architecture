@@ -1,0 +1,30 @@
+May 09 16:20:13.257 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 09 16:20:13.257 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54850.
+May 09 16:20:13.283 HYPERVISOR: exec_cmd: hypervisor version 
+May 09 16:20:13.287 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
+May 09 16:20:13.287 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
+May 09 16:20:13.291 HYPERVISOR: exec_cmd: vm create R2 4 c3745 
+May 09 16:20:13.291 VM: VM R2 created.
+May 09 16:20:13.295 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5003 
+May 09 16:20:13.299 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+May 09 16:20:13.303 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/cristianacarvalho/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.image.bin 
+May 09 16:20:13.315 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+May 09 16:20:13.340 HYPERVISOR: exec_cmd: vm get_status R2 
+May 09 16:20:13.371 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60b22838 
+May 09 16:20:13.389 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c404.a1a8.0000 
+May 09 16:20:13.398 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+May 09 16:20:13.402 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+May 09 16:20:13.410 HYPERVISOR: exec_cmd: vm set_config R2 configs/i4_startup-config.cfg 
+May 09 16:20:13.988 HYPERVISOR: exec_cmd: nio create_udp udp-c9f810de-608d-41f3-b0ca-ea12ac68240d 10007 127.0.0.1 10006 
+May 09 16:20:13.992 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-c9f810de-608d-41f3-b0ca-ea12ac68240d 
+May 09 16:20:13.999 HYPERVISOR: exec_cmd: vm get_status R2 
+May 09 16:20:14.050 HYPERVISOR: exec_cmd: nio create_udp udp-de11d3b5-dfcf-4901-bc4f-5eda110f406a 10009 127.0.0.1 10008 
+May 09 16:20:14.058 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-de11d3b5-dfcf-4901-bc4f-5eda110f406a 
+May 09 16:20:14.071 HYPERVISOR: exec_cmd: vm get_status R2 
+May 09 16:20:39.739 HYPERVISOR: exec_cmd: vm get_status R2 
+May 09 16:20:39.752 HYPERVISOR: exec_cmd: vm extract_config R2 
+May 09 16:20:39.766 HYPERVISOR: exec_cmd: vm delete R2 
+May 09 16:20:39.766 VM: VM R2 destroyed.
+May 09 16:20:39.776 HYPERVISOR: exec_cmd: hypervisor stop 
+May 09 16:20:39.915 HYPERVISOR: Stopped.
+May 09 16:20:39.915 GENERAL: reset done.
