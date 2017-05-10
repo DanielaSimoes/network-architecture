@@ -1,0 +1,53 @@
+May 09 16:26:59.710 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+May 09 16:26:59.711 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55109.
+May 09 16:26:59.772 HYPERVISOR: exec_cmd: hypervisor version 
+May 09 16:26:59.779 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
+May 09 16:26:59.779 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
+May 09 16:26:59.783 HYPERVISOR: exec_cmd: vm create ESW2 2 c3745 
+May 09 16:26:59.783 VM: VM ESW2 created.
+May 09 16:26:59.786 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW2 5001 
+May 09 16:26:59.790 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW2 
+May 09 16:26:59.794 HYPERVISOR: exec_cmd: vm set_ios ESW2 /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+May 09 16:26:59.798 HYPERVISOR: exec_cmd: vm set_nvram ESW2 256 
+May 09 16:26:59.802 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:26:59.806 HYPERVISOR: exec_cmd: vm set_idle_pc ESW2 0x60b22838 
+May 09 16:26:59.810 HYPERVISOR: exec_cmd: c3745 set_mac_addr ESW2 c402.a1a2.0000 
+May 09 16:26:59.814 HYPERVISOR: exec_cmd: vm set_ram ESW2 256 
+May 09 16:26:59.818 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:26:59.837 HYPERVISOR: exec_cmd: vm slot_add_binding ESW2 1 0 NM-16ESW 
+May 09 16:26:59.882 HYPERVISOR: exec_cmd: vm set_disk0 ESW2 1 
+May 09 16:26:59.896 HYPERVISOR: exec_cmd: vm set_config ESW2 configs/i2_startup-config.cfg 
+May 09 16:27:00.486 HYPERVISOR: exec_cmd: nio create_udp udp-f8fd70c8-dae8-4cdb-8956-f55fc3789daf 10007 127.0.0.1 10006 
+May 09 16:27:00.489 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 7 udp-f8fd70c8-dae8-4cdb-8956-f55fc3789daf 
+May 09 16:27:00.502 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:27:00.541 HYPERVISOR: exec_cmd: nio create_udp udp-8d20e9b3-310c-4d43-8fd4-07abf897cede 10008 127.0.0.1 10009 
+May 09 16:27:00.558 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 4 udp-8d20e9b3-310c-4d43-8fd4-07abf897cede 
+May 09 16:27:00.563 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:27:00.578 HYPERVISOR: exec_cmd: nio create_udp udp-1e0efc08-4cf0-4d1e-916c-740d01014861 10010 127.0.0.1 10011 
+May 09 16:27:00.595 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 2 udp-1e0efc08-4cf0-4d1e-916c-740d01014861 
+May 09 16:27:00.602 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:27:00.616 HYPERVISOR: exec_cmd: nio create_udp udp-d5e9728b-b3b0-4040-9e12-359fadccc339 10012 127.0.0.1 10013 
+May 09 16:27:00.629 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 5 udp-d5e9728b-b3b0-4040-9e12-359fadccc339 
+May 09 16:27:00.640 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:27:00.750 HYPERVISOR: exec_cmd: nio create_udp udp-d76647f4-3caf-44b0-b5ef-38452cd9dd71 10027 127.0.0.1 10026 
+May 09 16:27:00.759 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 6 udp-d76647f4-3caf-44b0-b5ef-38452cd9dd71 
+May 09 16:27:00.770 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:27:00.854 HYPERVISOR: exec_cmd: nio create_udp udp-9be25c50-b8be-4fe6-904a-08a32a0ae34f 10035 127.0.0.1 10034 
+May 09 16:27:00.867 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 8 udp-9be25c50-b8be-4fe6-904a-08a32a0ae34f 
+May 09 16:27:00.878 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:27:00.897 HYPERVISOR: exec_cmd: nio create_udp udp-c794ba56-ef60-46a6-b47a-31946dcc2258 10039 127.0.0.1 10038 
+May 09 16:27:00.912 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 3 udp-c794ba56-ef60-46a6-b47a-31946dcc2258 
+May 09 16:27:00.921 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:27:01.071 HYPERVISOR: exec_cmd: nio create_udp udp-a9ca0d3d-f3c8-4efa-a81c-c5a50bd1601f 10053 127.0.0.1 10052 
+May 09 16:27:01.075 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 1 udp-a9ca0d3d-f3c8-4efa-a81c-c5a50bd1601f 
+May 09 16:27:01.078 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:27:01.169 HYPERVISOR: exec_cmd: nio create_udp udp-656534c9-2a8f-43bb-8643-c3ec57360885 10061 127.0.0.1 10060 
+May 09 16:27:01.171 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW2 1 0 udp-656534c9-2a8f-43bb-8643-c3ec57360885 
+May 09 16:27:01.174 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:47:13.700 HYPERVISOR: exec_cmd: vm get_status ESW2 
+May 09 16:47:13.711 HYPERVISOR: exec_cmd: vm extract_config ESW2 
+May 09 16:47:13.723 HYPERVISOR: exec_cmd: vm delete ESW2 
+May 09 16:47:13.723 VM: VM ESW2 destroyed.
+May 09 16:47:13.733 HYPERVISOR: exec_cmd: hypervisor stop 
+May 09 16:47:14.099 HYPERVISOR: Stopped.
+May 09 16:47:14.099 GENERAL: reset done.

@@ -35,17 +35,17 @@ switchport access vlan 180
 exit
 
 int Vlan1
-ip address 10.1.10.4 255.255.255.0
+ip address 10.1.10.6 255.255.255.0
 no autostate
 no shutdown
 
 int Vlan120
-ip address 10.2.20.2 255.255.255.0
+ip address 10.2.20.4 255.255.255.0
 no autostate
 no shutdown
 
 int Vlan180
-ip address 10.2.80.2 255.255.255.0
+ip address 10.2.80.4 255.255.255.0
 no autostate
 no shutdown
 
