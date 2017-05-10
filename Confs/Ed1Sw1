@@ -7,6 +7,7 @@ exit
 conf t
 
 ip routing
+ipv6 unicast-routing
 
 interface range FastEthernet 1/2
 switchport mode trunk
@@ -36,9 +37,9 @@ exit
 
 int Vlan1
 ip address 10.1.10.5 255.255.255.0
-no autostate
-ipv6 enable
+ipv6 enable 
 ipv6 address 2002:A:A:12::1/64
+no autostate
 no shutdown
 
 int Vlan190

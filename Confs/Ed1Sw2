@@ -7,6 +7,7 @@ exit
 conf t
 
 ip routing
+ipv6 unicast-routing
 
 interface range FastEthernet 1/2
 switchport mode trunk
