@@ -36,16 +36,22 @@ exit
 
 int Vlan1
 ip address 10.1.10.3 255.255.255.0
+ipv6 enable
+ipv6 address 2002:A:A:12::2/64
 no autostate
 no shutdown
 
 int Vlan190
 ip address 10.1.90.2 255.255.255.0
+ipv6 enable
+ipv6 address 2002:A:A:10::2/64
 no autostate
 no shutdown
 
 int Vlan110
 ip address 10.1.110.2 255.255.255.0
+ipv6 enable
+ipv6 address 2002:A:A:11::2/64
 no autostate
 no shutdown
 
