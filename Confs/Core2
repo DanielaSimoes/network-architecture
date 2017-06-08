@@ -1,0 +1,82 @@
+vlan database
+vlan 190
+vlan 110
+vlan 120
+vlan 180
+
+exit
+
+conf t
+
+ip routing
+ipv6 unicast-routing
+
+interface range FastEthernet 1/0 - 1
+switchport mode trunk
+switchport trunk allowed vlan 1,120,180,190,110,1002-1005
+no shutdown
+
+interface range FastEthernet 1/6 - 7
+switchport mode trunk
+switchport trunk allowed vlan 1,120,180,190,110,1002-1005
+no shutdown
+
+! interfaces que ligam ao router
+
+interface FastEthernet 1/4
+no switchport
+ip address 10.1.196.1 255.255.255.252
+ip ospf 10 area 0
+no shutdown
+
+interface FastEthernet 1/5
+no switchport
+ip address 10.1.200.1 255.255.255.252
+ip ospf 10 area 0
+no shutdown
+
+! interfaces que ligam ao outro core
+
+interface FastEthernet 1/2
+no switchport
+ip address 10.1.192.2 255.255.255.252
+
+exit
+
+int Vlan1
+ip address 10.1.10.7 255.255.255.0
+ipv6 enable
+ipv6 address 2002:A:A:12::6/64
+ip ospf 10 area 0
+no shutdown
+
+int Vlan190
+ip address 10.1.90.6 255.255.255.0
+ipv6 enable
+ipv6 address 2002:A:A:10::4/64
+ip ospf 10 area 0
+no shutdown
+
+int Vlan110
+ip address 10.1.110.5 255.255.255.0
+ipv6 enable
+ipv6 address 2002:A:A:11::4/64
+ip ospf 10 area 0
+no shutdown
+
+int Vlan120
+ip address 10.2.20.6 255.255.255.0
+ipv6 enable
+ipv6 address 2002:A:A:13::4/64
+ip ospf 10 area 0
+no shutdown
+
+int Vlan180
+ip address 10.2.80.6 255.255.255.0
+ipv6 enable
+ipv6 address 2002:A:A:14::4/64
+ip ospf 10 area 0
+no shutdown
+
+end
+wr
