@@ -42,21 +42,21 @@ int Vlan1
 ip address 10.1.10.6 255.255.255.0
 ipv6 enable
 ipv6 address 2002:A:A:12::4/64
-no autostate
+ip ospf 1 area 0
 no shutdown
 
 int Vlan120
 ip address 10.2.20.4 255.255.255.0
 ipv6 enable
 ipv6 address 2002:A:A:13::2/64
-no autostate
+ip ospf 1 area 0
 no shutdown
 
 int Vlan180
 ip address 10.2.80.4 255.255.255.0
 ipv6 enable
 ipv6 address 2002:A:A:14::2/64
-no autostate
+ip ospf 1 area 0
 no shutdown
 
 end
