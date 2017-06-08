@@ -56,5 +56,8 @@ ipv6 address 2002:A:A:11::2/64
 no autostate
 no shutdown
 
+router ospf 1 
+network 10.0.0.0 0.255.255.255 area 0
+
 end
 wr
