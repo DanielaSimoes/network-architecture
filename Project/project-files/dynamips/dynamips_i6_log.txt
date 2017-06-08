@@ -1,49 +1,65 @@
-May 09 15:16:23.358 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-May 09 15:16:23.359 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 54289.
-May 09 15:16:23.450 HYPERVISOR: exec_cmd: hypervisor version 
-May 09 15:16:23.476 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
-May 09 15:16:23.476 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
-May 09 15:16:23.530 HYPERVISOR: exec_cmd: vm create Ed2Sw2 6 c3745 
-May 09 15:16:23.530 VM: VM Ed2Sw2 created.
-May 09 15:16:23.535 HYPERVISOR: exec_cmd: vm set_con_tcp_port Ed2Sw2 5005 
-May 09 15:16:23.538 HYPERVISOR: exec_cmd: c3745 get_mac_addr Ed2Sw2 
-May 09 15:16:23.543 HYPERVISOR: exec_cmd: vm set_ios Ed2Sw2 /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-May 09 15:16:23.554 HYPERVISOR: exec_cmd: vm set_nvram Ed2Sw2 256 
-May 09 15:16:23.565 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-May 09 15:16:23.586 HYPERVISOR: exec_cmd: vm set_idle_pc Ed2Sw2 0x60b22838 
-May 09 15:16:23.609 HYPERVISOR: exec_cmd: c3745 set_mac_addr Ed2Sw2 c406.a1af.0000 
-May 09 15:16:23.614 HYPERVISOR: exec_cmd: vm set_ram Ed2Sw2 256 
-May 09 15:16:23.618 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-May 09 15:16:23.622 HYPERVISOR: exec_cmd: vm slot_add_binding Ed2Sw2 1 0 NM-16ESW 
-May 09 15:16:23.631 HYPERVISOR: exec_cmd: vm set_disk0 Ed2Sw2 1 
-May 09 15:16:23.653 HYPERVISOR: exec_cmd: vm set_config Ed2Sw2 configs/i6_startup-config.cfg 
-May 09 15:16:24.514 HYPERVISOR: exec_cmd: nio create_udp udp-f1d7014c-eb2c-4b93-9355-7a5dd600ba01 10015 127.0.0.1 10014 
-May 09 15:16:24.534 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 2 udp-f1d7014c-eb2c-4b93-9355-7a5dd600ba01 
-May 09 15:16:24.544 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-May 09 15:16:24.572 HYPERVISOR: exec_cmd: nio create_udp udp-633ddc4a-39a7-4c91-b55e-c5865a61631c 10016 127.0.0.1 10017 
-May 09 15:16:24.594 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 3 udp-633ddc4a-39a7-4c91-b55e-c5865a61631c 
-May 09 15:16:24.603 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-May 09 15:16:24.632 HYPERVISOR: exec_cmd: nio create_udp udp-e4d76d09-d8b7-4801-b24f-77c23a5f7cb5 10018 127.0.0.1 10019 
-May 09 15:16:24.661 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 0 udp-e4d76d09-d8b7-4801-b24f-77c23a5f7cb5 
-May 09 15:16:24.676 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-May 09 15:16:24.812 HYPERVISOR: exec_cmd: nio create_udp udp-2b6f6f53-3af6-475b-bb1e-e5b409b32569 10030 127.0.0.1 10031 
-May 09 15:16:24.820 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 1 udp-2b6f6f53-3af6-475b-bb1e-e5b409b32569 
-May 09 15:16:24.832 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-May 09 15:29:33.058 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
-May 09 15:33:25.185 HYPERVISOR: exec_cmd: vm set_ghost_status Ed2Sw2 2 
-May 09 15:33:25.187 HYPERVISOR: exec_cmd: vm set_ghost_file Ed2Sw2 c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
-May 09 15:33:25.188 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-May 09 15:33:25.189 HYPERVISOR: exec_cmd: vm start Ed2Sw2 
-May 09 15:35:05.305 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-May 09 15:35:05.307 HYPERVISOR: exec_cmd: vm stop Ed2Sw2 
-May 09 15:35:05.447 VM: VM Ed2Sw2 shutdown.
-May 09 15:35:05.449 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
-May 09 16:14:08.458 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
-May 09 16:14:13.864 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
-May 09 16:14:35.811 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-May 09 16:14:35.822 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
-May 09 16:14:35.833 HYPERVISOR: exec_cmd: vm delete Ed2Sw2 
-May 09 16:14:35.833 VM: VM Ed2Sw2 destroyed.
-May 09 16:14:35.843 HYPERVISOR: exec_cmd: hypervisor stop 
-May 09 16:14:36.024 HYPERVISOR: Stopped.
-May 09 16:14:36.024 GENERAL: reset done.
+Jun 08 09:52:56.969 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 08 09:52:56.969 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 61362.
+Jun 08 09:52:57.054 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 08 09:52:57.065 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
+Jun 08 09:52:57.065 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
+Jun 08 09:52:57.088 HYPERVISOR: exec_cmd: vm create Ed2Sw2 6 c3745 
+Jun 08 09:52:57.090 VM: VM Ed2Sw2 created.
+Jun 08 09:52:57.113 HYPERVISOR: exec_cmd: vm set_con_tcp_port Ed2Sw2 5005 
+Jun 08 09:52:57.115 HYPERVISOR: exec_cmd: c3745 get_mac_addr Ed2Sw2 
+Jun 08 09:52:57.117 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 09:52:57.119 HYPERVISOR: exec_cmd: vm set_idle_pc Ed2Sw2 0x60b22838 
+Jun 08 09:52:57.124 HYPERVISOR: exec_cmd: c3745 set_mac_addr Ed2Sw2 c406.a1af.0000 
+Jun 08 09:52:57.130 HYPERVISOR: exec_cmd: vm set_ios Ed2Sw2 /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 08 09:52:57.134 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 09:52:57.139 HYPERVISOR: exec_cmd: vm slot_add_binding Ed2Sw2 1 0 NM-16ESW 
+Jun 08 09:52:57.144 HYPERVISOR: exec_cmd: vm set_ram Ed2Sw2 256 
+Jun 08 09:52:57.147 HYPERVISOR: exec_cmd: vm set_nvram Ed2Sw2 256 
+Jun 08 09:52:57.151 HYPERVISOR: exec_cmd: vm set_disk0 Ed2Sw2 1 
+Jun 08 09:52:57.155 HYPERVISOR: exec_cmd: vm set_config Ed2Sw2 configs/i6_startup-config.cfg 
+Jun 08 09:52:57.929 HYPERVISOR: exec_cmd: nio create_udp udp-6763e70d-fdc8-46ce-b0d1-6740c2db77eb 10015 127.0.0.1 10014 
+Jun 08 09:52:57.935 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 2 udp-6763e70d-fdc8-46ce-b0d1-6740c2db77eb 
+Jun 08 09:52:57.948 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 09:52:58.011 HYPERVISOR: exec_cmd: nio create_udp udp-66b5512c-e41f-43d4-bfbe-35b304206c3c 10016 127.0.0.1 10017 
+Jun 08 09:52:58.024 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 3 udp-66b5512c-e41f-43d4-bfbe-35b304206c3c 
+Jun 08 09:52:58.030 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 09:52:58.082 HYPERVISOR: exec_cmd: nio create_udp udp-77869310-439a-41ef-b4ba-ab00900a7968 10018 127.0.0.1 10019 
+Jun 08 09:52:58.106 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 0 udp-77869310-439a-41ef-b4ba-ab00900a7968 
+Jun 08 09:52:58.110 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 09:52:58.134 HYPERVISOR: exec_cmd: nio create_udp udp-bb7e64c3-f4d5-4fbc-80b2-76179f20bafc 10022 127.0.0.1 10023 
+Jun 08 09:52:58.159 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 1 udp-bb7e64c3-f4d5-4fbc-80b2-76179f20bafc 
+Jun 08 09:52:58.184 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 10:28:43.645 HYPERVISOR: exec_cmd: vm set_ghost_status Ed2Sw2 2 
+Jun 08 10:28:43.646 HYPERVISOR: exec_cmd: vm set_ghost_file Ed2Sw2 c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
+Jun 08 10:28:43.647 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 10:28:43.648 HYPERVISOR: exec_cmd: vm start Ed2Sw2 
+Jun 08 10:34:51.842 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 10:34:51.855 HYPERVISOR: exec_cmd: vm stop Ed2Sw2 
+Jun 08 10:34:51.995 VM: VM Ed2Sw2 shutdown.
+Jun 08 10:34:51.997 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
+Jun 08 11:56:45.269 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 11:56:45.273 HYPERVISOR: exec_cmd: vm start Ed2Sw2 
+Jun 08 12:01:20.523 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 12:01:20.554 HYPERVISOR: exec_cmd: vm stop Ed2Sw2 
+Jun 08 12:01:20.704 VM: VM Ed2Sw2 shutdown.
+Jun 08 12:01:20.713 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
+Jun 08 12:15:06.819 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 12:15:06.839 HYPERVISOR: exec_cmd: vm start Ed2Sw2 
+Jun 08 12:37:09.884 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 12:37:09.899 HYPERVISOR: exec_cmd: vm stop Ed2Sw2 
+Jun 08 12:37:10.045 VM: VM Ed2Sw2 shutdown.
+Jun 08 12:37:10.077 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
+Jun 08 12:37:32.035 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 12:37:32.050 HYPERVISOR: exec_cmd: vm start Ed2Sw2 
+Jun 08 12:57:16.186 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 12:57:16.188 HYPERVISOR: exec_cmd: vm stop Ed2Sw2 
+Jun 08 12:57:16.342 VM: VM Ed2Sw2 shutdown.
+Jun 08 12:57:16.343 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
+Jun 08 12:57:31.287 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
+Jun 08 13:43:07.674 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
+Jun 08 13:43:07.683 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
+Jun 08 13:43:07.697 HYPERVISOR: exec_cmd: vm delete Ed2Sw2 
+Jun 08 13:43:07.697 VM: VM Ed2Sw2 destroyed.
+Jun 08 13:43:07.706 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 08 13:43:08.102 HYPERVISOR: Stopped.
+Jun 08 13:43:08.102 GENERAL: reset done.
