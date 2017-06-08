@@ -49,30 +49,36 @@ exit
 int Vlan1
 ip address 10.1.10.6 255.255.255.0
 ipv6 enable
-ipv6 address 2002:A:A:12::5/64no shutdown
+ipv6 address 2002:A:A:12::5/64
+ip ospf 1 area 0
+no shutdown
 
 int Vlan190
 ip address 10.1.90.5 255.255.255.0
 ipv6 enable
 ipv6 address 2002:A:A:10::3/64
+ip ospf 1 area 0
 no shutdown
 
 int Vlan110
 ip address 10.1.110.5 255.255.255.0
 ipv6 enable
 ipv6 address 2002:A:A:11::3/64
+ip ospf 1 area 0
 no shutdown
 
 int Vlan120
 ip address 10.2.20.5 255.255.255.0
 ipv6 enable
 ipv6 address 2002:A:A:13::3/64
+ip ospf 1 area 0
 no shutdown
 
 int Vlan180
 ip address 10.2.80.5 255.255.255.0
 ipv6 enable
 ipv6 address 2002:A:A:14::3/64
+ip ospf 1 area 0
 no shutdown
 
 
