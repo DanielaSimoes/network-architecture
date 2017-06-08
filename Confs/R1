@@ -1,5 +1,20 @@
 conf t
 
+ip nat pool MYNATPOOL 200.1.1.192 200.1.1.224 netmask 255.255.255.224
+access-list 1 permit 10.0.0.0 0.255.255.255
+
+int f1/0
+ip nat inside
+int f0/1
+ip nat inside
+int f0/0
+ip nat inside
+
+int f1/1
+ip nat outside
+
+ip nat inside source list 1 pool MYNATPOOL overload
+
 interface FastEthernet 0/0
 ip address 10.1.184.2 255.255.255.252
 no shutdown
@@ -11,6 +26,11 @@ no shutdown
 interface FastEthernet 1/0
 no switchport
 ip address 10.1.208.1 255.255.255.252
+no shutdown
+
+interface FastEthernet 1/1
+no switchport
+ip address 193.168.1.2 255.255.255.0
 no shutdown
 
 end

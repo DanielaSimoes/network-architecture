@@ -9,6 +9,9 @@ conf t
 ip routing
 ipv6 unicast-routing
 
+router ospf 1
+network 10.0.0.0 0.255.255.255 area 0
+
 interface range FastEthernet 1/2
 switchport mode trunk
 switchport trunk allowed vlan 1,190,110,1002-1005
@@ -37,7 +40,7 @@ exit
 
 int Vlan1
 ip address 10.1.10.5 255.255.255.0
-ipv6 enable 
+ipv6 enable
 ipv6 address 2002:A:A:12::1/64
 no autostate
 no shutdown
