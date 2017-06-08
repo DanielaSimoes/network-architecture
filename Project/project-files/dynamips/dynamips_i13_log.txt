@@ -1,38 +1,47 @@
-Jun 08 09:52:57.329 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 08 09:52:57.329 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 61374.
-Jun 08 09:52:57.401 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 08 09:52:57.407 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
-Jun 08 09:52:57.407 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
-Jun 08 09:52:57.413 HYPERVISOR: exec_cmd: ethsw create Edifico1 
-Jun 08 09:52:58.543 HYPERVISOR: exec_cmd: nio create_udp udp-1703ef23-4b18-425e-a9f2-6abef33df3be 10042 127.0.0.1 10043 
-Jun 08 09:52:58.549 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-1703ef23-4b18-425e-a9f2-6abef33df3be 
-Jun 08 09:52:58.598 HYPERVISOR: exec_cmd: ethsw set_access_port Edifico1 udp-1703ef23-4b18-425e-a9f2-6abef33df3be 190 
-Jun 08 09:52:58.646 HYPERVISOR: exec_cmd: nio create_udp udp-03063c70-2259-419b-9895-eb92d9fc488b 10044 127.0.0.1 10045 
-Jun 08 09:52:58.664 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-03063c70-2259-419b-9895-eb92d9fc488b 
-Jun 08 09:52:58.680 HYPERVISOR: exec_cmd: ethsw set_access_port Edifico1 udp-03063c70-2259-419b-9895-eb92d9fc488b 110 
-Jun 08 09:52:58.704 HYPERVISOR: exec_cmd: nio create_udp udp-56099dce-0a2b-4921-9dcb-2f9fcbea5cee 10047 127.0.0.1 10046 
-Jun 08 09:52:58.731 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-56099dce-0a2b-4921-9dcb-2f9fcbea5cee 
-Jun 08 09:52:58.736 HYPERVISOR: exec_cmd: ethsw set_access_port Edifico1 udp-56099dce-0a2b-4921-9dcb-2f9fcbea5cee 1 
-Jun 08 09:52:58.766 HYPERVISOR: exec_cmd: nio create_udp udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 10048 127.0.0.1 10049 
-Jun 08 09:52:58.794 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 
-Jun 08 09:52:58.811 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edifico1 udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 1 
-Jun 08 09:52:58.856 HYPERVISOR: exec_cmd: nio create_udp udp-bcfa25f6-1bcc-4fb1-9e53-7689124ecc41 10056 127.0.0.1 10057 
-Jun 08 09:52:58.882 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-bcfa25f6-1bcc-4fb1-9e53-7689124ecc41 
-Jun 08 09:52:58.897 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edifico1 udp-bcfa25f6-1bcc-4fb1-9e53-7689124ecc41 1 
-Jun 08 12:13:35.690 HYPERVISOR: exec_cmd: nio bind_filter udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 2 capture 
-Jun 08 12:13:35.693 HYPERVISOR: exec_cmd: nio setup_filter udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 2 en10mb /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/captures/Edifico1_1_to_Ed1Sw1_FastEthernet1-2.pcap 
-Jun 08 12:26:39.077 HYPERVISOR: exec_cmd: nio unbind_filter udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 2 
-Jun 08 12:26:42.016 HYPERVISOR: exec_cmd: nio bind_filter udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 2 capture 
-Jun 08 12:26:42.018 HYPERVISOR: exec_cmd: nio setup_filter udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 2 en10mb /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/captures/Edifico1_1_to_Ed1Sw1_FastEthernet1-2.pcap 
-Jun 08 12:27:17.164 HYPERVISOR: exec_cmd: nio bind_filter udp-bcfa25f6-1bcc-4fb1-9e53-7689124ecc41 2 capture 
-Jun 08 12:27:17.168 HYPERVISOR: exec_cmd: nio setup_filter udp-bcfa25f6-1bcc-4fb1-9e53-7689124ecc41 2 en10mb /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/captures/Edifico1_2_to_Ed1Sw2_FastEthernet1-2.pcap 
-Jun 08 12:37:40.765 HYPERVISOR: exec_cmd: nio unbind_filter udp-bcfa25f6-1bcc-4fb1-9e53-7689124ecc41 2 
-Jun 08 12:37:45.422 HYPERVISOR: exec_cmd: nio unbind_filter udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 2 
-Jun 08 12:38:00.260 HYPERVISOR: exec_cmd: nio bind_filter udp-bcfa25f6-1bcc-4fb1-9e53-7689124ecc41 2 capture 
-Jun 08 12:38:00.262 HYPERVISOR: exec_cmd: nio setup_filter udp-bcfa25f6-1bcc-4fb1-9e53-7689124ecc41 2 en10mb /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/captures/Edifico1_2_to_Ed1Sw2_FastEthernet1-2.pcap 
-Jun 08 12:40:13.110 HYPERVISOR: exec_cmd: nio bind_filter udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 2 capture 
-Jun 08 12:40:13.112 HYPERVISOR: exec_cmd: nio setup_filter udp-29bb943d-35ab-48c3-912b-cbf1641d88b4 2 en10mb /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/captures/Edifico1_1_to_Ed1Sw1_FastEthernet1-2.pcap 
-Jun 08 13:43:07.020 HYPERVISOR: exec_cmd: ethsw delete Edifico1 
-Jun 08 13:43:07.126 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 08 13:43:07.600 HYPERVISOR: Stopped.
-Jun 08 13:43:07.600 GENERAL: reset done.
+Jun 08 20:17:40.748 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 08 20:17:40.749 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 52803.
+Jun 08 20:17:40.863 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 08 20:17:40.873 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips 
+Jun 08 20:17:40.873 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips
+Jun 08 20:17:40.878 HYPERVISOR: exec_cmd: vm create Ed1Sw1 12 c3745 
+Jun 08 20:17:40.879 VM: VM Ed1Sw1 created.
+Jun 08 20:17:40.883 HYPERVISOR: exec_cmd: vm set_con_tcp_port Ed1Sw1 5013 
+Jun 08 20:17:40.892 HYPERVISOR: exec_cmd: c3745 get_mac_addr Ed1Sw1 
+Jun 08 20:17:40.898 HYPERVISOR: exec_cmd: vm set_ram Ed1Sw1 256 
+Jun 08 20:17:40.906 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 08 20:17:40.911 HYPERVISOR: exec_cmd: vm slot_add_binding Ed1Sw1 1 0 NM-16ESW 
+Jun 08 20:17:40.916 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 08 20:17:40.927 HYPERVISOR: exec_cmd: vm set_idle_pc Ed1Sw1 0x60b22838 
+Jun 08 20:17:40.934 HYPERVISOR: exec_cmd: c3745 set_mac_addr Ed1Sw1 c40c.b60d.0000 
+Jun 08 20:17:40.940 HYPERVISOR: exec_cmd: vm set_disk0 Ed1Sw1 1 
+Jun 08 20:17:40.946 HYPERVISOR: exec_cmd: vm set_ios Ed1Sw1 /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 08 20:17:40.950 HYPERVISOR: exec_cmd: vm set_nvram Ed1Sw1 256 
+Jun 08 20:17:40.965 HYPERVISOR: exec_cmd: vm set_config Ed1Sw1 configs/i12_startup-config.cfg 
+Jun 08 20:17:42.012 HYPERVISOR: exec_cmd: nio create_udp udp-e5432ed6-4d29-4c8e-87be-5a6dbbe9157c 10059 127.0.0.1 10058 
+Jun 08 20:17:42.024 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 2 udp-e5432ed6-4d29-4c8e-87be-5a6dbbe9157c 
+Jun 08 20:17:42.036 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 08 20:17:42.049 HYPERVISOR: exec_cmd: nio create_udp udp-d6b84480-3734-48cb-a44f-546ef7013beb 10060 127.0.0.1 10061 
+Jun 08 20:17:42.058 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 1 udp-d6b84480-3734-48cb-a44f-546ef7013beb 
+Jun 08 20:17:42.065 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 08 20:17:42.079 HYPERVISOR: exec_cmd: nio create_udp udp-ee87ddce-72cf-4122-9a13-3f8f591e91dc 10062 127.0.0.1 10063 
+Jun 08 20:17:42.100 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 3 udp-ee87ddce-72cf-4122-9a13-3f8f591e91dc 
+Jun 08 20:17:42.110 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 08 20:17:42.127 HYPERVISOR: exec_cmd: nio create_udp udp-57f4d35f-0b42-497b-af64-215219c5ff38 10064 127.0.0.1 10065 
+Jun 08 20:17:42.140 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 0 udp-57f4d35f-0b42-497b-af64-215219c5ff38 
+Jun 08 20:17:42.141 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 08 20:17:51.564 HYPERVISOR: exec_cmd: vm set_ghost_status Ed1Sw1 2 
+Jun 08 20:17:51.567 HYPERVISOR: exec_cmd: vm set_ghost_file Ed1Sw1 c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
+Jun 08 20:17:51.568 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 08 20:17:51.570 HYPERVISOR: exec_cmd: vm start Ed1Sw1 
+Jun 08 20:26:20.022 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 08 20:26:20.034 HYPERVISOR: exec_cmd: vm stop Ed1Sw1 
+Jun 08 20:26:20.183 VM: VM Ed1Sw1 shutdown.
+Jun 08 20:26:20.185 HYPERVISOR: exec_cmd: vm extract_config Ed1Sw1 
+Jun 08 20:26:22.703 HYPERVISOR: exec_cmd: vm extract_config Ed1Sw1 
+Jun 08 20:26:46.042 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 08 20:26:46.053 HYPERVISOR: exec_cmd: vm extract_config Ed1Sw1 
+Jun 08 20:26:46.066 HYPERVISOR: exec_cmd: vm delete Ed1Sw1 
+Jun 08 20:26:46.066 VM: VM Ed1Sw1 destroyed.
+Jun 08 20:26:46.084 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 08 20:26:46.087 HYPERVISOR: Stopped.
+Jun 08 20:26:46.087 GENERAL: reset done.
