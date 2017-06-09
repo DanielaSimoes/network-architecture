@@ -1,6 +1,62 @@
-Jun 09 10:40:32.065 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 09 10:40:32.065 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49668.
-Jun 09 10:40:32.184 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 09 10:40:32.208 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
-Jun 09 10:40:32.208 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
-Jun 09 10:40:32.217 HYPERVISOR: exec_cmd: ethsw create Edifico1 
+Jun 09 23:40:59.856 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 09 23:40:59.857 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58352.
+Jun 09 23:41:00.052 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 09 23:41:00.117 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 09 23:41:00.117 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 09 23:41:00.180 HYPERVISOR: exec_cmd: vm create Chicago1 15 c3745 
+Jun 09 23:41:00.180 VM: VM Chicago1 created.
+Jun 09 23:41:00.189 HYPERVISOR: exec_cmd: vm set_con_tcp_port Chicago1 5014 
+Jun 09 23:41:00.193 HYPERVISOR: exec_cmd: c3745 get_mac_addr Chicago1 
+Jun 09 23:41:00.201 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 09 23:41:00.247 HYPERVISOR: exec_cmd: vm slot_add_binding Chicago1 1 0 NM-4T 
+Jun 09 23:41:00.259 HYPERVISOR: exec_cmd: vm set_nvram Chicago1 256 
+Jun 09 23:41:00.264 HYPERVISOR: exec_cmd: vm set_ios Chicago1 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 09 23:41:00.270 HYPERVISOR: exec_cmd: c3745 set_mac_addr Chicago1 c40f.10e0.0000 
+Jun 09 23:41:00.297 HYPERVISOR: exec_cmd: vm set_disk0 Chicago1 0 
+Jun 09 23:41:00.313 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 09 23:41:00.320 HYPERVISOR: exec_cmd: vm slot_add_binding Chicago1 2 0 NM-1FE-TX 
+Jun 09 23:41:00.329 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 09 23:41:00.350 HYPERVISOR: exec_cmd: vm set_idle_pc Chicago1 0x60b22838 
+Jun 09 23:41:00.396 HYPERVISOR: exec_cmd: vm set_ram Chicago1 256 
+Jun 09 23:41:00.400 HYPERVISOR: exec_cmd: vm set_config Chicago1 configs/i15_startup-config.cfg 
+Jun 09 23:41:05.054 HYPERVISOR: exec_cmd: nio create_udp udp-cb612800-a352-42df-b8cc-fa94ebdb0a4b 10056 127.0.0.1 10057 
+Jun 09 23:41:05.065 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 0 0 udp-cb612800-a352-42df-b8cc-fa94ebdb0a4b 
+Jun 09 23:41:05.075 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 09 23:41:05.174 HYPERVISOR: exec_cmd: nio create_udp udp-eab799d9-a8cb-4697-8d31-3a75659da7d2 10060 127.0.0.1 10061 
+Jun 09 23:41:05.183 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 2 0 udp-eab799d9-a8cb-4697-8d31-3a75659da7d2 
+Jun 09 23:41:05.203 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 09 23:41:05.602 HYPERVISOR: exec_cmd: nio create_udp udp-ad1d9dc3-d261-4fac-b7b6-d2789e3dede2 10074 127.0.0.1 10075 
+Jun 09 23:41:05.646 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 0 1 udp-ad1d9dc3-d261-4fac-b7b6-d2789e3dede2 
+Jun 09 23:41:05.667 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 09 23:41:19.691 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jun 09 23:41:19.692 VM: VM Ghost created.
+Jun 09 23:41:19.693 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 09 23:41:19.696 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 09 23:41:19.699 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
+Jun 09 23:41:19.701 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jun 09 23:41:19.703 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 09 23:41:19.707 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 09 23:41:20.664 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 09 23:41:20.681 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 09 23:41:21.173 VM: VM Ghost shutdown.
+Jun 09 23:41:21.176 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 09 23:41:21.176 VM: VM Ghost destroyed.
+Jun 09 23:41:21.223 HYPERVISOR: exec_cmd: vm set_ghost_status Chicago1 2 
+Jun 09 23:41:21.226 HYPERVISOR: exec_cmd: vm set_ghost_file Chicago1 c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
+Jun 09 23:41:21.227 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 09 23:41:21.229 HYPERVISOR: exec_cmd: vm start Chicago1 
+Jun 09 23:52:06.610 HYPERVISOR: exec_cmd: nio bind_filter udp-cb612800-a352-42df-b8cc-fa94ebdb0a4b 2 capture 
+Jun 09 23:52:06.612 HYPERVISOR: exec_cmd: nio setup_filter udp-cb612800-a352-42df-b8cc-fa94ebdb0a4b 2 en10mb /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/captures/Chicago1_FastEthernet0-0_to_ISP1_FastEthernet0-1.pcap 
+Jun 10 00:33:02.561 HYPERVISOR: exec_cmd: nio unbind_filter udp-cb612800-a352-42df-b8cc-fa94ebdb0a4b 2 
+Jun 10 00:36:59.167 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 10 00:36:59.172 HYPERVISOR: exec_cmd: vm stop Chicago1 
+Jun 10 00:36:59.309 VM: VM Chicago1 shutdown.
+Jun 10 00:36:59.457 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 10 00:37:06.186 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 10 00:37:06.853 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 10 00:37:06.909 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 10 00:37:06.982 HYPERVISOR: exec_cmd: vm delete Chicago1 
+Jun 10 00:37:06.982 VM: VM Chicago1 destroyed.
+Jun 10 00:37:07.059 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 10 00:37:07.247 HYPERVISOR: Stopped.
+Jun 10 00:37:07.247 GENERAL: reset done.

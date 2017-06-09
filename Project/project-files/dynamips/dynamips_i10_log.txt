@@ -1,6 +1,6 @@
-Jun 09 10:40:31.937 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 09 10:40:31.937 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49664.
-Jun 09 10:40:31.981 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 09 10:40:31.985 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
-Jun 09 10:40:31.985 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
-Jun 09 10:40:31.996 HYPERVISOR: exec_cmd: ethsw create Edificio2 
+Jun 09 23:40:59.652 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 09 23:40:59.652 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 58350.
+Jun 09 23:40:59.874 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 09 23:40:59.920 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 09 23:40:59.921 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 09 23:40:59.929 HYPERVISOR: exec_cmd: ethsw create Edificio2 
