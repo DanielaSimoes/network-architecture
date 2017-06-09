@@ -59,5 +59,14 @@ ipv6 address 2002:A:A:11::1/64
 no autostate
 no shutdown
 
+service dhcp
+interface vlan 190
+ip helper-address 10.1.190.1
+
+service dhcp
+interface vlan 110
+ip helper-address 10.1.190.1
+
+
 end
 wr
