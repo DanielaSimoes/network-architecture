@@ -1,11 +1,17 @@
 conf t
 
 interface FastEthernet 0/0
-no switchport
 ip address 200.1.1.194 255.255.255.224
+no shutdown
+
+interface FastEthernet 0/1
+ip address 200.1.0.131 255.255.255.192
 no shutdown
 
 exit
 
 ip route 200.1.0.0 255.255.254.0 200.1.1.193
+
+end 
+wr
 

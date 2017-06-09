@@ -1,6 +1,6 @@
 conf t
 
-ip nat pool MYNATPOOL 200.1.1.197 200.1.1.224 netmask 255.255.255.224
+ip nat pool MYNATPOOL 200.1.1.199 200.1.1.224 netmask 255.255.255.224
 access-list 2 permit 10.0.0.0 0.255.255.255
 ip nat inside source list 2 pool MYNATPOOL
 
@@ -20,17 +20,20 @@ ip nat inside source list 2 pool MYNATPOOL overload
 interface FastEthernet 0/0
 ip address 10.1.200.3 255.255.255.252
 ipv6 address 2002:A:A:18::3/64
+ipv6 ospf 1 area 0
 no shutdown
 
 interface FastEthernet 0/1
 ip address 10.1.188.3 255.255.255.252
 ipv6 address 2002:A:A:16::3/64
+ipv6 ospf 1 area 0
 no shutdown
 
 interface FastEthernet 1/0
 no switchport
 ip address 10.1.208.2 255.255.255.252
 ipv6 address 2002:A:A:21::2/64
+ipv6 ospf 1 area 0
 no shutdown
 
 interface FastEthernet 1/1
@@ -38,9 +41,19 @@ no switchport
 ip address 200.1.1.195 255.255.255.224
 no shutdown
 
+interface Tunnel 1
+ipv6 address 2002:A:A:22::1/64 
+tunnel source 200.1.1.195
+tunnel destination 200.1.0.193 
+tunnel mode ipv6ip
+exit
+
+ipv6 route 2002:A:A:6::/64 Tunnel 1
+
 end
 conf t
 
+ipv6 router ospf 1
 router ospf 1
 network 10.0.0.0 0.255.255.255 area 0
 default-information originate always 

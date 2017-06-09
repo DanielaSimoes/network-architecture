@@ -1,6 +1,6 @@
 conf t
 
-ip nat pool MYNATPOOL 200.1.1.197 200.1.1.224 netmask 255.255.255.224
+ip nat pool MYNATPOOL 200.1.1.199 200.1.1.224 netmask 255.255.255.224
 access-list 2 permit 10.0.0.0 0.255.255.255
 ip nat inside source list 2 pool MYNATPOOL
 
@@ -17,20 +17,32 @@ ip nat outside
 ip nat translation timeout 120
 ip nat inside source list 2 pool MYNATPOOL overload
 
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 200.1.0.129
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set auth_ciphT authT cipherT 
+
 interface FastEthernet 0/0
 ip address 10.1.184.2 255.255.255.252
 ipv6 address 2002:A:A:15::2/64
+ipv6 ospf 1 area 0
 no shutdown
 
 interface FastEthernet 0/1
 ip address 10.1.196.2 255.255.255.252
 ipv6 address 2002:A:A:17::2/64
+ipv6 ospf 1 area 0
 no shutdown
 
 interface FastEthernet 1/0
 no switchport
 ip address 10.1.208.1 255.255.255.252
 ipv6 address 2002:A:A:21::1/64
+ipv6 ospf 1 area 0
 no shutdown
 
 interface FastEthernet 1/1
@@ -38,9 +50,21 @@ no switchport
 ip address 200.1.1.193 255.255.255.224
 no shutdown
 
+int Tunnel 0 
+ip unnumbered FastEthernet1/1
+tunnel source 200.1.1.193
+tunnel destination 200.1.0.129
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+ip route 10.3.0.0 255.255.0.0 Tunnel 0 200.1.0.129
+no shutdown
+
+ip route 200.1.0.128 255.255.255.192 200.1.1.194
+
 end
 conf t
 
+ipv6 router ospf 1
 router ospf 1
 network 10.0.0.0 0.255.255.255 area 0
 default-information originate always 

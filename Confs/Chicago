@@ -1,0 +1,46 @@
+conf t
+
+crypto isakmp policy 30
+authentication pre-share
+crypto isakmp key labcom address 200.1.1.193
+crypto ipsec transform-set authT ah-sha-hmac
+crypto ipsec transform-set cipherT esp-des
+crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
+crypto ipsec profile ARipsec
+set transform-set auth_ciphT authT cipherT  
+
+interface FastEthernet 0/1
+ip address 10.3.20.2 255.255.255.0
+no shutdown
+
+interface FastEthernet 0/0
+ip address 200.1.0.129 255.255.255.192
+no shutdown
+
+interface FastEthernet 2/0
+ip address 200.1.0.193 255.255.255.192
+no shutdown
+
+interface Tunnel 1
+ipv6 address 2002:A:A:22::1/64 
+tunnel source 200.1.0.193 
+tunnel destination 200.1.1.195
+tunnel mode ipv6ip
+exit
+
+int Tunnel 0 
+ip unnumbered FastEthernet0/0
+tunnel source 200.1.0.129
+tunnel destination 200.1.1.193
+tunnel mode ipsec ipv4
+tunnel protection ipsec profile ARipsec
+no shutdown
+ip route 10.1.0.0 255.255.0.0 Tunnel 0 200.1.1.193
+ip route 10.2.0.0 255.255.0.0 Tunnel 0 200.1.1.193
+
+ipv6 route 2002:A:A:18::/64 Tunnel 1
+ip route 200.1.1.192 255.255.255.224 200.1.0.131
+ip route 200.1.1.192 255.255.255.224 200.1.0.194
+
+end
+wr
