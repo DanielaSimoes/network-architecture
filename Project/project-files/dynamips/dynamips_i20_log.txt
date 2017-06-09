@@ -1,60 +1,29 @@
-May 08 16:06:13.322 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-May 08 16:06:13.322 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 64121.
-May 08 16:06:13.389 HYPERVISOR: exec_cmd: hypervisor version 
-May 08 16:06:13.405 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
-May 08 16:06:13.405 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
-May 08 16:06:13.412 HYPERVISOR: exec_cmd: vm create ESW1 1 c3745 
-May 08 16:06:13.413 VM: VM ESW1 created.
-May 08 16:06:13.418 HYPERVISOR: exec_cmd: vm set_con_tcp_port ESW1 5000 
-May 08 16:06:13.424 HYPERVISOR: exec_cmd: c3745 get_mac_addr ESW1 
-May 08 16:06:13.429 HYPERVISOR: exec_cmd: vm set_nvram ESW1 256 
-May 08 16:06:13.431 HYPERVISOR: exec_cmd: vm set_disk0 ESW1 1 
-May 08 16:06:13.435 HYPERVISOR: exec_cmd: vm set_ios ESW1 /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
-May 08 16:06:13.448 HYPERVISOR: exec_cmd: vm set_ram ESW1 256 
-May 08 16:06:13.462 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:06:13.467 HYPERVISOR: exec_cmd: vm set_idle_pc ESW1 0x60b22838 
-May 08 16:06:13.473 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:06:13.477 HYPERVISOR: exec_cmd: vm slot_add_binding ESW1 1 0 NM-16ESW 
-May 08 16:06:13.481 HYPERVISOR: exec_cmd: c3745 set_mac_addr ESW1 c401.a1a1.0000 
-May 08 16:06:13.485 HYPERVISOR: exec_cmd: vm set_config ESW1 configs/i1_startup-config.cfg 
-May 08 16:06:14.337 HYPERVISOR: exec_cmd: nio create_udp udp-fc8541e0-bf1a-4d45-b604-f0ae5f40e317 10000 127.0.0.1 10001 
-May 08 16:06:14.355 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 2 udp-fc8541e0-bf1a-4d45-b604-f0ae5f40e317 
-May 08 16:06:14.360 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:06:14.387 HYPERVISOR: exec_cmd: nio create_udp udp-a4239c15-4fe0-45ce-b8d2-7cb96fc0475a 10003 127.0.0.1 10002 
-May 08 16:06:14.413 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 1 udp-a4239c15-4fe0-45ce-b8d2-7cb96fc0475a 
-May 08 16:06:14.433 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:06:14.499 HYPERVISOR: exec_cmd: nio create_udp udp-22c1e7f1-6b2c-488a-bdda-564805fb4b17 10009 127.0.0.1 10008 
-May 08 16:06:14.510 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 4 udp-22c1e7f1-6b2c-488a-bdda-564805fb4b17 
-May 08 16:06:14.518 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:06:14.562 HYPERVISOR: exec_cmd: nio create_udp udp-df7bfd67-d948-46e8-85e4-bba16f291004 10012 127.0.0.1 10013 
-May 08 16:06:14.590 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 3 udp-df7bfd67-d948-46e8-85e4-bba16f291004 
-May 08 16:06:14.597 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:06:14.624 HYPERVISOR: exec_cmd: nio create_udp udp-71a17d43-0646-4483-adc5-144ab3eec408 10015 127.0.0.1 10014 
-May 08 16:06:14.659 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 0 0 udp-71a17d43-0646-4483-adc5-144ab3eec408 
-May 08 16:06:14.671 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:06:15.344 HYPERVISOR: exec_cmd: nio create_udp udp-b2400e2e-10a5-4917-9c6a-194973e09600 10055 127.0.0.1 10054 
-May 08 16:06:15.359 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 0 1 udp-b2400e2e-10a5-4917-9c6a-194973e09600 
-May 08 16:06:15.368 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:06:15.406 HYPERVISOR: exec_cmd: nio create_udp udp-c87a103e-57a7-46c3-bbd1-558467556f19 10057 127.0.0.1 10056 
-May 08 16:06:15.426 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ESW1 1 0 udp-c87a103e-57a7-46c3-bbd1-558467556f19 
-May 08 16:06:15.443 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:08:55.436 HYPERVISOR: exec_cmd: vm set_ghost_status ESW1 2 
-May 08 16:08:55.439 HYPERVISOR: exec_cmd: vm set_ghost_file ESW1 c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
-May 08 16:08:55.442 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:08:55.443 HYPERVISOR: exec_cmd: vm start ESW1 
-May 08 16:44:03.888 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:44:03.975 HYPERVISOR: exec_cmd: vm slot_disable_nio ESW1 1 0 
-May 08 16:44:03.984 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding ESW1 1 0 
-May 08 16:44:03.997 HYPERVISOR: exec_cmd: nio delete udp-c87a103e-57a7-46c3-bbd1-558467556f19 
-May 08 16:44:33.433 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:44:33.451 HYPERVISOR: exec_cmd: vm stop ESW1 
-May 08 16:44:33.652 VM: VM ESW1 shutdown.
-May 08 16:44:33.654 HYPERVISOR: exec_cmd: vm extract_config ESW1 
-May 08 16:54:17.413 HYPERVISOR: exec_cmd: vm extract_config ESW1 
-May 08 16:54:18.796 HYPERVISOR: exec_cmd: vm get_status ESW1 
-May 08 16:54:18.808 HYPERVISOR: exec_cmd: vm extract_config ESW1 
-May 08 16:54:18.819 HYPERVISOR: exec_cmd: vm delete ESW1 
-May 08 16:54:18.819 VM: VM ESW1 destroyed.
-May 08 16:54:18.835 HYPERVISOR: exec_cmd: hypervisor stop 
-May 08 16:54:18.909 HYPERVISOR: Stopped.
-May 08 16:54:18.909 GENERAL: reset done.
+Jun 09 10:40:32.976 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 09 10:40:32.977 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49686.
+Jun 09 10:40:33.245 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 09 10:40:33.253 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 09 10:40:33.253 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 09 10:40:33.267 HYPERVISOR: exec_cmd: ethsw create Edifico1 
+Jun 09 10:40:34.835 HYPERVISOR: exec_cmd: nio create_udp udp-75fff47c-aaa9-444d-8f7b-b8157ca704cd 10058 127.0.0.1 10059 
+Jun 09 10:40:34.852 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-75fff47c-aaa9-444d-8f7b-b8157ca704cd 
+Jun 09 10:40:34.875 HYPERVISOR: exec_cmd: ethsw set_access_port Edifico1 udp-75fff47c-aaa9-444d-8f7b-b8157ca704cd 110 
+Jun 09 10:40:34.892 HYPERVISOR: exec_cmd: nio create_udp udp-b90a2590-b09c-4326-a8c3-14d7dd3c1daf 10061 127.0.0.1 10060 
+Jun 09 10:40:34.903 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-b90a2590-b09c-4326-a8c3-14d7dd3c1daf 
+Jun 09 10:40:34.905 HYPERVISOR: exec_cmd: ethsw set_access_port Edifico1 udp-b90a2590-b09c-4326-a8c3-14d7dd3c1daf 1 
+Jun 09 10:40:34.921 HYPERVISOR: exec_cmd: nio create_udp udp-4a3f6389-eafa-44ec-93a1-1a64d7a149ad 10062 127.0.0.1 10063 
+Jun 09 10:40:34.933 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-4a3f6389-eafa-44ec-93a1-1a64d7a149ad 
+Jun 09 10:40:34.954 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edifico1 udp-4a3f6389-eafa-44ec-93a1-1a64d7a149ad 1 
+Jun 09 10:40:34.971 HYPERVISOR: exec_cmd: nio create_udp udp-8ee8e877-aa5c-4e8a-b831-b264086fbfb1 10064 127.0.0.1 10065 
+Jun 09 10:40:34.974 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-8ee8e877-aa5c-4e8a-b831-b264086fbfb1 
+Jun 09 10:40:35.012 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edifico1 udp-8ee8e877-aa5c-4e8a-b831-b264086fbfb1 1 
+Jun 09 10:40:35.041 HYPERVISOR: exec_cmd: nio create_udp udp-484872a1-c233-4e06-8634-8f896d70b9c0 10067 127.0.0.1 10066 
+Jun 09 10:40:35.064 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-484872a1-c233-4e06-8634-8f896d70b9c0 
+Jun 09 10:40:35.084 HYPERVISOR: exec_cmd: ethsw set_access_port Edifico1 udp-484872a1-c233-4e06-8634-8f896d70b9c0 190 
+Jun 09 11:15:32.244 HYPERVISOR: exec_cmd: ethsw remove_nio Edifico1 udp-484872a1-c233-4e06-8634-8f896d70b9c0 
+Jun 09 11:15:32.257 HYPERVISOR: exec_cmd: nio delete udp-484872a1-c233-4e06-8634-8f896d70b9c0 
+Jun 09 11:15:53.550 HYPERVISOR: exec_cmd: nio create_udp udp-6bf9a2d8-afbd-4126-be1c-8f658bc2121d 10067 127.0.0.1 10066 
+Jun 09 11:15:53.553 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-6bf9a2d8-afbd-4126-be1c-8f658bc2121d 
+Jun 09 11:15:53.555 HYPERVISOR: exec_cmd: ethsw set_access_port Edifico1 udp-6bf9a2d8-afbd-4126-be1c-8f658bc2121d 190 
+Jun 09 11:47:51.487 HYPERVISOR: exec_cmd: nio bind_filter udp-75fff47c-aaa9-444d-8f7b-b8157ca704cd 2 capture 
+Jun 09 11:47:51.491 HYPERVISOR: exec_cmd: nio setup_filter udp-75fff47c-aaa9-444d-8f7b-b8157ca704cd 2 en10mb /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/captures/Edifico1_4_to_ApoioCliente_Ethernet0.pcap 
+Jun 09 17:14:00.809 HYPERVISOR: exec_cmd: ethsw delete Edifico1 

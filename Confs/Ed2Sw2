@@ -36,6 +36,15 @@ interface range FastEthernet 1/7 - 10
 switchport mode access
 switchport access vlan 180
 
+service dhcp
+interface vlan 180
+ip helper-address 10.1.190.1
+
+service dhcp
+interface vlan 120
+ip helper-address 10.1.190.1
+
+
 exit
 
 int Vlan1

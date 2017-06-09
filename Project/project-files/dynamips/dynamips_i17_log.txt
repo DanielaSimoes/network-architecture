@@ -1,21 +1,34 @@
-May 08 17:18:29.036 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-May 08 17:18:29.037 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 65092.
-May 08 17:18:29.115 HYPERVISOR: exec_cmd: hypervisor version 
-May 08 17:18:29.116 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
-May 08 17:18:29.116 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
-May 08 17:18:29.123 HYPERVISOR: exec_cmd: ethsw create Edifico1 
-May 08 17:18:30.159 HYPERVISOR: exec_cmd: nio create_udp udp-f65f2c24-dffd-426b-82d9-b34a47fe327a 10048 127.0.0.1 10049 
-May 08 17:18:30.167 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-f65f2c24-dffd-426b-82d9-b34a47fe327a 
-May 08 17:18:30.182 HYPERVISOR: exec_cmd: ethsw set_access_port Edifico1 udp-f65f2c24-dffd-426b-82d9-b34a47fe327a 190 
-May 08 17:18:30.215 HYPERVISOR: exec_cmd: nio create_udp udp-208f2d7a-2709-4f1f-bf50-60cfee40c912 10050 127.0.0.1 10051 
-May 08 17:18:30.244 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-208f2d7a-2709-4f1f-bf50-60cfee40c912 
-May 08 17:18:30.274 HYPERVISOR: exec_cmd: ethsw set_access_port Edifico1 udp-208f2d7a-2709-4f1f-bf50-60cfee40c912 110 
-May 08 17:18:30.289 HYPERVISOR: exec_cmd: nio create_udp udp-cc860915-53eb-40d7-a2f0-56b3f69125c4 10053 127.0.0.1 10052 
-May 08 17:18:30.297 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-cc860915-53eb-40d7-a2f0-56b3f69125c4 
-May 08 17:18:30.321 HYPERVISOR: exec_cmd: ethsw set_access_port Edifico1 udp-cc860915-53eb-40d7-a2f0-56b3f69125c4 1 
-May 08 17:18:30.336 HYPERVISOR: exec_cmd: nio create_udp udp-f1d31654-b53b-45b9-bbec-14ed4d91cede 10054 127.0.0.1 10055 
-May 08 17:18:30.337 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-f1d31654-b53b-45b9-bbec-14ed4d91cede 
-May 08 17:18:30.343 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edifico1 udp-f1d31654-b53b-45b9-bbec-14ed4d91cede 1 
-May 08 17:26:50.876 HYPERVISOR: exec_cmd: nio create_udp udp-47cb5fba-2fa6-406b-80eb-2c78f6c998fb 10062 127.0.0.1 10063 
-May 08 17:26:50.883 HYPERVISOR: exec_cmd: ethsw add_nio Edifico1 udp-47cb5fba-2fa6-406b-80eb-2c78f6c998fb 
-May 08 17:26:50.905 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edifico1 udp-47cb5fba-2fa6-406b-80eb-2c78f6c998fb 1 
+Jun 09 10:40:32.381 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 09 10:40:32.382 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49680.
+Jun 09 10:40:32.533 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 09 10:40:32.569 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 09 10:40:32.569 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 09 10:40:32.668 HYPERVISOR: exec_cmd: vm create R3 14 c7200 
+Jun 09 10:40:32.669 VM: VM R3 created.
+Jun 09 10:40:32.739 HYPERVISOR: exec_cmd: vm set_con_tcp_port R3 5022 
+Jun 09 10:40:32.781 HYPERVISOR: exec_cmd: c7200 get_mac_addr R3 
+Jun 09 10:40:32.807 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 09 10:40:32.811 HYPERVISOR: exec_cmd: vm slot_add_binding R3 0 0 C7200-IO-FE 
+Jun 09 10:40:32.815 HYPERVISOR: exec_cmd: vm set_ram R3 512 
+Jun 09 10:40:32.822 HYPERVISOR: exec_cmd: vm set_ios R3 /Users/Daniela/GNS3/images/IOS/c7200-jk9o3s-mz.123-8.T.bin 
+Jun 09 10:40:32.830 HYPERVISOR: exec_cmd: vm set_nvram R3 512 
+Jun 09 10:40:32.835 HYPERVISOR: exec_cmd: vm set_disk0 R3 0 
+Jun 09 10:40:32.841 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 09 10:40:32.845 HYPERVISOR: exec_cmd: vm slot_add_binding R3 1 0 PA-4E 
+Jun 09 10:40:32.856 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 09 10:40:32.870 HYPERVISOR: exec_cmd: vm set_idle_pc R3 0x60697970 
+Jun 09 10:40:32.878 HYPERVISOR: exec_cmd: c7200 set_mac_addr R3 ca0e.0e3b.0000 
+Jun 09 10:40:32.887 HYPERVISOR: exec_cmd: vm set_config R3 configs/i14_startup-config.cfg 
+Jun 09 10:40:34.942 HYPERVISOR: exec_cmd: nio create_udp udp-cfce5e73-d3e9-4295-b043-c797aa6a19f0 10066 127.0.0.1 10067 
+Jun 09 10:40:34.944 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R3 0 0 udp-cfce5e73-d3e9-4295-b043-c797aa6a19f0 
+Jun 09 10:40:34.953 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 09 11:15:32.239 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 09 11:15:32.251 HYPERVISOR: exec_cmd: vm slot_remove_nio_binding R3 0 0 
+Jun 09 11:15:32.254 HYPERVISOR: exec_cmd: nio delete udp-cfce5e73-d3e9-4295-b043-c797aa6a19f0 
+Jun 09 11:15:32.263 HYPERVISOR: exec_cmd: vm get_status R3 
+Jun 09 11:15:32.268 HYPERVISOR: exec_cmd: vm extract_config R3 
+Jun 09 11:15:32.270 HYPERVISOR: exec_cmd: vm delete R3 
+Jun 09 11:15:32.270 VM: VM R3 destroyed.
+Jun 09 11:15:32.272 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 09 11:15:32.382 HYPERVISOR: Stopped.
+Jun 09 11:15:32.383 GENERAL: reset done.

@@ -1,10 +1,19 @@
-May 08 14:12:38.265 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-May 08 14:12:38.265 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63170.
-May 08 14:12:38.293 HYPERVISOR: exec_cmd: hypervisor version 
-May 08 14:12:38.294 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips 
-May 08 14:12:38.294 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture.git/Project/project-files/dynamips
-May 08 14:12:38.295 HYPERVISOR: exec_cmd: ethsw create SW12 
-May 08 14:22:49.772 HYPERVISOR: exec_cmd: ethsw delete SW12 
-May 08 14:22:49.781 HYPERVISOR: exec_cmd: hypervisor stop 
-May 08 14:22:49.991 HYPERVISOR: Stopped.
-May 08 14:22:49.991 GENERAL: reset done.
+Jun 09 10:40:32.778 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 09 10:40:32.778 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 49682.
+Jun 09 10:40:32.832 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 09 10:40:32.837 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 09 10:40:32.837 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 09 10:40:32.844 HYPERVISOR: exec_cmd: ethsw create EdificioVelho 
+Jun 09 10:40:34.360 HYPERVISOR: exec_cmd: nio create_udp udp-a658a3fc-c6d9-4566-9643-df7a0049a928 10029 127.0.0.1 10028 
+Jun 09 10:40:34.386 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-a658a3fc-c6d9-4566-9643-df7a0049a928 
+Jun 09 10:40:34.410 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EdificioVelho udp-a658a3fc-c6d9-4566-9643-df7a0049a928 1 
+Jun 09 10:40:34.437 HYPERVISOR: exec_cmd: nio create_udp udp-992051f9-5fda-4289-8dc4-f37d09a47117 10031 127.0.0.1 10030 
+Jun 09 10:40:34.442 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-992051f9-5fda-4289-8dc4-f37d09a47117 
+Jun 09 10:40:34.480 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EdificioVelho udp-992051f9-5fda-4289-8dc4-f37d09a47117 1 
+Jun 09 10:40:34.639 HYPERVISOR: exec_cmd: nio create_udp udp-1d2de4e1-6e7e-4147-bb1b-c443a0560d95 10046 127.0.0.1 10047 
+Jun 09 10:40:34.656 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-1d2de4e1-6e7e-4147-bb1b-c443a0560d95 
+Jun 09 10:40:34.674 HYPERVISOR: exec_cmd: ethsw set_access_port EdificioVelho udp-1d2de4e1-6e7e-4147-bb1b-c443a0560d95 1 
+Jun 09 17:14:00.811 HYPERVISOR: exec_cmd: ethsw delete EdificioVelho 
+Jun 09 17:14:00.867 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 09 17:14:01.076 HYPERVISOR: Stopped.
+Jun 09 17:14:01.076 GENERAL: reset done.
