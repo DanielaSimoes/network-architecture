@@ -67,7 +67,8 @@ conf t
 ipv6 router ospf 1
 router ospf 1
 network 10.0.0.0 0.255.255.255 area 0
-default-information originate always 
+default-information originate always
+
 
 end
 wr
