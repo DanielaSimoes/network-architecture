@@ -1,19 +1,6 @@
-Jun 10 22:47:23.319 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 10 22:47:23.319 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51775.
-Jun 10 22:47:23.375 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 10 22:47:23.380 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips 
-Jun 10 22:47:23.380 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips
-Jun 10 22:47:23.387 HYPERVISOR: exec_cmd: ethsw create EdificioVelho 
-Jun 10 22:47:24.706 HYPERVISOR: exec_cmd: nio create_udp udp-1db65fac-a929-42f3-892d-f5736d63788e 10031 127.0.0.1 10030 
-Jun 10 22:47:24.711 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-1db65fac-a929-42f3-892d-f5736d63788e 
-Jun 10 22:47:24.755 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EdificioVelho udp-1db65fac-a929-42f3-892d-f5736d63788e 1 
-Jun 10 22:47:24.837 HYPERVISOR: exec_cmd: nio create_udp udp-da5b6938-75dc-4a5c-91b5-1dfaa209da12 10041 127.0.0.1 10040 
-Jun 10 22:47:24.846 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-da5b6938-75dc-4a5c-91b5-1dfaa209da12 
-Jun 10 22:47:24.875 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EdificioVelho udp-da5b6938-75dc-4a5c-91b5-1dfaa209da12 1 
-Jun 10 22:47:24.910 HYPERVISOR: exec_cmd: nio create_udp udp-11deda40-8f20-4714-917c-60fd38f08cf0 10042 127.0.0.1 10043 
-Jun 10 22:47:24.918 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-11deda40-8f20-4714-917c-60fd38f08cf0 
-Jun 10 22:47:24.945 HYPERVISOR: exec_cmd: ethsw set_access_port EdificioVelho udp-11deda40-8f20-4714-917c-60fd38f08cf0 1 
-Jun 10 22:59:29.211 HYPERVISOR: exec_cmd: ethsw delete EdificioVelho 
-Jun 10 22:59:29.269 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 10 22:59:29.387 HYPERVISOR: Stopped.
-Jun 10 22:59:29.388 GENERAL: reset done.
+Jun 11 14:09:23.585 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 11 14:09:23.585 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 62859.
+Jun 11 14:09:23.644 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 11 14:09:23.650 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 11 14:09:23.650 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 11 14:09:23.655 HYPERVISOR: exec_cmd: ethsw create EdificioVelho 

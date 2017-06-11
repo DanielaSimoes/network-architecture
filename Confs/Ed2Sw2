@@ -57,6 +57,7 @@ no shutdown
 
 int Vlan120
 ip address 10.2.20.4 255.255.255.0
+ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:13::4/64
 ipv6 ospf 1 area 0
@@ -64,10 +65,29 @@ no shutdown
 
 int Vlan180
 ip address 10.2.80.4 255.255.255.0
+ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:14::4/64
 ipv6 ospf 1 area 0
 no shutdown
+
+exit
+
+! QoS access list
+
+access-list 101 permit ip 10.2.20.0 255.255.255.0 any ! all hosts in VoIP VLAN
+
+class-map match-all EF
+match access-group 101
+
+! input set DSCP
+
+policy-map SETDSCP
+class EF
+set ip dscp 46
+
+int vlan 120
+service-policy input SETDSCP
 
 end
 wr

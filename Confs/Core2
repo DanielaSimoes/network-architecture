@@ -10,6 +10,7 @@ conf t
 
 ip routing
 ipv6 unicast-routing
+ipv6 router ospf 1
 
 interface range FastEthernet 1/0 - 1
 switchport mode trunk
@@ -29,13 +30,16 @@ network 10.0.0.0 0.255.255.255 area 0
 interface FastEthernet 1/4
 no switchport
 ip address 10.1.196.1 255.255.255.252
+ip ospf 1 area 0
 ipv6 address 2002:A:A:18::1/64
+ipv6 ospf 1 area 0
 no shutdown
 
 interface FastEthernet 1/5
 no switchport
 ip address 10.1.200.1 255.255.255.252
 ipv6 address 2002:A:A:17::1/64
+ipv6 ospf 1 area 0
 no shutdown
 
 ! interfaces que ligam ao outro core
@@ -44,19 +48,22 @@ interface FastEthernet 1/2
 no switchport
 ip address 10.1.192.2 255.255.255.252
 ipv6 address 2002:A:A:19::2/64
+ipv6 ospf 1 area 0
 no shutdown
+
+! edvsw1
 
 interface FastEthernet 1/8
 no switchport
-ip address 10.1.220.1 255.255.255.0
+ip address 192.168.100.2 255.255.255.0
 no shutdown
+
+! edvsw2
 
 interface FastEthernet 1/3
 no switchport
-ip address 10.1.220.2 255.255.255.0
+ip address 192.168.103.2 255.255.255.0
 no shutdown
-
-exit
 
 int Vlan1
 ip address 10.1.10.7 255.255.255.0
@@ -66,44 +73,55 @@ no shutdown
 
 int Vlan190
 ip address 10.1.90.6 255.255.255.0
+ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:10::6/64
-ip ospf 1 area 0
+ipv6 ospf 1 area 0
 no shutdown
 
 int Vlan110
 ip address 10.1.110.5 255.255.255.0
+ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:11::5/64
-ip ospf 1 area 0
+ipv6 ospf 1 area 0
 no shutdown
 
 int Vlan120
 ip address 10.2.20.6 255.255.255.0
+ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:13::6/64
-ip ospf 1 area 0
+ipv6 ospf 1 area 0
 no shutdown
 
 int Vlan180
 ip address 10.2.80.6 255.255.255.0
+ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:14::6/64
-ip ospf 1 area 0
+ipv6 ospf 1 area 0
 no shutdown
 
-end
-conf t
-class-map match-all PREMIUMmatch ip dscp 46class-map match-all GOLDmatch ip dscp 10class-map match-all SILVERmatch ip dscp 22class-map match-all BEST-EFFORTmatch ip dscp 0
+exit
 
-end
-conf t
-policy-map EDGEclass PREMIUMpriority percent 40class GOLDbandwidth percent 20class SILVERbandwidth percent 15class BEST-EFFORTpolice 16000 2000 2000 conform-action set-dscp-transmit 0
+! Qos Treatment -> output
 
-end
+class-map match-all PREMIUM
+match ip dscp 46
+class-map match-all BEST-EFFORT
+match ip dscp 0
 
-conf t
-int range f1/6 - 7
+policy-map EDGE
+class PREMIUM
+priority percent 40
+class BEST-EFFORT
+police 16000 2000 2000 conform-action set-dscp-transmit 0
+
+int range f1/4 - 5
+service-policy output EDGE
+
+int f1/2
 service-policy output EDGE
 
 end

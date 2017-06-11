@@ -17,9 +17,9 @@ no shutdown
 interface range f 1/1
 switchport mode trunk
 switchport trunk encapsulation dot1q
-no shutdown   
+no shutdown
 
-interface vlan 1 
+interface vlan 1
 ip address 192.168.0.1 255.255.252.0
 ip ospf 10 area 0
 no shutdown
