@@ -1,85 +1,62 @@
-Jun 11 14:09:23.348 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 11 14:09:23.348 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 62849.
-Jun 11 14:09:23.406 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 11 14:09:23.412 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
-Jun 11 14:09:23.412 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
-Jun 11 14:09:23.417 HYPERVISOR: exec_cmd: vm create Core2 2 c3745 
-Jun 11 14:09:23.418 VM: VM Core2 created.
-Jun 11 14:09:23.422 HYPERVISOR: exec_cmd: vm set_con_tcp_port Core2 5001 
-Jun 11 14:09:23.427 HYPERVISOR: exec_cmd: c3745 get_mac_addr Core2 
-Jun 11 14:09:23.432 HYPERVISOR: exec_cmd: c3745 set_mac_addr Core2 c402.a1a2.0000 
-Jun 11 14:09:23.438 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:23.443 HYPERVISOR: exec_cmd: vm slot_add_binding Core2 1 0 NM-16ESW 
-Jun 11 14:09:23.448 HYPERVISOR: exec_cmd: vm set_nvram Core2 256 
-Jun 11 14:09:23.452 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:23.458 HYPERVISOR: exec_cmd: vm set_idle_pc Core2 0x60b22838 
-Jun 11 14:09:23.465 HYPERVISOR: exec_cmd: vm set_ram Core2 256 
-Jun 11 14:09:23.470 HYPERVISOR: exec_cmd: vm set_ios Core2 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-Jun 11 14:09:23.475 HYPERVISOR: exec_cmd: vm set_disk0 Core2 1 
-Jun 11 14:09:23.500 HYPERVISOR: exec_cmd: vm set_config Core2 configs/i2_startup-config.cfg 
-Jun 11 14:09:25.781 HYPERVISOR: exec_cmd: nio create_udp udp-9d20a433-2295-4ca2-ad27-0299183ca6fd 10006 127.0.0.1 10007 
-Jun 11 14:09:25.795 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 2 udp-9d20a433-2295-4ca2-ad27-0299183ca6fd 
-Jun 11 14:09:25.801 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:25.819 HYPERVISOR: exec_cmd: nio create_udp udp-dc3d8197-2376-4bd0-97a7-59f03d39feba 10008 127.0.0.1 10009 
-Jun 11 14:09:25.835 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 5 udp-dc3d8197-2376-4bd0-97a7-59f03d39feba 
-Jun 11 14:09:25.844 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:25.869 HYPERVISOR: exec_cmd: nio create_udp udp-6b28e543-dbce-4931-bee7-92c6ca19aaf7 10010 127.0.0.1 10011 
-Jun 11 14:09:25.888 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 4 udp-6b28e543-dbce-4931-bee7-92c6ca19aaf7 
-Jun 11 14:09:25.892 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:25.927 HYPERVISOR: exec_cmd: nio create_udp udp-bced941e-9000-4ccc-82ff-414e956cae93 10015 127.0.0.1 10014 
-Jun 11 14:09:25.939 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 7 udp-bced941e-9000-4ccc-82ff-414e956cae93 
-Jun 11 14:09:25.945 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:26.087 HYPERVISOR: exec_cmd: nio create_udp udp-00ff0436-2cf9-4dc5-a2bf-aa5c22cd0214 10027 127.0.0.1 10026 
-Jun 11 14:09:26.090 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 6 udp-00ff0436-2cf9-4dc5-a2bf-aa5c22cd0214 
-Jun 11 14:09:26.101 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:26.181 HYPERVISOR: exec_cmd: nio create_udp udp-3b36b771-b1a1-45f0-a48a-bf3107a427d8 10033 127.0.0.1 10032 
-Jun 11 14:09:26.186 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 8 udp-3b36b771-b1a1-45f0-a48a-bf3107a427d8 
-Jun 11 14:09:26.200 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:26.239 HYPERVISOR: exec_cmd: nio create_udp udp-48230d5b-3846-44b5-b1e0-3409b71e1406 10037 127.0.0.1 10036 
-Jun 11 14:09:26.250 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 3 udp-48230d5b-3846-44b5-b1e0-3409b71e1406 
-Jun 11 14:09:26.263 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:26.511 HYPERVISOR: exec_cmd: nio create_udp udp-69c0068c-1ba8-47aa-9067-e0d30aef66ce 10055 127.0.0.1 10054 
-Jun 11 14:09:26.523 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 0 udp-69c0068c-1ba8-47aa-9067-e0d30aef66ce 
-Jun 11 14:09:26.526 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:26.632 HYPERVISOR: exec_cmd: nio create_udp udp-bdaad4a2-b4a7-434e-8c81-f0e38c0b0200 10063 127.0.0.1 10062 
-Jun 11 14:09:26.638 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 1 udp-bdaad4a2-b4a7-434e-8c81-f0e38c0b0200 
-Jun 11 14:09:26.646 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:32.221 HYPERVISOR: exec_cmd: vm set_ghost_status Core2 2 
-Jun 11 14:09:32.222 HYPERVISOR: exec_cmd: vm set_ghost_file Core2 c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
-Jun 11 14:09:32.223 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 14:09:32.224 HYPERVISOR: exec_cmd: vm start Core2 
-Jun 11 17:16:47.189 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 17:16:47.193 HYPERVISOR: exec_cmd: vm stop Core2 
-Jun 11 17:16:47.458 VM: VM Core2 shutdown.
-Jun 11 17:16:47.463 HYPERVISOR: exec_cmd: vm extract_config Core2 
-Jun 11 17:16:57.430 HYPERVISOR: exec_cmd: vm set_ios Core2 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
-Jun 11 17:17:25.805 HYPERVISOR: exec_cmd: vm set_ghost_status Core2 2 
-Jun 11 17:17:25.807 HYPERVISOR: exec_cmd: vm set_ghost_file Core2 c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
-Jun 11 17:17:25.808 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 17:17:25.810 HYPERVISOR: exec_cmd: vm start Core2 
-Jun 11 17:32:46.661 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 17:32:46.663 HYPERVISOR: exec_cmd: vm stop Core2 
-Jun 11 17:32:46.931 VM: VM Core2 shutdown.
-Jun 11 17:32:46.933 HYPERVISOR: exec_cmd: vm extract_config Core2 
-Jun 11 17:33:14.228 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 17:33:14.230 HYPERVISOR: exec_cmd: vm start Core2 
-Jun 11 17:47:04.971 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 17:47:04.976 HYPERVISOR: exec_cmd: vm stop Core2 
-Jun 11 17:47:05.242 VM: VM Core2 shutdown.
-Jun 11 17:47:05.244 HYPERVISOR: exec_cmd: vm extract_config Core2 
-Jun 11 17:47:14.636 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 17:47:14.637 HYPERVISOR: exec_cmd: vm start Core2 
-Jun 11 18:00:49.231 HYPERVISOR: exec_cmd: nio bind_filter udp-6b28e543-dbce-4931-bee7-92c6ca19aaf7 2 capture 
-Jun 11 18:00:49.233 HYPERVISOR: exec_cmd: nio setup_filter udp-6b28e543-dbce-4931-bee7-92c6ca19aaf7 2 en10mb /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/captures/Core2_FastEthernet1-4_to_R2_FastEthernet0-0.pcap 
-Jun 11 18:15:40.906 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 18:15:40.910 HYPERVISOR: exec_cmd: vm stop Core2 
-Jun 11 18:15:41.161 VM: VM Core2 shutdown.
-Jun 11 18:15:41.167 HYPERVISOR: exec_cmd: vm extract_config Core2 
-Jun 11 18:15:44.099 HYPERVISOR: exec_cmd: vm extract_config Core2 
-Jun 11 18:15:44.725 HYPERVISOR: exec_cmd: vm get_status Core2 
-Jun 11 18:15:44.741 HYPERVISOR: exec_cmd: vm extract_config Core2 
-Jun 11 18:15:44.768 HYPERVISOR: exec_cmd: vm delete Core2 
-Jun 11 18:15:44.768 VM: VM Core2 destroyed.
-Jun 11 18:15:44.793 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 11 18:15:44.890 HYPERVISOR: Stopped.
-Jun 11 18:15:44.890 GENERAL: reset done.
+Jun 11 18:18:24.741 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 11 18:18:24.741 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 64114.
+Jun 11 18:18:24.783 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 11 18:18:24.788 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 11 18:18:24.788 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 11 18:18:24.791 HYPERVISOR: exec_cmd: vm create Core2 2 c3745 
+Jun 11 18:18:24.791 VM: VM Core2 created.
+Jun 11 18:18:24.795 HYPERVISOR: exec_cmd: vm set_con_tcp_port Core2 5001 
+Jun 11 18:18:24.799 HYPERVISOR: exec_cmd: c3745 get_mac_addr Core2 
+Jun 11 18:18:24.804 HYPERVISOR: exec_cmd: vm set_nvram Core2 256 
+Jun 11 18:18:24.808 HYPERVISOR: exec_cmd: c3745 set_mac_addr Core2 c402.a1a2.0000 
+Jun 11 18:18:24.821 HYPERVISOR: exec_cmd: vm set_disk0 Core2 1 
+Jun 11 18:18:24.875 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 18:18:24.911 HYPERVISOR: exec_cmd: vm slot_add_binding Core2 1 0 NM-16ESW 
+Jun 11 18:18:24.920 HYPERVISOR: exec_cmd: vm set_ram Core2 256 
+Jun 11 18:18:24.926 HYPERVISOR: exec_cmd: vm set_ios Core2 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Jun 11 18:18:24.933 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 18:18:24.946 HYPERVISOR: exec_cmd: vm set_idle_pc Core2 0x60b22838 
+Jun 11 18:18:24.950 HYPERVISOR: exec_cmd: vm set_config Core2 configs/i2_startup-config.cfg 
+Jun 11 18:18:27.103 HYPERVISOR: exec_cmd: nio create_udp udp-a0ab2b91-dd02-4789-840a-cba5e48865b1 10007 127.0.0.1 10008 
+Jun 11 18:18:27.120 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 2 udp-a0ab2b91-dd02-4789-840a-cba5e48865b1 
+Jun 11 18:18:27.123 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 18:18:27.143 HYPERVISOR: exec_cmd: nio create_udp udp-64da501a-eef7-4f57-8b3e-56fa72455e5f 10006 127.0.0.1 10009 
+Jun 11 18:18:27.155 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 5 udp-64da501a-eef7-4f57-8b3e-56fa72455e5f 
+Jun 11 18:18:27.158 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 18:18:27.182 HYPERVISOR: exec_cmd: nio create_udp udp-24165ad7-b492-4b51-8366-74bb525a38b4 10010 127.0.0.1 10011 
+Jun 11 18:18:27.191 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 4 udp-24165ad7-b492-4b51-8366-74bb525a38b4 
+Jun 11 18:18:27.200 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 18:18:27.244 HYPERVISOR: exec_cmd: nio create_udp udp-ac32654a-dfb3-4b57-81e8-2a57819d63e2 10015 127.0.0.1 10014 
+Jun 11 18:18:27.251 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 7 udp-ac32654a-dfb3-4b57-81e8-2a57819d63e2 
+Jun 11 18:18:27.255 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 18:18:27.367 HYPERVISOR: exec_cmd: nio create_udp udp-bdc28d7e-0479-4d0a-91c7-0359849d62ce 10025 127.0.0.1 10024 
+Jun 11 18:18:27.371 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 6 udp-bdc28d7e-0479-4d0a-91c7-0359849d62ce 
+Jun 11 18:18:27.376 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 18:18:27.467 HYPERVISOR: exec_cmd: nio create_udp udp-af029f0a-f14b-4c52-8758-491d3b6fb7e7 10033 127.0.0.1 10032 
+Jun 11 18:18:27.472 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 8 udp-af029f0a-f14b-4c52-8758-491d3b6fb7e7 
+Jun 11 18:18:27.480 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 18:18:27.544 HYPERVISOR: exec_cmd: nio create_udp udp-01b691c0-2f53-425c-aa93-bce6f788b940 10037 127.0.0.1 10036 
+Jun 11 18:18:27.558 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 3 udp-01b691c0-2f53-425c-aa93-bce6f788b940 
+Jun 11 18:18:27.563 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 18:18:27.721 HYPERVISOR: exec_cmd: nio create_udp udp-0841505c-32b8-45cc-9ba1-692d0a534145 10053 127.0.0.1 10052 
+Jun 11 18:18:27.726 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 0 udp-0841505c-32b8-45cc-9ba1-692d0a534145 
+Jun 11 18:18:27.743 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 18:18:27.878 HYPERVISOR: exec_cmd: nio create_udp udp-d81cb5b1-2e85-4893-a70f-a23974ea0c08 10063 127.0.0.1 10062 
+Jun 11 18:18:27.882 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Core2 1 1 udp-d81cb5b1-2e85-4893-a70f-a23974ea0c08 
+Jun 11 18:18:27.893 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 21:43:05.027 HYPERVISOR: exec_cmd: vm set_ghost_status Core2 2 
+Jun 11 21:43:05.032 HYPERVISOR: exec_cmd: vm set_ghost_file Core2 c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
+Jun 11 21:43:05.034 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 21:43:05.036 HYPERVISOR: exec_cmd: vm start Core2 
+Jun 11 22:41:09.259 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 22:41:09.264 HYPERVISOR: exec_cmd: vm stop Core2 
+Jun 11 22:41:09.512 VM: VM Core2 shutdown.
+Jun 11 22:41:09.517 HYPERVISOR: exec_cmd: vm extract_config Core2 
+Jun 11 22:41:54.322 HYPERVISOR: exec_cmd: vm extract_config Core2 
+Jun 11 22:41:54.804 HYPERVISOR: exec_cmd: vm get_status Core2 
+Jun 11 22:41:54.826 HYPERVISOR: exec_cmd: vm extract_config Core2 
+Jun 11 22:41:54.855 HYPERVISOR: exec_cmd: vm delete Core2 
+Jun 11 22:41:54.855 VM: VM Core2 destroyed.
+Jun 11 22:41:54.879 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 11 22:41:55.035 HYPERVISOR: Stopped.
+Jun 11 22:41:55.035 GENERAL: reset done.

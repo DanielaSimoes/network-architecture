@@ -1,0 +1,38 @@
+enable
+! empty
+conf t
+
+int GigabitEthernet0
+nameif outside
+security-level 0
+ip address 200.1.1.194 255.255.255.252
+no shutdown
+
+int GigabitEthernet1
+nameif inside
+security-level 100
+ip address 200.1.1.197 255.255.255.252
+no shutdown
+
+route inside 200.1.1.0 255.255.255.0 200.1.1.198
+route outside 0.0.0.0 0.0.0.0 200.1.1.193
+
+access-list OUTSIDE_IN permit icmp any 200.1.1.0 255.255.255.0
+access-group OUTSIDE_IN in interface outside
+
+access-list OUTSIDE_OUT permit icmp 200.1.1.0 255.255.255.0 any
+access-group OUTSIDE_OUT out interface outside
+
+! Chicago1 allow anything to R2 f1/1 and vice-versa
+
+access-list OUTSIDE_IN permit ip 200.1.0.193 255.255.255.255 200.1.1.198 255.255.255.255
+access-group OUTSIDE_IN in interface outside
+
+access-list OUTSIDE_OUT permit ip 200.1.1.198 255.255.255.255 200.1.0.193 255.255.255.255
+access-group OUTSIDE_OUT out interface outside
+
+access-list OUTSIDE_IN permit ip 200.1.0.193 255.255.255.255 200.1.1.195 255.255.255.255
+access-group OUTSIDE_IN in interface outside
+
+access-list OUTSIDE_OUT permit ip 200.1.1.195 255.255.255.255 200.1.0.193 255.255.255.255
+access-group OUTSIDE_OUT out interface outside

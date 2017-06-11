@@ -105,6 +105,8 @@ no shutdown
 
 exit
 
+ipv6 route 2002:A:A:6::/64 2002:A:A:18::3
+
 ! Qos Treatment -> output
 
 class-map match-all PREMIUM

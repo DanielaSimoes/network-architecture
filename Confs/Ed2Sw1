@@ -75,7 +75,7 @@ exit
 
 ! QoS access list
 
-access-list 101 permit ip 10.2.20.0 255.255.255.0
+access-list 101 permit ip 10.2.20.0 0.0.0.255 any
 
 class-map match-all EF
 match access-group 101

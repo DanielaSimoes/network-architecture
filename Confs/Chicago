@@ -1,5 +1,6 @@
 conf t
 
+ipv6 unicast-routing
 crypto isakmp policy 30
 authentication pre-share
 crypto isakmp key labcom address 200.1.1.193
@@ -7,10 +8,12 @@ crypto ipsec transform-set authT ah-sha-hmac
 crypto ipsec transform-set cipherT esp-des
 crypto ipsec transform-set auth_ciphT ah-sha-hmac esp-des
 crypto ipsec profile ARipsec
-set transform-set auth_ciphT authT cipherT  
+set transform-set auth_ciphT authT cipherT
 
 interface FastEthernet 0/1
 ip address 10.3.20.2 255.255.255.0
+ipv6 enable
+ipv6 address 2002:A:A:6::2/64
 no shutdown
 
 interface FastEthernet 0/0
@@ -22,13 +25,14 @@ ip address 200.1.0.193 255.255.255.192
 no shutdown
 
 interface Tunnel 1
-ipv6 address 2002:A:A:22::1/64 
-tunnel source 200.1.0.193 
-tunnel destination 200.1.1.195
+ipv6 enable
+ipv6 address 2002:A:A:22::1/64
+tunnel source 200.1.0.193
+tunnel destination 200.1.1.198
 tunnel mode ipv6ip
 exit
 
-int Tunnel 0 
+int Tunnel 0
 ip unnumbered FastEthernet0/0
 tunnel source 200.1.0.129
 tunnel destination 200.1.1.193
