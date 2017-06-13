@@ -1,39 +1,40 @@
-Jun 11 18:18:24.852 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 11 18:18:24.852 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 64193.
-Jun 11 18:18:24.950 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 11 18:18:24.963 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
-Jun 11 18:18:24.963 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
-Jun 11 18:18:24.988 HYPERVISOR: exec_cmd: vm create Ed2Sw2 6 c3745 
-Jun 11 18:18:24.989 VM: VM Ed2Sw2 created.
-Jun 11 18:18:25.009 HYPERVISOR: exec_cmd: vm set_con_tcp_port Ed2Sw2 5005 
-Jun 11 18:18:25.018 HYPERVISOR: exec_cmd: c3745 get_mac_addr Ed2Sw2 
-Jun 11 18:18:25.021 HYPERVISOR: exec_cmd: vm set_nvram Ed2Sw2 256 
-Jun 11 18:18:25.025 HYPERVISOR: exec_cmd: c3745 set_mac_addr Ed2Sw2 c406.a1af.0000 
-Jun 11 18:18:25.034 HYPERVISOR: exec_cmd: vm set_disk0 Ed2Sw2 1 
-Jun 11 18:18:25.038 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-Jun 11 18:18:25.043 HYPERVISOR: exec_cmd: vm slot_add_binding Ed2Sw2 1 0 NM-16ESW 
-Jun 11 18:18:25.046 HYPERVISOR: exec_cmd: vm set_ram Ed2Sw2 256 
-Jun 11 18:18:25.051 HYPERVISOR: exec_cmd: vm set_ios Ed2Sw2 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
-Jun 11 18:18:25.059 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-Jun 11 18:18:25.072 HYPERVISOR: exec_cmd: vm set_idle_pc Ed2Sw2 0x60b22838 
-Jun 11 18:18:25.086 HYPERVISOR: exec_cmd: vm set_config Ed2Sw2 configs/i6_startup-config.cfg 
-Jun 11 18:18:27.331 HYPERVISOR: exec_cmd: nio create_udp udp-902fec51-76c7-4a09-b4f7-11ae2fbc9c19 10023 127.0.0.1 10022 
-Jun 11 18:18:27.340 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 2 udp-902fec51-76c7-4a09-b4f7-11ae2fbc9c19 
-Jun 11 18:18:27.348 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-Jun 11 18:18:27.360 HYPERVISOR: exec_cmd: nio create_udp udp-a06ce457-1940-4130-8c91-376f74ee0315 10024 127.0.0.1 10025 
-Jun 11 18:18:27.369 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 3 udp-a06ce457-1940-4130-8c91-376f74ee0315 
-Jun 11 18:18:27.373 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-Jun 11 18:18:27.391 HYPERVISOR: exec_cmd: nio create_udp udp-4341a563-d177-46de-a6ac-025c3c1c1c24 10026 127.0.0.1 10027 
-Jun 11 18:18:27.405 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 0 udp-4341a563-d177-46de-a6ac-025c3c1c1c24 
-Jun 11 18:18:27.408 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-Jun 11 18:18:27.421 HYPERVISOR: exec_cmd: nio create_udp udp-eebc149d-46ac-4e74-9d62-0dc44e5c581f 10028 127.0.0.1 10029 
-Jun 11 18:18:27.434 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed2Sw2 1 1 udp-eebc149d-46ac-4e74-9d62-0dc44e5c581f 
-Jun 11 18:18:27.438 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-Jun 11 22:41:54.361 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
-Jun 11 22:41:54.770 HYPERVISOR: exec_cmd: vm get_status Ed2Sw2 
-Jun 11 22:41:54.821 HYPERVISOR: exec_cmd: vm extract_config Ed2Sw2 
-Jun 11 22:41:54.846 HYPERVISOR: exec_cmd: vm delete Ed2Sw2 
-Jun 11 22:41:54.847 VM: VM Ed2Sw2 destroyed.
-Jun 11 22:41:54.876 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 11 22:41:54.902 HYPERVISOR: Stopped.
-Jun 11 22:41:54.902 GENERAL: reset done.
+Jun 13 16:38:46.590 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 16:38:46.590 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60435.
+Jun 13 16:38:46.609 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 16:38:46.610 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips 
+Jun 13 16:38:46.610 GENERAL: working_dir=/Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips
+Jun 13 16:38:46.610 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips/5fbc53a4-6cda-4d20-80ae-3d127e3f2019 
+Jun 13 16:38:46.611 GENERAL: working_dir=/Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips/5fbc53a4-6cda-4d20-80ae-3d127e3f2019
+Jun 13 16:38:46.612 HYPERVISOR: exec_cmd: vm create ISP2 13 c3745 
+Jun 13 16:38:46.612 VM: VM ISP2 created.
+Jun 13 16:38:46.613 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP2 2026 
+Jun 13 16:38:46.615 HYPERVISOR: exec_cmd: c3745 get_mac_addr ISP2 
+Jun 13 16:38:46.616 HYPERVISOR: exec_cmd: c3745 set_mac_addr ISP2 c40d.153e.0000 
+Jun 13 16:38:46.618 HYPERVISOR: exec_cmd: vm set_nvram ISP2 256 
+Jun 13 16:38:46.620 HYPERVISOR: exec_cmd: vm set_ios ISP2 /Users/rafaelferreira/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Jun 13 16:38:46.621 HYPERVISOR: exec_cmd: vm set_ram ISP2 256 
+Jun 13 16:38:46.622 HYPERVISOR: exec_cmd: vm set_disk0 ISP2 0 
+Jun 13 16:38:46.624 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 13 16:38:46.625 HYPERVISOR: exec_cmd: vm set_idle_pc ISP2 0x60ba6b20 
+Jun 13 16:38:46.627 HYPERVISOR: exec_cmd: vm set_config ISP2 configs/i13_startup-config.cfg 
+Jun 13 16:38:49.816 HYPERVISOR: exec_cmd: nio create_udp udp-cf8d2760-56da-4daa-a8d4-8122f8b88e1e 10015 127.0.0.1 10014 
+Jun 13 16:38:49.818 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2 0 1 udp-cf8d2760-56da-4daa-a8d4-8122f8b88e1e 
+Jun 13 16:38:49.820 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 13 16:38:57.886 HYPERVISOR: exec_cmd: nio create_udp udp-b6030d52-910c-4268-8636-3991c01de4cf 10070 127.0.0.1 10071 
+Jun 13 16:38:57.889 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2 0 0 udp-b6030d52-910c-4268-8636-3991c01de4cf 
+Jun 13 16:38:57.890 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 13 16:54:35.694 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 13 16:54:35.715 HYPERVISOR: exec_cmd: vm set_idle_pc ISP2 0x60ba7598 
+Jun 13 19:38:59.248 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 13 19:38:59.255 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 13 20:12:46.818 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 13 20:12:46.831 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 13 20:17:53.093 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 13 20:17:53.133 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 13 20:17:53.406 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 13 20:17:53.472 HYPERVISOR: exec_cmd: vm extract_config ISP2 
+Jun 13 20:17:53.529 HYPERVISOR: exec_cmd: vm delete ISP2 
+Jun 13 20:17:53.529 VM: VM ISP2 destroyed.
+Jun 13 20:17:53.590 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 20:17:53.668 HYPERVISOR: Stopped.
+Jun 13 20:17:53.669 GENERAL: reset done.

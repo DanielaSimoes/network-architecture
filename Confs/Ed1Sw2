@@ -9,6 +9,7 @@ conf t
 ip routing
 ipv6 unicast-routing
 ipv6 router ospf 1
+ip multicast-routing
 
 router ospf 1
 network 10.0.0.0 0.255.255.255 area 0
@@ -37,10 +38,9 @@ interface range FastEthernet 1/7 - 10
 switchport mode access
 switchport access vlan 110
 
-exit
-
 int Vlan1
 ip address 10.1.10.3 255.255.255.0
+ip ospf mtu-ignore
 ipv6 enable
 ipv6 address 2002:A:A:12::3/64
 ipv6 ospf 1 area 0
@@ -48,6 +48,7 @@ no shutdown
 
 int Vlan190
 ip address 10.1.90.2 255.255.255.0
+ip ospf mtu-ignore
 ipv6 enable
 ipv6 address 2002:A:A:10::2/64
 ipv6 ospf 1 area 0
@@ -55,6 +56,7 @@ no shutdown
 
 int Vlan110
 ip address 10.1.110.2 255.255.255.0
+ip ospf mtu-ignore
 ipv6 enable
 ipv6 address 2002:A:A:11::2/64
 ipv6 ospf 1 area 0
@@ -68,7 +70,6 @@ service dhcp
 interface vlan 110
 ip helper-address 10.1.190.1
 ipv6 dhcp relay destination 2002:a:a:20:a00:27ff:fea3:beed
-
 
 
 end

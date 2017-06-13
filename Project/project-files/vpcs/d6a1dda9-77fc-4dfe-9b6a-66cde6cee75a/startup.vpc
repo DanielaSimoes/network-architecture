@@ -1,1 +1,2 @@
-set pcname Engenharia
+ip 10.1.90.1 10.1.90.2 24
+ip 2002:a:a:10::1/64

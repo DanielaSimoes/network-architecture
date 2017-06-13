@@ -1,0 +1,21 @@
+Jun 13 14:56:06.661 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 14:56:06.662 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 51546.
+Jun 13 14:56:06.877 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 14:56:06.946 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips 
+Jun 13 14:56:06.946 GENERAL: working_dir=/Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips
+Jun 13 14:56:06.991 HYPERVISOR: exec_cmd: ethsw create Edificio2 
+Jun 13 14:56:09.021 HYPERVISOR: exec_cmd: nio create_udp udp-de2e11a8-1917-4ab6-83f7-8e9a6339c7e9 10029 127.0.0.1 10028 
+Jun 13 14:56:09.025 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-de2e11a8-1917-4ab6-83f7-8e9a6339c7e9 
+Jun 13 14:56:09.080 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edificio2 udp-de2e11a8-1917-4ab6-83f7-8e9a6339c7e9 1 
+Jun 13 14:56:09.121 HYPERVISOR: exec_cmd: nio create_udp udp-cf3eefd5-82ba-4e7b-a5fc-97259da9fdd4 10030 127.0.0.1 10031 
+Jun 13 14:56:09.126 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-cf3eefd5-82ba-4e7b-a5fc-97259da9fdd4 
+Jun 13 14:56:09.149 HYPERVISOR: exec_cmd: ethsw set_access_port Edificio2 udp-cf3eefd5-82ba-4e7b-a5fc-97259da9fdd4 120 
+Jun 13 14:56:09.168 HYPERVISOR: exec_cmd: nio create_udp udp-4e5fd79b-1493-466c-9ea8-5754d1b250a8 10032 127.0.0.1 10033 
+Jun 13 14:56:09.182 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-4e5fd79b-1493-466c-9ea8-5754d1b250a8 
+Jun 13 14:56:09.192 HYPERVISOR: exec_cmd: ethsw set_access_port Edificio2 udp-4e5fd79b-1493-466c-9ea8-5754d1b250a8 180 
+Jun 13 14:56:09.213 HYPERVISOR: exec_cmd: nio create_udp udp-facea69f-6c7f-48c4-b86d-03bc89288a13 10035 127.0.0.1 10034 
+Jun 13 14:56:09.229 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-facea69f-6c7f-48c4-b86d-03bc89288a13 
+Jun 13 14:56:09.247 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edificio2 udp-facea69f-6c7f-48c4-b86d-03bc89288a13 1 
+Jun 13 14:56:09.264 HYPERVISOR: exec_cmd: nio create_udp udp-f24ac7c3-d780-4068-940b-99f66cab6264 10036 127.0.0.1 10037 
+Jun 13 14:56:09.290 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-f24ac7c3-d780-4068-940b-99f66cab6264 
+Jun 13 14:56:09.323 HYPERVISOR: exec_cmd: ethsw set_access_port Edificio2 udp-f24ac7c3-d780-4068-940b-99f66cab6264 1 
