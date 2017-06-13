@@ -1,6 +1,8 @@
 conf t
 
 ipv6 unicast-routing
+ip multicast-routing
+ip pim rp-address 10.1.196.2
 
 ip nat pool MYNATPOOL 200.1.1.199 200.1.1.224 netmask 255.255.255.224
 access-list 2 permit 10.0.0.0 0.255.255.255
@@ -25,6 +27,7 @@ ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:18::3/64
 ipv6 ospf 1 area 0
+ip pim sparse-mode
 no shutdown
 
 interface FastEthernet 0/1
@@ -33,6 +36,7 @@ ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:16::3/64
 ipv6 ospf 1 area 0
+ip pim sparse-mode
 no shutdown
 
 interface FastEthernet 1/0
@@ -42,11 +46,14 @@ ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:21::2/64
 ipv6 ospf 1 area 0
+ip pim sparse-mode
 no shutdown
 
 interface FastEthernet 1/1
 no switchport
 ip address 200.1.1.198 255.255.255.252
+ip pim sparse-mode
+ip igmp join-group 234.234.234.234
 no shutdown
 
 interface Tunnel 1

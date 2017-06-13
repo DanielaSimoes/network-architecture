@@ -3,6 +3,7 @@ vlan 190
 vlan 110
 vlan 120
 vlan 180
+vlan 216
 
 exit
 
@@ -11,15 +12,17 @@ conf t
 ip routing
 ipv6 unicast-routing
 ipv6 router ospf 1
+ip multicast-routing
+ip pim rp-address 10.1.196.2
 
 interface range FastEthernet 1/0 - 1
 switchport mode trunk
-switchport trunk allowed vlan 1,120,180,190,110,1002-1005
+switchport trunk allowed vlan 1,120,180,190,110,1002-1005,216
 no shutdown
 
 interface range FastEthernet 1/6 - 7
 switchport mode trunk
-switchport trunk allowed vlan 1,120,180,190,110,1002-1005
+switchport trunk allowed vlan 1,120,180,190,110,1002-1005,216
 no shutdown
 
 router ospf 1
@@ -33,6 +36,8 @@ ip address 10.1.196.1 255.255.255.252
 ip ospf 1 area 0
 ipv6 address 2002:A:A:18::1/64
 ipv6 ospf 1 area 0
+ip pim sparse-mode
+ip igmp static-group 234.234.234.234
 no shutdown
 
 interface FastEthernet 1/5
@@ -40,6 +45,7 @@ no switchport
 ip address 10.1.200.1 255.255.255.252
 ipv6 address 2002:A:A:17::1/64
 ipv6 ospf 1 area 0
+ip pim sparse-mode
 no shutdown
 
 ! interfaces que ligam ao outro core
@@ -49,6 +55,7 @@ no switchport
 ip address 10.1.192.2 255.255.255.252
 ipv6 address 2002:A:A:19::2/64
 ipv6 ospf 1 area 0
+ip pim sparse-mode
 no shutdown
 
 ! edvsw1
@@ -101,6 +108,15 @@ ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:14::6/64
 ipv6 ospf 1 area 0
+no shutdown
+
+int Vlan216
+ip address 10.2.216.4 255.255.255.0
+ip ospf 1 area 0
+ipv6 enable
+ipv6 address 2002:A:A:23::4/64
+ipv6 ospf 1 area 0
+ip pim sparse-mode
 no shutdown
 
 exit

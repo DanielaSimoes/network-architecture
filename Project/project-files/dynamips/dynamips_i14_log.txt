@@ -1,6 +1,16 @@
-Jun 11 18:18:25.242 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 11 18:18:25.243 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 64206.
-Jun 11 18:18:25.331 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 11 18:18:25.338 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
-Jun 11 18:18:25.338 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
-Jun 11 18:18:25.343 HYPERVISOR: exec_cmd: ethsw create SW1 
+Jun 13 13:02:37.508 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 13:02:37.509 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50057.
+Jun 13 13:02:37.562 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 13:02:37.579 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips 
+Jun 13 13:02:37.579 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips
+Jun 13 13:02:37.588 HYPERVISOR: exec_cmd: ethsw create SW1 
+Jun 13 13:02:38.858 HYPERVISOR: exec_cmd: nio create_udp udp-82e53425-7954-42ce-9c01-ff8175f27857 10052 127.0.0.1 10053 
+Jun 13 13:02:38.866 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-82e53425-7954-42ce-9c01-ff8175f27857 
+Jun 13 13:02:38.891 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-82e53425-7954-42ce-9c01-ff8175f27857 1 
+Jun 13 13:02:38.909 HYPERVISOR: exec_cmd: nio create_udp udp-d2123135-12a7-48fa-b154-4063986e3b14 10055 127.0.0.1 10054 
+Jun 13 13:02:38.926 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-d2123135-12a7-48fa-b154-4063986e3b14 
+Jun 13 13:02:38.965 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-d2123135-12a7-48fa-b154-4063986e3b14 1 
+Jun 13 13:06:36.873 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Jun 13 13:06:36.909 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 13:06:37.221 HYPERVISOR: Stopped.
+Jun 13 13:06:37.221 GENERAL: reset done.

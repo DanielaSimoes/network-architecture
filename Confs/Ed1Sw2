@@ -9,6 +9,7 @@ conf t
 ip routing
 ipv6 unicast-routing
 ipv6 router ospf 1
+ip multicast-routing
 
 router ospf 1
 network 10.0.0.0 0.255.255.255 area 0
