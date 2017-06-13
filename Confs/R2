@@ -23,6 +23,8 @@ ip nat inside source list 2 pool MYNATPOOL overload
 
 interface FastEthernet 0/0
 ip address 10.1.196.2 255.255.255.252
+ip ospf mtu-ignore
+no cdp log mismatch duplex
 ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:18::3/64
@@ -32,6 +34,8 @@ no shutdown
 
 interface FastEthernet 0/1
 ip address 10.1.188.2 255.255.255.252
+ip ospf mtu-ignore
+no cdp log mismatch duplex
 ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:16::3/64
@@ -42,6 +46,8 @@ no shutdown
 interface FastEthernet 1/0
 no switchport
 ip address 10.1.208.2 255.255.255.252
+ip ospf mtu-ignore
+no cdp log mismatch duplex
 ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:21::2/64

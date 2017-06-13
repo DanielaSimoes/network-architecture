@@ -1,36 +1,18 @@
-Jun 13 13:02:37.175 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 13 13:02:37.176 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50044.
-Jun 13 13:02:37.271 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 13:02:37.277 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips 
-Jun 13 13:02:37.277 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips
-Jun 13 13:02:37.280 HYPERVISOR: exec_cmd: vm create EdVSw1 7 c3745 
-Jun 13 13:02:37.281 VM: VM EdVSw1 created.
-Jun 13 13:02:37.286 HYPERVISOR: exec_cmd: vm set_con_tcp_port EdVSw1 5006 
-Jun 13 13:02:37.289 HYPERVISOR: exec_cmd: c3745 get_mac_addr EdVSw1 
-Jun 13 13:02:37.298 HYPERVISOR: exec_cmd: vm get_status EdVSw1 
-Jun 13 13:02:37.308 HYPERVISOR: exec_cmd: vm slot_add_binding EdVSw1 1 0 NM-16ESW 
-Jun 13 13:02:37.318 HYPERVISOR: exec_cmd: vm set_nvram EdVSw1 256 
-Jun 13 13:02:37.332 HYPERVISOR: exec_cmd: vm set_disk0 EdVSw1 1 
-Jun 13 13:02:37.354 HYPERVISOR: exec_cmd: vm set_ram EdVSw1 256 
-Jun 13 13:02:37.368 HYPERVISOR: exec_cmd: c3745 set_mac_addr EdVSw1 c407.a1b3.0000 
-Jun 13 13:02:37.377 HYPERVISOR: exec_cmd: vm set_ios EdVSw1 /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-Jun 13 13:02:37.395 HYPERVISOR: exec_cmd: vm get_status EdVSw1 
-Jun 13 13:02:37.416 HYPERVISOR: exec_cmd: vm set_idle_pc EdVSw1 0x60b22838 
-Jun 13 13:02:37.424 HYPERVISOR: exec_cmd: vm set_config EdVSw1 configs/i7_startup-config.cfg 
-Jun 13 13:02:38.648 HYPERVISOR: exec_cmd: nio create_udp udp-266b3e7e-f4e7-46f0-a0f6-7a960b397c19 10036 127.0.0.1 10037 
-Jun 13 13:02:38.660 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EdVSw1 1 0 udp-266b3e7e-f4e7-46f0-a0f6-7a960b397c19 
-Jun 13 13:02:38.670 HYPERVISOR: exec_cmd: vm get_status EdVSw1 
-Jun 13 13:02:38.693 HYPERVISOR: exec_cmd: nio create_udp udp-29ee0566-713a-429f-b05d-2723dae71863 10038 127.0.0.1 10039 
-Jun 13 13:02:38.713 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EdVSw1 1 1 udp-29ee0566-713a-429f-b05d-2723dae71863 
-Jun 13 13:02:38.726 HYPERVISOR: exec_cmd: vm get_status EdVSw1 
-Jun 13 13:02:38.778 HYPERVISOR: exec_cmd: nio create_udp udp-b76df610-d780-4d23-b5c6-4019cb792b4f 10045 127.0.0.1 10044 
-Jun 13 13:02:38.783 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EdVSw1 1 2 udp-b76df610-d780-4d23-b5c6-4019cb792b4f 
-Jun 13 13:02:38.786 HYPERVISOR: exec_cmd: vm get_status EdVSw1 
-Jun 13 13:06:12.765 HYPERVISOR: exec_cmd: vm extract_config EdVSw1 
-Jun 13 13:07:04.484 HYPERVISOR: exec_cmd: vm get_status EdVSw1 
-Jun 13 13:07:04.494 HYPERVISOR: exec_cmd: vm extract_config EdVSw1 
-Jun 13 13:07:04.507 HYPERVISOR: exec_cmd: vm delete EdVSw1 
-Jun 13 13:07:04.507 VM: VM EdVSw1 destroyed.
-Jun 13 13:07:04.528 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 13 13:07:04.594 HYPERVISOR: Stopped.
-Jun 13 13:07:04.594 GENERAL: reset done.
+Jun 13 16:38:46.667 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 16:38:46.667 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60438.
+Jun 13 16:38:46.686 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 16:38:46.687 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips 
+Jun 13 16:38:46.687 GENERAL: working_dir=/Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips
+Jun 13 16:38:46.688 HYPERVISOR: exec_cmd: ethsw create SW1 
+Jun 13 16:38:52.892 HYPERVISOR: exec_cmd: nio create_udp udp-44e7de7d-360d-403c-99e2-c6f385dd963f 10034 127.0.0.1 10035 
+Jun 13 16:38:52.893 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-44e7de7d-360d-403c-99e2-c6f385dd963f 
+Jun 13 16:38:52.910 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-44e7de7d-360d-403c-99e2-c6f385dd963f 1 
+Jun 13 16:38:54.274 HYPERVISOR: exec_cmd: nio create_udp udp-dd05b7e4-e4a0-4d0c-af66-ece73235ccc0 10045 127.0.0.1 10044 
+Jun 13 16:38:54.275 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-dd05b7e4-e4a0-4d0c-af66-ece73235ccc0 
+Jun 13 16:38:54.289 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-dd05b7e4-e4a0-4d0c-af66-ece73235ccc0 1 
+Jun 13 16:55:11.606 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-44e7de7d-360d-403c-99e2-c6f385dd963f 1 
+Jun 13 16:55:11.761 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-dd05b7e4-e4a0-4d0c-af66-ece73235ccc0 1 
+Jun 13 20:17:53.407 HYPERVISOR: exec_cmd: ethsw delete SW1 
+Jun 13 20:17:53.491 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 20:17:53.668 HYPERVISOR: Stopped.
+Jun 13 20:17:53.668 GENERAL: reset done.

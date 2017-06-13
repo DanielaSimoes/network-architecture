@@ -1,30 +1,73 @@
-Jun 13 13:02:37.253 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 13 13:02:37.253 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50048.
-Jun 13 13:02:37.291 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 13:02:37.301 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips 
-Jun 13 13:02:37.301 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips
-Jun 13 13:02:37.310 HYPERVISOR: exec_cmd: ethsw create Edificio2 
-Jun 13 13:02:38.433 HYPERVISOR: exec_cmd: nio create_udp udp-dda38dc8-1861-4be6-aac3-9216fb38bb43 10017 127.0.0.1 10016 
-Jun 13 13:02:38.445 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-dda38dc8-1861-4be6-aac3-9216fb38bb43 
-Jun 13 13:02:38.463 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edificio2 udp-dda38dc8-1861-4be6-aac3-9216fb38bb43 1 
-Jun 13 13:02:38.480 HYPERVISOR: exec_cmd: nio create_udp udp-e1f643fb-c54a-40b2-af01-1bca12762ef2 10018 127.0.0.1 10019 
-Jun 13 13:02:38.494 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-e1f643fb-c54a-40b2-af01-1bca12762ef2 
-Jun 13 13:02:38.508 HYPERVISOR: exec_cmd: ethsw set_access_port Edificio2 udp-e1f643fb-c54a-40b2-af01-1bca12762ef2 120 
-Jun 13 13:02:38.520 HYPERVISOR: exec_cmd: nio create_udp udp-66547399-0863-46a9-a444-2944e7b38819 10020 127.0.0.1 10021 
-Jun 13 13:02:38.527 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-66547399-0863-46a9-a444-2944e7b38819 
-Jun 13 13:02:38.551 HYPERVISOR: exec_cmd: ethsw set_access_port Edificio2 udp-66547399-0863-46a9-a444-2944e7b38819 180 
-Jun 13 13:02:38.573 HYPERVISOR: exec_cmd: nio create_udp udp-c6fd4ad5-5739-4816-8493-118c445f9471 10022 127.0.0.1 10023 
-Jun 13 13:02:38.581 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-c6fd4ad5-5739-4816-8493-118c445f9471 
-Jun 13 13:02:38.605 HYPERVISOR: exec_cmd: ethsw set_access_port Edificio2 udp-c6fd4ad5-5739-4816-8493-118c445f9471 1 
-Jun 13 13:02:38.622 HYPERVISOR: exec_cmd: nio create_udp udp-9333b72b-936e-481d-bc1a-6794affc25b5 10025 127.0.0.1 10024 
-Jun 13 13:02:38.626 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-9333b72b-936e-481d-bc1a-6794affc25b5 
-Jun 13 13:02:38.652 HYPERVISOR: exec_cmd: ethsw set_access_port Edificio2 udp-9333b72b-936e-481d-bc1a-6794affc25b5 216 
-Jun 13 13:02:38.670 HYPERVISOR: exec_cmd: nio create_udp udp-c0a3171f-9526-4f97-888a-c8a9379814d7 10035 127.0.0.1 10034 
-Jun 13 13:02:38.680 HYPERVISOR: exec_cmd: ethsw add_nio Edificio2 udp-c0a3171f-9526-4f97-888a-c8a9379814d7 
-Jun 13 13:02:38.706 HYPERVISOR: exec_cmd: ethsw set_dot1q_port Edificio2 udp-c0a3171f-9526-4f97-888a-c8a9379814d7 1 
-Jun 13 13:03:54.699 HYPERVISOR: exec_cmd: nio bind_filter udp-c0a3171f-9526-4f97-888a-c8a9379814d7 2 capture 
-Jun 13 13:03:54.701 HYPERVISOR: exec_cmd: nio setup_filter udp-c0a3171f-9526-4f97-888a-c8a9379814d7 2 en10mb /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/captures/Edificio2_5_to_Ed2Sw2_FastEthernet1-1.pcap 
-Jun 13 13:04:43.497 HYPERVISOR: exec_cmd: nio unbind_filter udp-c0a3171f-9526-4f97-888a-c8a9379814d7 2 
-Jun 13 13:04:46.447 HYPERVISOR: exec_cmd: nio bind_filter udp-c0a3171f-9526-4f97-888a-c8a9379814d7 2 capture 
-Jun 13 13:04:46.449 HYPERVISOR: exec_cmd: nio setup_filter udp-c0a3171f-9526-4f97-888a-c8a9379814d7 2 en10mb /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/captures/Edificio2_5_to_Ed2Sw2_FastEthernet1-1.pcap 
-Jun 13 13:06:36.874 HYPERVISOR: exec_cmd: ethsw delete Edificio2 
+Jun 13 16:38:47.024 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 16:38:47.024 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60449.
+Jun 13 16:38:47.046 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 16:38:47.047 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips 
+Jun 13 16:38:47.047 GENERAL: working_dir=/Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips
+Jun 13 16:38:47.049 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips/1a2232bc-bc21-4af5-979f-eef93bb479f4 
+Jun 13 16:38:47.049 GENERAL: working_dir=/Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips/1a2232bc-bc21-4af5-979f-eef93bb479f4
+Jun 13 16:38:47.050 HYPERVISOR: exec_cmd: vm create Chicago1 15 c3745 
+Jun 13 16:38:47.050 VM: VM Chicago1 created.
+Jun 13 16:38:47.052 HYPERVISOR: exec_cmd: vm set_con_tcp_port Chicago1 2016 
+Jun 13 16:38:47.053 HYPERVISOR: exec_cmd: c3745 get_mac_addr Chicago1 
+Jun 13 16:38:47.055 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 16:38:47.057 HYPERVISOR: exec_cmd: vm slot_add_binding Chicago1 1 0 NM-4T 
+Jun 13 16:38:47.058 HYPERVISOR: exec_cmd: c3745 set_mac_addr Chicago1 c40f.10e0.0000 
+Jun 13 16:38:47.060 HYPERVISOR: exec_cmd: vm set_nvram Chicago1 256 
+Jun 13 16:38:47.062 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 16:38:47.064 HYPERVISOR: exec_cmd: vm slot_add_binding Chicago1 2 0 NM-1FE-TX 
+Jun 13 16:38:47.066 HYPERVISOR: exec_cmd: vm set_ios Chicago1 /Users/rafaelferreira/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 13 16:38:47.069 HYPERVISOR: exec_cmd: vm set_ram Chicago1 256 
+Jun 13 16:38:47.071 HYPERVISOR: exec_cmd: vm set_disk0 Chicago1 0 
+Jun 13 16:38:47.073 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 16:38:47.074 HYPERVISOR: exec_cmd: vm set_idle_pc Chicago1 0x60b22838 
+Jun 13 16:38:47.077 HYPERVISOR: exec_cmd: vm set_config Chicago1 configs/i15_startup-config.cfg 
+Jun 13 16:38:49.777 HYPERVISOR: exec_cmd: nio create_udp udp-3752fbd9-3477-4ea0-be78-51201209126f 10014 127.0.0.1 10015 
+Jun 13 16:38:49.779 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 2 0 udp-3752fbd9-3477-4ea0-be78-51201209126f 
+Jun 13 16:38:49.780 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 16:38:52.585 HYPERVISOR: exec_cmd: nio create_udp udp-9a31f744-9613-44af-9970-b7aac6d68f44 10032 127.0.0.1 10033 
+Jun 13 16:38:52.588 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 0 0 udp-9a31f744-9613-44af-9970-b7aac6d68f44 
+Jun 13 16:38:52.589 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 16:38:54.233 HYPERVISOR: exec_cmd: nio create_udp udp-bf7114a7-705a-4e4a-82ea-620a372bdc58 10044 127.0.0.1 10045 
+Jun 13 16:38:54.237 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 0 1 udp-bf7114a7-705a-4e4a-82ea-620a372bdc58 
+Jun 13 16:38:54.241 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 16:54:54.071 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
+Jun 13 16:54:54.071 VM: VM Ghost created.
+Jun 13 16:54:54.073 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/rafaelferreira/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 13 16:54:54.074 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
+Jun 13 16:54:54.077 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost /Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips/c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
+Jun 13 16:54:54.080 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
+Jun 13 16:54:54.083 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 13 16:54:54.086 HYPERVISOR: exec_cmd: vm start Ghost 
+Jun 13 16:54:54.803 HYPERVISOR: exec_cmd: vm get_status Ghost 
+Jun 13 16:54:54.806 HYPERVISOR: exec_cmd: vm stop Ghost 
+Jun 13 16:54:55.793 VM: VM Ghost shutdown.
+Jun 13 16:54:55.794 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
+Jun 13 16:54:55.794 VM: VM Ghost destroyed.
+Jun 13 16:54:55.806 HYPERVISOR: exec_cmd: vm set_ghost_status Chicago1 2 
+Jun 13 16:54:55.807 HYPERVISOR: exec_cmd: vm set_ghost_file Chicago1 /Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips/c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
+Jun 13 16:54:55.808 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 16:54:55.809 HYPERVISOR: exec_cmd: vm start Chicago1 
+Jun 13 16:55:08.811 HYPERVISOR: exec_cmd: vm set_ios Chicago1 /Users/rafaelferreira/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 13 16:55:11.616 HYPERVISOR: exec_cmd: vm set_ios Chicago1 /Users/rafaelferreira/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 13 16:55:26.052 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 13 16:55:26.055 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 13 17:20:35.493 HYPERVISOR: exec_cmd: nio bind_filter udp-3752fbd9-3477-4ea0-be78-51201209126f 2 capture 
+Jun 13 17:20:35.495 HYPERVISOR: exec_cmd: nio setup_filter udp-3752fbd9-3477-4ea0-be78-51201209126f 2 en10mb /Users/rafaelferreira/Development/network-architecture/Project/tmp/captures/Chicago1_FastEthernet20_to_ISP2_FastEthernet01.pcap 
+Jun 13 17:21:40.846 HYPERVISOR: exec_cmd: nio unbind_filter udp-3752fbd9-3477-4ea0-be78-51201209126f 2 
+Jun 13 17:54:45.613 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 17:54:45.616 HYPERVISOR: exec_cmd: vm stop Chicago1 
+Jun 13 17:54:45.734 VM: VM Chicago1 shutdown.
+Jun 13 17:54:45.735 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 13 19:38:58.981 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 19:38:58.991 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 13 20:12:46.506 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 20:12:46.507 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 13 20:17:52.818 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 20:17:52.830 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 13 20:17:53.393 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 13 20:17:53.462 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 13 20:17:53.517 HYPERVISOR: exec_cmd: vm delete Chicago1 
+Jun 13 20:17:53.518 VM: VM Chicago1 destroyed.
+Jun 13 20:17:53.586 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 13 20:17:53.971 HYPERVISOR: Stopped.
+Jun 13 20:17:53.971 GENERAL: reset done.

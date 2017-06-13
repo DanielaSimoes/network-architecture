@@ -49,11 +49,9 @@ service dhcp
 interface vlan 120
 ip helper-address 10.1.190.1
 
-
-exit
-
 int Vlan1
 ip address 10.1.10.4 255.255.255.0
+ip ospf mtu-ignore
 ipv6 enable
 ipv6 address 2002:A:A:12::4/64
 ipv6 ospf 1 area 0
@@ -61,6 +59,7 @@ no shutdown
 
 int Vlan120
 ip address 10.2.20.2 255.255.255.0
+ip ospf mtu-ignore
 ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:13::2/64
@@ -69,6 +68,7 @@ no shutdown
 
 int Vlan180
 ip address 10.2.80.2 255.255.255.0
+ip ospf mtu-ignore
 ip ospf 1 area 0
 ipv6 enable
 ipv6 address 2002:A:A:14::2/64

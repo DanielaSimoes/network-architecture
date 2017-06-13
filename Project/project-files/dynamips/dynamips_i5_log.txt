@@ -1,60 +1,16 @@
-Jun 13 13:02:37.030 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 13 13:02:37.030 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 50037.
-Jun 13 13:02:37.070 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 13 13:02:37.074 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips 
-Jun 13 13:02:37.074 GENERAL: working_dir=/Users/cristianacarvalho/Desktop/UA/3º ano/AR/Projeto/network-architecture/Project/project-files/dynamips
-Jun 13 13:02:37.078 HYPERVISOR: exec_cmd: vm create R2 4 c3745 
-Jun 13 13:02:37.079 VM: VM R2 created.
-Jun 13 13:02:37.082 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5003 
-Jun 13 13:02:37.086 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
-Jun 13 13:02:37.092 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 13:02:37.096 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-16ESW 
-Jun 13 13:02:37.100 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
-Jun 13 13:02:37.104 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
-Jun 13 13:02:37.109 HYPERVISOR: exec_cmd: vm set_ram R2 256 
-Jun 13 13:02:37.113 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c404.a1a8.0000 
-Jun 13 13:02:37.117 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
-Jun 13 13:02:37.133 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 13:02:37.173 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x61f2b4e8 
-Jun 13 13:02:37.194 HYPERVISOR: exec_cmd: vm set_config R2 configs/i4_startup-config.cfg 
-Jun 13 13:02:38.299 HYPERVISOR: exec_cmd: nio create_udp udp-bd6953d3-44ad-4fc2-aab9-a01cf4c3a0c2 10011 127.0.0.1 10009 
-Jun 13 13:02:38.305 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-bd6953d3-44ad-4fc2-aab9-a01cf4c3a0c2 
-Jun 13 13:02:38.309 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 13:02:38.357 HYPERVISOR: exec_cmd: nio create_udp udp-c037e46d-90a0-4abc-825f-799e77eb39c2 10013 127.0.0.1 10012 
-Jun 13 13:02:38.373 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-c037e46d-90a0-4abc-825f-799e77eb39c2 
-Jun 13 13:02:38.376 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 13:02:38.395 HYPERVISOR: exec_cmd: nio create_udp udp-df9bfce7-c142-48b4-a28e-9c8b825490ca 10015 127.0.0.1 10014 
-Jun 13 13:02:38.436 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-df9bfce7-c142-48b4-a28e-9c8b825490ca 
-Jun 13 13:02:38.446 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 13:02:38.512 HYPERVISOR: exec_cmd: nio create_udp udp-074c5224-8571-4fbb-9b95-59ac41335831 10027 127.0.0.1 10026 
-Jun 13 13:02:38.515 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 1 udp-074c5224-8571-4fbb-9b95-59ac41335831 
-Jun 13 13:02:38.526 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 13:02:56.327 HYPERVISOR: exec_cmd: vm create Ghost 0 c3745 
-Jun 13 13:02:56.328 VM: VM Ghost created.
-Jun 13 13:02:56.328 HYPERVISOR: exec_cmd: vm set_ios Ghost /Users/cristianacarvalho/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
-Jun 13 13:02:56.329 HYPERVISOR: exec_cmd: vm set_ghost_status Ghost 1 
-Jun 13 13:02:56.330 HYPERVISOR: exec_cmd: vm set_ghost_file Ghost c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
-Jun 13 13:02:56.331 HYPERVISOR: exec_cmd: vm set_ram Ghost 256 
-Jun 13 13:02:56.332 HYPERVISOR: exec_cmd: vm get_status Ghost 
-Jun 13 13:02:56.333 HYPERVISOR: exec_cmd: vm start Ghost 
-Jun 13 13:02:56.640 HYPERVISOR: exec_cmd: vm get_status Ghost 
-Jun 13 13:02:56.642 HYPERVISOR: exec_cmd: vm stop Ghost 
-Jun 13 13:02:56.765 VM: VM Ghost shutdown.
-Jun 13 13:02:56.766 HYPERVISOR: exec_cmd: vm clean_delete Ghost 
-Jun 13 13:02:56.766 VM: VM Ghost destroyed.
-Jun 13 13:02:56.779 HYPERVISOR: exec_cmd: vm set_ghost_status R2 2 
-Jun 13 13:02:56.780 HYPERVISOR: exec_cmd: vm set_ghost_file R2 c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
-Jun 13 13:02:56.781 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 13:02:56.782 HYPERVISOR: exec_cmd: vm start R2 
-Jun 13 13:06:10.251 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 13:06:10.255 HYPERVISOR: exec_cmd: vm stop R2 
-Jun 13 13:06:10.410 VM: VM R2 shutdown.
-Jun 13 13:06:10.413 HYPERVISOR: exec_cmd: vm extract_config R2 
-Jun 13 13:06:12.761 HYPERVISOR: exec_cmd: vm extract_config R2 
-Jun 13 13:07:04.482 HYPERVISOR: exec_cmd: vm get_status R2 
-Jun 13 13:07:04.493 HYPERVISOR: exec_cmd: vm extract_config R2 
-Jun 13 13:07:04.503 HYPERVISOR: exec_cmd: vm delete R2 
-Jun 13 13:07:04.503 VM: VM R2 destroyed.
-Jun 13 13:07:04.525 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 13 13:07:04.888 HYPERVISOR: Stopped.
-Jun 13 13:07:04.888 GENERAL: reset done.
+Jun 13 16:38:46.524 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 13 16:38:46.525 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60432.
+Jun 13 16:38:46.540 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 13 16:38:46.541 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips 
+Jun 13 16:38:46.541 GENERAL: working_dir=/Users/rafaelferreira/Development/network-architecture/Project/project-files/dynamips
+Jun 13 16:38:46.542 HYPERVISOR: exec_cmd: ethsw create EdificioVelho 
+Jun 13 16:38:47.975 HYPERVISOR: exec_cmd: nio create_udp udp-926dfcd9-1529-4192-a0e1-c2e0785a9aed 10001 127.0.0.1 10000 
+Jun 13 16:38:47.977 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-926dfcd9-1529-4192-a0e1-c2e0785a9aed 
+Jun 13 16:38:47.991 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EdificioVelho udp-926dfcd9-1529-4192-a0e1-c2e0785a9aed 1 
+Jun 13 16:38:54.484 HYPERVISOR: exec_cmd: nio create_udp udp-2e56e24b-7d6e-4f08-9a1e-d02609a7729c 10046 127.0.0.1 10047 
+Jun 13 16:38:54.490 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-2e56e24b-7d6e-4f08-9a1e-d02609a7729c 
+Jun 13 16:38:54.500 HYPERVISOR: exec_cmd: ethsw set_access_port EdificioVelho udp-2e56e24b-7d6e-4f08-9a1e-d02609a7729c 1 
+Jun 13 16:38:56.181 HYPERVISOR: exec_cmd: nio create_udp udp-41fcff1a-6111-4da2-85be-5e942060fb4c 10059 127.0.0.1 10058 
+Jun 13 16:38:56.182 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-41fcff1a-6111-4da2-85be-5e942060fb4c 
+Jun 13 16:38:56.197 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EdificioVelho udp-41fcff1a-6111-4da2-85be-5e942060fb4c 1 
+Jun 13 20:17:53.400 HYPERVISOR: exec_cmd: ethsw delete EdificioVelho 
