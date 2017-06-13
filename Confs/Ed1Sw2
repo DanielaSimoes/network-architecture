@@ -67,6 +67,8 @@ ip helper-address 10.1.190.1
 service dhcp
 interface vlan 110
 ip helper-address 10.1.190.1
+ipv6 dhcp relay destination 2002:a:a:20:a00:27ff:fea3:beed
+
 
 
 end
