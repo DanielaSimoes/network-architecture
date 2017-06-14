@@ -96,6 +96,5 @@ conf t
 ipv6 router ospf 1
 default-information originate always
 
-
 end
 wr
