@@ -69,6 +69,7 @@ no shutdown
 
 interface Tunnel 1
 ipv6 enable
+ip unnumbered FastEthernet1/1
 ipv6 address 2002:A:A:22::1/64
 tunnel source 200.1.1.198
 tunnel destination 200.1.0.193
@@ -80,9 +81,15 @@ ipv6 route 2002:A:A:6::/64 Tunnel 1
 end
 conf t
 
-ipv6 router ospf 1
+
 router ospf 1
 network 10.0.0.0 0.255.255.255 area 0
+default-information originate always
+
+end
+conf t
+
+ipv6 router ospf 1
 default-information originate always
 
 exit
