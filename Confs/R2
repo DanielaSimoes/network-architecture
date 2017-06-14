@@ -4,9 +4,8 @@ ipv6 unicast-routing
 ip multicast-routing
 ip pim rp-address 10.1.196.2
 
-ip nat pool MYNATPOOL 200.1.1.199 200.1.1.224 netmask 255.255.255.224
+ip nat pool MYNATPOOL 200.1.1.199 200.1.1.222 netmask 255.255.255.224
 access-list 2 permit 10.0.0.0 0.255.255.255
-ip nat inside source list 2 pool MYNATPOOL
 
 int f1/0
 ip nat inside
@@ -19,7 +18,13 @@ int f1/1
 ip nat outside
 
 ip nat translation timeout 120
-ip nat inside source list 2 pool MYNATPOOL overload
+
+! snat
+ip nat Stateful id 2
+backup 10.1.208.2
+peer 10.1.208.1
+mapping-id 10
+ip nat inside source list 2 pool MYNATPOOL mapping-id 10 overload
 
 interface FastEthernet 0/0
 ip address 10.1.196.2 255.255.255.252
