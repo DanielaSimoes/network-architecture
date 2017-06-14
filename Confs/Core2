@@ -40,7 +40,6 @@ ip ospf 1 area 0
 ipv6 address 2002:A:A:18::1/64
 ipv6 ospf 1 area 0
 ip pim sparse-mode
-ip igmp static-group 234.234.234.234
 no shutdown
 
 interface FastEthernet 1/5
