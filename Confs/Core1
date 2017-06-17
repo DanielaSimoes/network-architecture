@@ -1,9 +1,6 @@
 vlan database
-vlan 190
-vlan 110
-vlan 120
-vlan 180
-vlan 216
+vlan 101
+vlan 102
 
 exit
 
@@ -17,17 +14,16 @@ ip pim rp-address 10.1.196.2
 
 interface range FastEthernet 1/0
 switchport mode trunk
-switchport trunk allowed vlan 1,120,180,190,110,216,1002-1005
+switchport trunk allowed vlan 1,101,102,120,180,190,110,216,1002-1005
 no shutdown
 
 interface range FastEthernet 1/4 - 6
 switchport mode trunk
-switchport trunk allowed vlan 1,120,180,190,110,216,1002-1005
+switchport trunk allowed vlan 1,101,102,120,180,190,110,216,1002-1005
 no shutdown
 
 router ospf 1
 network 10.0.0.0 0.255.255.255 area 0
-
 
 ! interfaces que ligam ao router
 
@@ -72,57 +68,14 @@ ipv6 address 2002:A:A:20::2/64
 ipv6 ospf 1 area 0
 no shutdown
 
-int Vlan1
-ip address 10.1.10.6 255.255.255.0
-ipv6 ospf 1 area 0
+int vlan 101
+ip address 10.1.0.10 255.255.255.0
 ip ospf mtu-ignore
-ipv6 enable
-ipv6 address 2002:A:A:12::6/64
 no shutdown
 
-int Vlan190
-ip address 10.1.90.5 255.255.255.0
+int vlan 102
+ip address 10.2.0.10 255.255.255.0
 ip ospf mtu-ignore
-no cdp log mismatch duplex
-ipv6 enable
-ipv6 address 2002:A:A:10::5/64
-ipv6 ospf 1 area 0
-no shutdown
-
-int Vlan110
-ip address 10.1.110.5 255.255.255.0
-ip ospf mtu-ignore
-no cdp log mismatch duplex
-ipv6 enable
-ipv6 address 2002:A:A:11::5/64
-ipv6 ospf 1 area 0
-no shutdown
-
-int Vlan120
-ip address 10.2.20.5 255.255.255.0
-ip ospf mtu-ignore
-no cdp log mismatch duplex
-ipv6 enable
-ipv6 address 2002:A:A:13::5/64
-ipv6 ospf 1 area 0
-no shutdown
-
-int Vlan180
-ip address 10.2.80.5 255.255.255.0
-ip ospf mtu-ignore
-no cdp log mismatch duplex
-ipv6 enable
-ipv6 address 2002:A:A:14::5/64
-ipv6 ospf 1 area 0
-no shutdown
-
-int Vlan216
-ip address 10.2.216.5 255.255.255.0
-ip ospf 1 area 0
-ipv6 enable
-ipv6 address 2002:A:A:23::5/64
-ipv6 ospf 1 area 0
-ip pim sparse-mode
 no shutdown
 
 !SNMP
@@ -135,6 +88,8 @@ snmp-server community myrouter RO
 
 snmp-server enable traps syslog
 snmp-server host 10.1.190.1 version 2c myrouter
+
+
 
 end
 wr

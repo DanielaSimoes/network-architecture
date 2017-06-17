@@ -1,9 +1,6 @@
 vlan database
-vlan 190
-vlan 110
-vlan 120
-vlan 180
-vlan 216
+vlan 102
+vlan 101
 
 exit
 
@@ -17,12 +14,12 @@ ip pim rp-address 10.1.196.2
 
 interface range FastEthernet 1/0 - 1
 switchport mode trunk
-switchport trunk allowed vlan 1,120,180,190,110,1002-1005,216
+switchport trunk allowed vlan 1,101,102,120,180,190,110,1002-1005,216
 no shutdown
 
 interface range FastEthernet 1/6 - 7
 switchport mode trunk
-switchport trunk allowed vlan 1,120,180,190,110,1002-1005,216
+switchport trunk allowed vlan 1,101,102,120,180,190,110,1002-1005,216
 no shutdown
 
 router ospf 1
@@ -84,55 +81,14 @@ ip ospf mtu-ignore
 no cdp log mismatch duplex
 no shutdown
 
-int Vlan1
-ip address 10.1.10.7 255.255.255.0
-ipv6 enable
-ipv6 address 2002:A:A:12::7/64
-no shutdown
-
-int Vlan190
-ip address 10.1.90.6 255.255.255.0
-ip ospf 1 area 0
+int vlan 101
+ip address 10.1.0.13 255.255.255.0
 ip ospf mtu-ignore
-ipv6 enable
-ipv6 address 2002:A:A:10::6/64
-ipv6 ospf 1 area 0
 no shutdown
 
-int Vlan110
-ip address 10.1.110.8 255.255.255.0
-ip ospf 1 area 0
+int vlan 102
+ip address 10.2.0.11 255.255.255.0
 ip ospf mtu-ignore
-ipv6 enable
-ipv6 address 2002:A:A:11::5/64
-ipv6 ospf 1 area 0
-no shutdown
-
-int Vlan120
-ip address 10.2.20.6 255.255.255.0
-ip ospf 1 area 0
-ip ospf mtu-ignore
-ipv6 enable
-ipv6 address 2002:A:A:13::6/64
-ipv6 ospf 1 area 0
-no shutdown
-
-int Vlan180
-ip address 10.2.80.6 255.255.255.0
-ip ospf 1 area 0
-ip ospf mtu-ignore
-ipv6 enable
-ipv6 address 2002:A:A:14::6/64
-ipv6 ospf 1 area 0
-no shutdown
-
-int Vlan216
-ip address 10.2.216.4 255.255.255.0
-ip ospf 1 area 0
-ipv6 enable
-ipv6 address 2002:A:A:23::4/64
-ipv6 ospf 1 area 0
-ip pim sparse-mode
 no shutdown
 
 exit
