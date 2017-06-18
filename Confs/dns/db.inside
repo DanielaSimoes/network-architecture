@@ -1,0 +1,22 @@
+$TTL 604800
+$ORIGIN inside.
+@ IN SOA ns1.inside. adm.inside. (
+                 2 ; Serial
+                 604800 ; Refresh
+                 86400 ; Retry
+                 2419200 ; Expire
+                 604800 ) ; Negative Cache TTL
+         IN NS ns1.inside.
+         IN A 10.1.190.1
+vlan190  IN A 10.1.90.2
+vlan110  IN A 10.1.110.2
+vlan1ed1 IN A 10.1.10.3
+vlan1ed2 IN A 10.1.10.4
+vlan120  IN A 10.2.20.2
+vlan180  IN A 10.2.80.2
+
+v1sw1 IN AAAA 2001:0:1::1
+        IN MX 10 server1
+ns1 IN A 10.1.190.1
+server1 IN A 10.1.190.1
+server2 IN CNAME server1

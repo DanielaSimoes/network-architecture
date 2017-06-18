@@ -1,0 +1,20 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "inside" in{
+        type master;
+        file "/etc/bind/db.inside";
+};
+zone "metaltech.pt" in{
+        type master;
+        file "/etc/bind/db.metaltech.pt";
+};
+zone "metaltech.com" in{
+        type master;
+        file "/etc/bind/db.metaltech.com";
+};

@@ -24,6 +24,7 @@ no shutdown
 
 router ospf 1
 network 10.0.0.0 0.255.255.255 area 0
+network 200.1.1.0 0.0.0.63 area 0
 
 ! interfaces que ligam ao router
 
@@ -62,6 +63,7 @@ no shutdown
 interface FastEthernet 1/7
 no switchport
 ip address 10.1.190.2 255.255.255.0
+ip address 200.1.1.2 255.255.255.192 secondary
 ip ospf mtu-ignore
 no cdp log mismatch duplex
 ipv6 address 2002:A:A:20::2/64
