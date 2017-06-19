@@ -91,7 +91,7 @@ ip ospf mtu-ignore
 no shutdown
 
 int vlan 103
-ip address 192.168.0.10 255.255.252.0
+ip address 192.0.0.10 255.255.255.0
 ip ospf mtu-ignore
 ip ospf 10 area 0
 no shutdown
