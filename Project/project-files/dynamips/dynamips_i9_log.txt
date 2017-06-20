@@ -1,0 +1,25 @@
+Jun 18 21:30:59.896 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 18 21:30:59.897 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63873.
+Jun 18 21:30:59.916 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 18 21:30:59.917 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 18 21:30:59.917 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 18 21:30:59.918 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/43da739f-c93e-4a0b-921c-26c02091607b 
+Jun 18 21:30:59.918 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/43da739f-c93e-4a0b-921c-26c02091607b
+Jun 18 21:30:59.919 HYPERVISOR: exec_cmd: vm create ISP1 10 c3745 
+Jun 18 21:30:59.919 VM: VM ISP1 created.
+Jun 18 21:30:59.920 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP1 5014 
+Jun 18 21:30:59.921 HYPERVISOR: exec_cmd: c3745 get_mac_addr ISP1 
+Jun 18 21:30:59.922 HYPERVISOR: exec_cmd: vm set_ios ISP1 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Jun 18 21:30:59.922 HYPERVISOR: exec_cmd: c3745 set_mac_addr ISP1 c40a.152a.0000 
+Jun 18 21:30:59.923 HYPERVISOR: exec_cmd: vm set_disk0 ISP1 0 
+Jun 18 21:30:59.924 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jun 18 21:30:59.925 HYPERVISOR: exec_cmd: vm set_idle_pc ISP1 0x60ba7598 
+Jun 18 21:30:59.926 HYPERVISOR: exec_cmd: vm set_nvram ISP1 256 
+Jun 18 21:30:59.927 HYPERVISOR: exec_cmd: vm set_ram ISP1 256 
+Jun 18 21:30:59.928 HYPERVISOR: exec_cmd: vm set_config ISP1 configs/i10_startup-config.cfg 
+Jun 18 21:31:02.578 HYPERVISOR: exec_cmd: nio create_udp udp-be8ca911-999a-41c4-b440-0a58468f6a85 10021 127.0.0.1 10020 
+Jun 18 21:31:02.580 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1 0 1 udp-be8ca911-999a-41c4-b440-0a58468f6a85 
+Jun 18 21:31:02.580 HYPERVISOR: exec_cmd: vm get_status ISP1 
+Jun 18 21:31:05.094 HYPERVISOR: exec_cmd: nio create_udp udp-a3e0abb0-0fda-4212-9981-76653230c207 10047 127.0.0.1 10046 
+Jun 18 21:31:05.095 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1 0 0 udp-a3e0abb0-0fda-4212-9981-76653230c207 
+Jun 18 21:31:05.096 HYPERVISOR: exec_cmd: vm get_status ISP1 
