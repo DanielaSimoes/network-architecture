@@ -1,25 +1,36 @@
-Jun 18 21:30:59.761 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 18 21:30:59.761 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63867.
-Jun 18 21:30:59.780 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 18 21:30:59.781 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
-Jun 18 21:30:59.781 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
-Jun 18 21:30:59.781 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/5fbc53a4-6cda-4d20-80ae-3d127e3f2019 
-Jun 18 21:30:59.782 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/5fbc53a4-6cda-4d20-80ae-3d127e3f2019
-Jun 18 21:30:59.782 HYPERVISOR: exec_cmd: vm create ISP2 13 c3745 
-Jun 18 21:30:59.783 VM: VM ISP2 created.
-Jun 18 21:30:59.783 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP2 5023 
-Jun 18 21:30:59.784 HYPERVISOR: exec_cmd: c3745 get_mac_addr ISP2 
-Jun 18 21:30:59.785 HYPERVISOR: exec_cmd: vm set_ios ISP2 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
-Jun 18 21:30:59.786 HYPERVISOR: exec_cmd: c3745 set_mac_addr ISP2 c40d.153e.0000 
-Jun 18 21:30:59.788 HYPERVISOR: exec_cmd: vm set_disk0 ISP2 0 
-Jun 18 21:30:59.789 HYPERVISOR: exec_cmd: vm get_status ISP2 
-Jun 18 21:30:59.791 HYPERVISOR: exec_cmd: vm set_idle_pc ISP2 0x60ba7598 
-Jun 18 21:30:59.793 HYPERVISOR: exec_cmd: vm set_nvram ISP2 256 
-Jun 18 21:30:59.795 HYPERVISOR: exec_cmd: vm set_ram ISP2 256 
-Jun 18 21:30:59.797 HYPERVISOR: exec_cmd: vm set_config ISP2 configs/i13_startup-config.cfg 
-Jun 18 21:31:03.805 HYPERVISOR: exec_cmd: nio create_udp udp-35bcc9f1-aa31-4b22-98fd-1778eacd3162 10034 127.0.0.1 10035 
-Jun 18 21:31:03.806 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2 0 0 udp-35bcc9f1-aa31-4b22-98fd-1778eacd3162 
-Jun 18 21:31:03.807 HYPERVISOR: exec_cmd: vm get_status ISP2 
-Jun 18 21:31:06.201 HYPERVISOR: exec_cmd: nio create_udp udp-2a00c18d-2751-45af-9353-aaa467a7f603 10059 127.0.0.1 10058 
-Jun 18 21:31:06.202 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP2 0 1 udp-2a00c18d-2751-45af-9353-aaa467a7f603 
-Jun 18 21:31:06.203 HYPERVISOR: exec_cmd: vm get_status ISP2 
+Jun 20 10:35:02.329 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 20 10:35:02.329 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53086.
+Jun 20 10:35:02.348 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 10:35:02.349 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 20 10:35:02.349 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 20 10:35:02.350 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/5896e6b5-b1eb-4d47-8d0b-6faa9aad91e8 
+Jun 20 10:35:02.350 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/5896e6b5-b1eb-4d47-8d0b-6faa9aad91e8
+Jun 20 10:35:02.351 HYPERVISOR: exec_cmd: vm create R2 4 c3745 
+Jun 20 10:35:02.351 VM: VM R2 created.
+Jun 20 10:35:02.352 HYPERVISOR: exec_cmd: vm set_con_tcp_port R2 5011 
+Jun 20 10:35:02.352 HYPERVISOR: exec_cmd: c3745 get_mac_addr R2 
+Jun 20 10:35:02.354 HYPERVISOR: exec_cmd: c3745 set_mac_addr R2 c404.a1a8.0000 
+Jun 20 10:35:02.355 HYPERVISOR: exec_cmd: vm set_ram R2 256 
+Jun 20 10:35:02.356 HYPERVISOR: exec_cmd: vm set_ios R2 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Jun 20 10:35:02.357 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 20 10:35:02.358 HYPERVISOR: exec_cmd: vm set_idle_pc R2 0x60ba7598 
+Jun 20 10:35:02.359 HYPERVISOR: exec_cmd: vm set_disk0 R2 0 
+Jun 20 10:35:02.360 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 20 10:35:02.361 HYPERVISOR: exec_cmd: vm slot_add_binding R2 1 0 NM-16ESW 
+Jun 20 10:35:02.363 HYPERVISOR: exec_cmd: vm set_nvram R2 256 
+Jun 20 10:35:02.365 HYPERVISOR: exec_cmd: vm set_config R2 configs/i4_startup-config.cfg 
+Jun 20 10:35:02.366 HYPERVISOR: exec_cmd: vm set_config R2 configs/i4_startup-config.cfg configs/i4_private-config.cfg 
+Jun 20 10:35:06.247 HYPERVISOR: exec_cmd: nio create_udp udp-0a65ae5b-9b0b-4cbb-a17d-bc31f8588cf2 10031 127.0.0.1 10030 
+Jun 20 10:35:06.248 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 0 udp-0a65ae5b-9b0b-4cbb-a17d-bc31f8588cf2 
+Jun 20 10:35:06.249 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 20 10:35:06.821 HYPERVISOR: exec_cmd: nio create_udp udp-2fc035fd-9d96-4d72-9581-4a244b7efab0 10037 127.0.0.1 10036 
+Jun 20 10:35:06.822 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 0 udp-2fc035fd-9d96-4d72-9581-4a244b7efab0 
+Jun 20 10:35:06.823 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 20 10:35:07.301 HYPERVISOR: exec_cmd: nio create_udp udp-2361f9a8-7e19-42e0-8fdc-69a1a21041ed 10041 127.0.0.1 10040 
+Jun 20 10:35:07.302 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 0 1 udp-2361f9a8-7e19-42e0-8fdc-69a1a21041ed 
+Jun 20 10:35:07.303 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 20 10:35:09.410 HYPERVISOR: exec_cmd: nio create_udp udp-5a6a0a60-5735-4a41-a6e0-d1c0fb5c0366 10063 127.0.0.1 10062 
+Jun 20 10:35:09.411 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R2 1 1 udp-5a6a0a60-5735-4a41-a6e0-d1c0fb5c0366 
+Jun 20 10:35:09.412 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 20 10:38:18.643 HYPERVISOR: exec_cmd: vm get_status R2 
+Jun 20 10:38:18.650 HYPERVISOR: exec_cmd: vm extract_config R2 

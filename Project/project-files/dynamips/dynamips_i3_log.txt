@@ -1,12 +1,35 @@
-Jun 18 21:30:59.454 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 18 21:30:59.454 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63853.
-Jun 18 21:30:59.472 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 18 21:30:59.473 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
-Jun 18 21:30:59.473 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
-Jun 18 21:30:59.474 HYPERVISOR: exec_cmd: ethsw create SW1 
-Jun 18 21:31:02.197 HYPERVISOR: exec_cmd: nio create_udp udp-63e2ea42-d812-47de-a4ce-c2b214122f69 10017 127.0.0.1 10016 
-Jun 18 21:31:02.198 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-63e2ea42-d812-47de-a4ce-c2b214122f69 
-Jun 18 21:31:02.210 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-63e2ea42-d812-47de-a4ce-c2b214122f69 1 
-Jun 18 21:31:03.263 HYPERVISOR: exec_cmd: nio create_udp udp-3360867b-2f9a-4a05-af06-bccde6679339 10028 127.0.0.1 10029 
-Jun 18 21:31:03.263 HYPERVISOR: exec_cmd: ethsw add_nio SW1 udp-3360867b-2f9a-4a05-af06-bccde6679339 
-Jun 18 21:31:03.275 HYPERVISOR: exec_cmd: ethsw set_access_port SW1 udp-3360867b-2f9a-4a05-af06-bccde6679339 1 
+Jun 20 10:35:01.810 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 20 10:35:01.810 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53074.
+Jun 20 10:35:01.834 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 10:35:01.836 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 20 10:35:01.836 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 20 10:35:01.837 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/d7e47e41-9fd2-4a3c-b004-349288b4bfd1 
+Jun 20 10:35:01.837 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/d7e47e41-9fd2-4a3c-b004-349288b4bfd1
+Jun 20 10:35:01.839 HYPERVISOR: exec_cmd: vm create Ed1Sw1 12 c3745 
+Jun 20 10:35:01.839 VM: VM Ed1Sw1 created.
+Jun 20 10:35:01.840 HYPERVISOR: exec_cmd: vm set_con_tcp_port Ed1Sw1 5027 
+Jun 20 10:35:01.842 HYPERVISOR: exec_cmd: c3745 get_mac_addr Ed1Sw1 
+Jun 20 10:35:01.844 HYPERVISOR: exec_cmd: c3745 set_mac_addr Ed1Sw1 c40c.b60d.0000 
+Jun 20 10:35:01.845 HYPERVISOR: exec_cmd: vm set_ram Ed1Sw1 256 
+Jun 20 10:35:01.847 HYPERVISOR: exec_cmd: vm set_ios Ed1Sw1 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Jun 20 10:35:01.849 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 10:35:01.850 HYPERVISOR: exec_cmd: vm set_idle_pc Ed1Sw1 0x60ba7598 
+Jun 20 10:35:01.852 HYPERVISOR: exec_cmd: vm set_disk0 Ed1Sw1 1 
+Jun 20 10:35:01.854 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 10:35:01.855 HYPERVISOR: exec_cmd: vm slot_add_binding Ed1Sw1 1 0 NM-16ESW 
+Jun 20 10:35:01.857 HYPERVISOR: exec_cmd: vm set_nvram Ed1Sw1 256 
+Jun 20 10:35:01.859 HYPERVISOR: exec_cmd: vm set_config Ed1Sw1 configs/i12_startup-config.cfg 
+Jun 20 10:35:03.660 HYPERVISOR: exec_cmd: nio create_udp udp-d903dd13-73f1-46ec-9c79-e0a5e34266d3 10003 127.0.0.1 10002 
+Jun 20 10:35:03.661 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 2 udp-d903dd13-73f1-46ec-9c79-e0a5e34266d3 
+Jun 20 10:35:03.662 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 10:35:04.372 HYPERVISOR: exec_cmd: nio create_udp udp-b15e4e34-f24f-4e30-807f-6c525584086d 10010 127.0.0.1 10011 
+Jun 20 10:35:04.373 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 3 udp-b15e4e34-f24f-4e30-807f-6c525584086d 
+Jun 20 10:35:04.374 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 10:35:06.054 HYPERVISOR: exec_cmd: nio create_udp udp-3c6e912f-f05a-4c38-9577-c5089f001a1a 10029 127.0.0.1 10028 
+Jun 20 10:35:06.055 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 0 udp-3c6e912f-f05a-4c38-9577-c5089f001a1a 
+Jun 20 10:35:06.056 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 10:35:09.579 HYPERVISOR: exec_cmd: nio create_udp udp-34a3e9e7-b17c-45c7-b78e-fd05e6f31484 10064 127.0.0.1 10065 
+Jun 20 10:35:09.580 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 1 udp-34a3e9e7-b17c-45c7-b78e-fd05e6f31484 
+Jun 20 10:35:09.581 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 10:38:18.321 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 10:38:18.323 HYPERVISOR: exec_cmd: vm extract_config Ed1Sw1 

@@ -1,32 +1,15 @@
-Jun 18 21:30:59.670 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 18 21:30:59.670 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 63863.
-Jun 18 21:30:59.687 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 18 21:30:59.688 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
-Jun 18 21:30:59.688 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
-Jun 18 21:30:59.688 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/1a2232bc-bc21-4af5-979f-eef93bb479f4 
-Jun 18 21:30:59.688 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/1a2232bc-bc21-4af5-979f-eef93bb479f4
-Jun 18 21:30:59.689 HYPERVISOR: exec_cmd: vm create Chicago1 15 c3745 
-Jun 18 21:30:59.689 VM: VM Chicago1 created.
-Jun 18 21:30:59.690 HYPERVISOR: exec_cmd: vm set_con_tcp_port Chicago1 5029 
-Jun 18 21:30:59.691 HYPERVISOR: exec_cmd: c3745 get_mac_addr Chicago1 
-Jun 18 21:30:59.692 HYPERVISOR: exec_cmd: vm get_status Chicago1 
-Jun 18 21:30:59.692 HYPERVISOR: exec_cmd: vm slot_add_binding Chicago1 2 0 NM-1FE-TX 
-Jun 18 21:30:59.694 HYPERVISOR: exec_cmd: vm set_ios Chicago1 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-Jun 18 21:30:59.695 HYPERVISOR: exec_cmd: vm get_status Chicago1 
-Jun 18 21:30:59.696 HYPERVISOR: exec_cmd: vm slot_add_binding Chicago1 1 0 NM-4T 
-Jun 18 21:30:59.697 HYPERVISOR: exec_cmd: c3745 set_mac_addr Chicago1 c40f.10e0.0000 
-Jun 18 21:30:59.697 HYPERVISOR: exec_cmd: vm set_disk0 Chicago1 0 
-Jun 18 21:30:59.698 HYPERVISOR: exec_cmd: vm get_status Chicago1 
-Jun 18 21:30:59.699 HYPERVISOR: exec_cmd: vm set_idle_pc Chicago1 0x60b22838 
-Jun 18 21:30:59.700 HYPERVISOR: exec_cmd: vm set_nvram Chicago1 256 
-Jun 18 21:30:59.702 HYPERVISOR: exec_cmd: vm set_ram Chicago1 256 
-Jun 18 21:30:59.703 HYPERVISOR: exec_cmd: vm set_config Chicago1 configs/i15_startup-config.cfg 
-Jun 18 21:31:02.172 HYPERVISOR: exec_cmd: nio create_udp udp-88487dc8-011e-415b-bce3-2d38410f669c 10016 127.0.0.1 10017 
-Jun 18 21:31:02.173 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 0 1 udp-88487dc8-011e-415b-bce3-2d38410f669c 
-Jun 18 21:31:02.173 HYPERVISOR: exec_cmd: vm get_status Chicago1 
-Jun 18 21:31:02.550 HYPERVISOR: exec_cmd: nio create_udp udp-281c05ca-5c70-4299-8dab-72ebbe78361d 10020 127.0.0.1 10021 
-Jun 18 21:31:02.551 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 0 0 udp-281c05ca-5c70-4299-8dab-72ebbe78361d 
-Jun 18 21:31:02.552 HYPERVISOR: exec_cmd: vm get_status Chicago1 
-Jun 18 21:31:06.175 HYPERVISOR: exec_cmd: nio create_udp udp-ee9437ae-98f2-44a9-802a-9f339ae88891 10058 127.0.0.1 10059 
-Jun 18 21:31:06.176 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 2 0 udp-ee9437ae-98f2-44a9-802a-9f339ae88891 
-Jun 18 21:31:06.177 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 20 10:35:02.207 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 20 10:35:02.207 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53083.
+Jun 20 10:35:02.239 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 10:35:02.242 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 20 10:35:02.242 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 20 10:35:02.244 HYPERVISOR: exec_cmd: ethsw create EdificioVelho 
+Jun 20 10:35:08.996 HYPERVISOR: exec_cmd: nio create_udp udp-e7b741be-87fd-4d94-bc1e-99ae619fb0c5 10058 127.0.0.1 10059 
+Jun 20 10:35:08.998 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-e7b741be-87fd-4d94-bc1e-99ae619fb0c5 
+Jun 20 10:35:09.005 HYPERVISOR: exec_cmd: ethsw set_access_port EdificioVelho udp-e7b741be-87fd-4d94-bc1e-99ae619fb0c5 1 
+Jun 20 10:35:10.201 HYPERVISOR: exec_cmd: nio create_udp udp-ee9c9629-d122-4ea2-a107-631f84f5af3f 10071 127.0.0.1 10070 
+Jun 20 10:35:10.202 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-ee9c9629-d122-4ea2-a107-631f84f5af3f 
+Jun 20 10:35:10.222 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EdificioVelho udp-ee9c9629-d122-4ea2-a107-631f84f5af3f 1 
+Jun 20 10:35:11.009 HYPERVISOR: exec_cmd: nio create_udp udp-c46d291c-dd00-4043-8632-435be89c24bf 10079 127.0.0.1 10078 
+Jun 20 10:35:11.011 HYPERVISOR: exec_cmd: ethsw add_nio EdificioVelho udp-c46d291c-dd00-4043-8632-435be89c24bf 
+Jun 20 10:35:11.013 HYPERVISOR: exec_cmd: ethsw set_dot1q_port EdificioVelho udp-c46d291c-dd00-4043-8632-435be89c24bf 1 
