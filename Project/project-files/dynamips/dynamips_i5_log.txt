@@ -1,27 +1,43 @@
-Jun 20 10:35:02.049 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 20 10:35:02.049 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 53080.
-Jun 20 10:35:02.085 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 20 10:35:02.087 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
-Jun 20 10:35:02.087 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
-Jun 20 10:35:02.089 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/43da739f-c93e-4a0b-921c-26c02091607b 
-Jun 20 10:35:02.089 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/43da739f-c93e-4a0b-921c-26c02091607b
-Jun 20 10:35:02.091 HYPERVISOR: exec_cmd: vm create ISP1 10 c3745 
-Jun 20 10:35:02.091 VM: VM ISP1 created.
-Jun 20 10:35:02.093 HYPERVISOR: exec_cmd: vm set_con_tcp_port ISP1 5014 
-Jun 20 10:35:02.095 HYPERVISOR: exec_cmd: c3745 get_mac_addr ISP1 
-Jun 20 10:35:02.097 HYPERVISOR: exec_cmd: c3745 set_mac_addr ISP1 c40a.152a.0000 
-Jun 20 10:35:02.099 HYPERVISOR: exec_cmd: vm set_ram ISP1 256 
-Jun 20 10:35:02.101 HYPERVISOR: exec_cmd: vm get_status ISP1 
-Jun 20 10:35:02.103 HYPERVISOR: exec_cmd: vm set_idle_pc ISP1 0x60ba7598 
-Jun 20 10:35:02.106 HYPERVISOR: exec_cmd: vm set_ios ISP1 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
-Jun 20 10:35:02.108 HYPERVISOR: exec_cmd: vm set_disk0 ISP1 0 
-Jun 20 10:35:02.111 HYPERVISOR: exec_cmd: vm set_nvram ISP1 256 
-Jun 20 10:35:02.115 HYPERVISOR: exec_cmd: vm set_config ISP1 configs/i10_startup-config.cfg 
-Jun 20 10:35:07.701 HYPERVISOR: exec_cmd: nio create_udp udp-33589cea-50c7-4c24-b10f-5b048f79406e 10045 127.0.0.1 10044 
-Jun 20 10:35:07.702 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1 0 1 udp-33589cea-50c7-4c24-b10f-5b048f79406e 
-Jun 20 10:35:07.702 HYPERVISOR: exec_cmd: vm get_status ISP1 
-Jun 20 10:35:07.881 HYPERVISOR: exec_cmd: nio create_udp udp-6d784438-b406-4016-ae67-0c0b15f16f9e 10047 127.0.0.1 10046 
-Jun 20 10:35:07.882 HYPERVISOR: exec_cmd: vm slot_add_nio_binding ISP1 0 0 udp-6d784438-b406-4016-ae67-0c0b15f16f9e 
-Jun 20 10:35:07.883 HYPERVISOR: exec_cmd: vm get_status ISP1 
-Jun 20 10:38:18.476 HYPERVISOR: exec_cmd: vm get_status ISP1 
-Jun 20 10:38:18.479 HYPERVISOR: exec_cmd: vm extract_config ISP1 
+Jun 20 12:05:39.310 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 20 12:05:39.310 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55873.
+Jun 20 12:05:39.335 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 12:05:39.336 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 20 12:05:39.336 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 20 12:05:39.337 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/1a2232bc-bc21-4af5-979f-eef93bb479f4 
+Jun 20 12:05:39.337 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/1a2232bc-bc21-4af5-979f-eef93bb479f4
+Jun 20 12:05:39.338 HYPERVISOR: exec_cmd: vm create Chicago1 15 c3745 
+Jun 20 12:05:39.340 VM: VM Chicago1 created.
+Jun 20 12:05:39.341 HYPERVISOR: exec_cmd: vm set_con_tcp_port Chicago1 5029 
+Jun 20 12:05:39.342 HYPERVISOR: exec_cmd: c3745 get_mac_addr Chicago1 
+Jun 20 12:05:39.343 HYPERVISOR: exec_cmd: c3745 set_mac_addr Chicago1 c40f.10e0.0000 
+Jun 20 12:05:39.344 HYPERVISOR: exec_cmd: vm set_ios Chicago1 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
+Jun 20 12:05:39.345 HYPERVISOR: exec_cmd: vm set_ram Chicago1 256 
+Jun 20 12:05:39.346 HYPERVISOR: exec_cmd: vm set_nvram Chicago1 256 
+Jun 20 12:05:39.346 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 20 12:05:39.347 HYPERVISOR: exec_cmd: vm set_idle_pc Chicago1 0x61d311b8 
+Jun 20 12:05:39.348 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 20 12:05:39.350 HYPERVISOR: exec_cmd: vm slot_add_binding Chicago1 1 0 NM-4T 
+Jun 20 12:05:39.352 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 20 12:05:39.353 HYPERVISOR: exec_cmd: vm slot_add_binding Chicago1 2 0 NM-1FE-TX 
+Jun 20 12:05:39.355 HYPERVISOR: exec_cmd: vm set_disk0 Chicago1 0 
+Jun 20 12:05:39.356 HYPERVISOR: exec_cmd: vm set_config Chicago1 configs/i15_startup-config.cfg 
+Jun 20 12:05:42.699 HYPERVISOR: exec_cmd: nio create_udp udp-87dacd3f-548e-46cd-ae9a-d41446704714 10012 127.0.0.1 10013 
+Jun 20 12:05:42.700 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 0 0 udp-87dacd3f-548e-46cd-ae9a-d41446704714 
+Jun 20 12:05:42.701 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 20 12:05:44.054 HYPERVISOR: exec_cmd: nio create_udp udp-f147c35d-414b-422f-ae84-7c1286a048c6 10026 127.0.0.1 10027 
+Jun 20 12:05:44.055 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 0 1 udp-f147c35d-414b-422f-ae84-7c1286a048c6 
+Jun 20 12:05:44.057 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 20 12:05:49.222 HYPERVISOR: exec_cmd: nio create_udp udp-11a20487-357a-4749-adb0-c05f4539d6ec 10076 127.0.0.1 10077 
+Jun 20 12:05:49.224 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Chicago1 2 0 udp-11a20487-357a-4749-adb0-c05f4539d6ec 
+Jun 20 12:05:49.225 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 20 15:34:27.654 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 20 15:34:27.667 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 20 15:34:55.275 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 20 15:34:55.281 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 20 15:34:56.132 HYPERVISOR: exec_cmd: vm get_status Chicago1 
+Jun 20 15:34:56.181 HYPERVISOR: exec_cmd: vm extract_config Chicago1 
+Jun 20 15:34:56.245 HYPERVISOR: exec_cmd: vm delete Chicago1 
+Jun 20 15:34:56.246 VM: VM Chicago1 destroyed.
+Jun 20 15:34:56.300 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 20 15:34:56.451 HYPERVISOR: Stopped.
+Jun 20 15:34:56.451 GENERAL: reset done.

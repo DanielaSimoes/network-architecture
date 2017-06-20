@@ -1,6 +1,6 @@
 vlan database
 vlan 101
-vlan 102
+vlan 1
 
 exit
 
@@ -14,12 +14,12 @@ ip pim rp-address 10.1.196.2
 
 interface range FastEthernet 1/0
 switchport mode trunk
-switchport trunk allowed vlan 1,101,102,120,180,190,110,216,1002-1005
+switchport trunk allowed vlan 1,101,1002-1005
 no shutdown
 
 interface range FastEthernet 1/4 - 6
 switchport mode trunk
-switchport trunk allowed vlan 1,101,102,120,180,190,110,216,1002-1005
+switchport trunk allowed vlan 1,101,1002-1005
 no shutdown
 
 router ospf 1
@@ -60,6 +60,8 @@ ipv6 ospf 1 area 0
 ip pim dense-mode
 no shutdown
 
+! datacenter
+
 interface FastEthernet 1/7
 no switchport
 ip address 10.1.190.2 255.255.255.0
@@ -72,16 +74,19 @@ no shutdown
 
 int vlan 101
 ip address 10.1.0.10 255.255.255.0
+ip ospf 10 area 0
 ip ospf mtu-ignore
 no shutdown
 
-int vlan 102
-ip address 10.2.0.10 255.255.255.0
+int Vlan1
+ip address 10.1.10.6 255.255.255.0
 ip ospf mtu-ignore
+ipv6 enable
+ipv6 address 2002:A:A:12::6/64
+ipv6 ospf 1 area 0
 no shutdown
 
 !SNMP
-conf t
 snmp-server engineID local 123456789A
 snmp-server user user1 group1 v3 auth md5 authpass priv des56 encpassword
 snmp-server group group1 v3 priv
@@ -91,7 +96,7 @@ snmp-server community myrouter RO
 snmp-server enable traps syslog
 snmp-server host 10.1.190.1 version 2c myrouter
 
-
+exit
 
 end
 wr

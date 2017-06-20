@@ -1,6 +1,6 @@
 vlan database
+vlan 1
 vlan 102
-vlan 101
 vlan 103
 
 exit
@@ -15,12 +15,12 @@ ip pim rp-address 10.1.196.2
 
 interface range FastEthernet 1/0 - 1
 switchport mode trunk
-switchport trunk allowed vlan 1,101,102,120,180,190,110,1002-1005,216
+switchport trunk allowed vlan 1,102,1002-1005
 no shutdown
 
 interface range FastEthernet 1/6 - 7
 switchport mode trunk
-switchport trunk allowed vlan 1,101,102,120,180,190,110,1002-1005,216
+switchport trunk allowed vlan 1,102,1002-1005
 no shutdown
 
 router ospf 1
@@ -79,21 +79,22 @@ switchport mode trunk
 switchport trunk allowed vlan 1,103,1002-1005
 no shutdown
 
-
-int vlan 101
-ip address 10.1.0.13 255.255.255.0
-ip ospf mtu-ignore
-no shutdown
-
 int vlan 102
 ip address 10.2.0.11 255.255.255.0
+ip ospf 10 area 0
 ip ospf mtu-ignore
 no shutdown
 
 int vlan 103
-ip address 192.0.0.10 255.255.255.0
+ip address 192.168.100.1 255.255.255.0
 ip ospf mtu-ignore
 ip ospf 10 area 0
+no shutdown
+
+int Vlan1
+ip address 10.1.10.8 255.255.255.0
+ipv6 enable
+ipv6 address 2002:A:A:12::7/64
 no shutdown
 
 exit
@@ -118,6 +119,8 @@ service-policy output EDGE
 
 int f1/2
 service-policy output EDGE
+
+exit
 
 end
 wr
