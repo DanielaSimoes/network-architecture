@@ -1,1 +1,1 @@
-Jun 20 15:34:56.221 VM: trying to shutdown an inactive VM.
+Jun 20 18:12:58.483 VM: trying to shutdown an inactive VM.

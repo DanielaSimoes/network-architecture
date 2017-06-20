@@ -1,61 +1,52 @@
-Jun 20 12:05:38.436 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
-Jun 20 12:05:38.436 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 55864.
-Jun 20 12:05:38.458 HYPERVISOR: exec_cmd: hypervisor version 
-Jun 20 12:05:38.459 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
-Jun 20 12:05:38.460 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
-Jun 20 12:05:38.461 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/daf440b9-6a06-46f2-9909-22b9b29a40ee 
-Jun 20 12:05:38.461 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/daf440b9-6a06-46f2-9909-22b9b29a40ee
-Jun 20 12:05:38.462 HYPERVISOR: exec_cmd: vm create EdVSw2 8 c3745 
-Jun 20 12:05:38.473 VM: VM EdVSw2 created.
-Jun 20 12:05:38.474 HYPERVISOR: exec_cmd: vm set_con_tcp_port EdVSw2 5019 
-Jun 20 12:05:38.475 HYPERVISOR: exec_cmd: c3745 get_mac_addr EdVSw2 
-Jun 20 12:05:38.476 HYPERVISOR: exec_cmd: c3745 set_mac_addr EdVSw2 c408.a1b5.0000 
-Jun 20 12:05:38.479 HYPERVISOR: exec_cmd: vm set_ios EdVSw2 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-m.124-4.T1.bin 
-Jun 20 12:05:38.480 HYPERVISOR: exec_cmd: vm set_ram EdVSw2 256 
-Jun 20 12:05:38.481 HYPERVISOR: exec_cmd: vm set_nvram EdVSw2 256 
-Jun 20 12:05:38.482 HYPERVISOR: exec_cmd: vm get_status EdVSw2 
-Jun 20 12:05:38.482 HYPERVISOR: exec_cmd: vm slot_add_binding EdVSw2 1 0 NM-16ESW 
-Jun 20 12:05:38.483 HYPERVISOR: exec_cmd: vm set_disk0 EdVSw2 1 
-Jun 20 12:05:38.484 HYPERVISOR: exec_cmd: vm get_status EdVSw2 
-Jun 20 12:05:38.485 HYPERVISOR: exec_cmd: vm set_idle_pc EdVSw2 0x61d311b8 
-Jun 20 12:05:38.487 HYPERVISOR: exec_cmd: vm set_config EdVSw2 configs/i8_startup-config.cfg 
-Jun 20 12:05:42.057 HYPERVISOR: exec_cmd: nio create_udp udp-1b0d91c1-a412-4764-b85f-550c24186d62 10006 127.0.0.1 10007 
-Jun 20 12:05:42.058 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EdVSw2 1 0 udp-1b0d91c1-a412-4764-b85f-550c24186d62 
-Jun 20 12:05:42.059 HYPERVISOR: exec_cmd: vm get_status EdVSw2 
-Jun 20 12:05:46.432 HYPERVISOR: exec_cmd: nio create_udp udp-170ee22a-d382-406a-bbdc-d074191e34eb 10048 127.0.0.1 10049 
-Jun 20 12:05:46.433 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EdVSw2 1 2 udp-170ee22a-d382-406a-bbdc-d074191e34eb 
-Jun 20 12:05:46.434 HYPERVISOR: exec_cmd: vm get_status EdVSw2 
-Jun 20 12:05:47.828 HYPERVISOR: exec_cmd: nio create_udp udp-58743f97-1be3-403c-8d0c-cbe82abe1054 10062 127.0.0.1 10063 
-Jun 20 12:05:47.830 HYPERVISOR: exec_cmd: vm slot_add_nio_binding EdVSw2 1 1 udp-58743f97-1be3-403c-8d0c-cbe82abe1054 
-Jun 20 12:05:47.830 HYPERVISOR: exec_cmd: vm get_status EdVSw2 
-Jun 20 12:13:17.239 HYPERVISOR: exec_cmd: vm set_ghost_status EdVSw2 2 
-Jun 20 12:13:17.243 HYPERVISOR: exec_cmd: vm set_ghost_file EdVSw2 /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/c3745-advipservicesk9-m.124-4.T1.bin-256.ghost 
-Jun 20 12:13:17.244 HYPERVISOR: exec_cmd: vm get_status EdVSw2 
-Jun 20 12:13:17.246 HYPERVISOR: exec_cmd: vm start EdVSw2 
-Jun 20 12:13:47.517 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 12:13:47.522 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 14:35:49.433 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 14:35:49.443 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 14:56:10.944 HYPERVISOR: exec_cmd: nio bind_filter udp-170ee22a-d382-406a-bbdc-d074191e34eb 2 capture 
-Jun 20 14:56:10.945 HYPERVISOR: exec_cmd: nio setup_filter udp-170ee22a-d382-406a-bbdc-d074191e34eb 2 en10mb /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/tmp/captures/EdVSw2_FastEthernet12_to_EdVSw1_FastEthernet12.pcap 
-Jun 20 15:00:19.755 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 15:00:19.758 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 15:23:10.553 HYPERVISOR: exec_cmd: nio bind_filter udp-58743f97-1be3-403c-8d0c-cbe82abe1054 2 capture 
-Jun 20 15:23:10.555 HYPERVISOR: exec_cmd: nio setup_filter udp-58743f97-1be3-403c-8d0c-cbe82abe1054 2 en10mb /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/tmp/captures/EdVSw2_FastEthernet11_to_Core2_FastEthernet13.pcap 
-Jun 20 15:27:25.787 HYPERVISOR: exec_cmd: nio unbind_filter udp-58743f97-1be3-403c-8d0c-cbe82abe1054 2 
-Jun 20 15:28:20.122 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 15:28:20.131 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 15:34:27.601 HYPERVISOR: exec_cmd: vm get_status EdVSw2 
-Jun 20 15:34:27.621 HYPERVISOR: exec_cmd: vm stop EdVSw2 
-Jun 20 15:34:27.739 VM: VM EdVSw2 shutdown.
-Jun 20 15:34:27.775 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 15:34:27.883 HYPERVISOR: exec_cmd: nio unbind_filter udp-170ee22a-d382-406a-bbdc-d074191e34eb 2 
-Jun 20 15:34:55.226 HYPERVISOR: exec_cmd: vm get_status EdVSw2 
-Jun 20 15:34:55.238 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 15:34:56.126 HYPERVISOR: exec_cmd: vm get_status EdVSw2 
-Jun 20 15:34:56.178 HYPERVISOR: exec_cmd: vm extract_config EdVSw2 
-Jun 20 15:34:56.236 HYPERVISOR: exec_cmd: vm delete EdVSw2 
-Jun 20 15:34:56.237 VM: VM EdVSw2 destroyed.
-Jun 20 15:34:56.297 HYPERVISOR: exec_cmd: hypervisor stop 
-Jun 20 15:34:56.624 HYPERVISOR: Stopped.
-Jun 20 15:34:56.624 GENERAL: reset done.
+Jun 20 18:03:39.523 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 20 18:03:39.523 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 60465.
+Jun 20 18:03:39.546 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 20 18:03:39.548 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 20 18:03:39.548 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 20 18:03:39.550 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/d7e47e41-9fd2-4a3c-b004-349288b4bfd1 
+Jun 20 18:03:39.550 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/d7e47e41-9fd2-4a3c-b004-349288b4bfd1
+Jun 20 18:03:39.551 HYPERVISOR: exec_cmd: vm create Ed1Sw1 12 c3745 
+Jun 20 18:03:39.597 VM: VM Ed1Sw1 created.
+Jun 20 18:03:39.598 HYPERVISOR: exec_cmd: vm set_con_tcp_port Ed1Sw1 5027 
+Jun 20 18:03:39.599 HYPERVISOR: exec_cmd: c3745 get_mac_addr Ed1Sw1 
+Jun 20 18:03:39.599 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 18:03:39.600 HYPERVISOR: exec_cmd: vm set_idle_pc Ed1Sw1 0x60ba7598 
+Jun 20 18:03:39.602 HYPERVISOR: exec_cmd: vm set_ios Ed1Sw1 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Jun 20 18:03:39.603 HYPERVISOR: exec_cmd: vm set_disk0 Ed1Sw1 1 
+Jun 20 18:03:39.605 HYPERVISOR: exec_cmd: vm set_ram Ed1Sw1 256 
+Jun 20 18:03:39.607 HYPERVISOR: exec_cmd: vm set_nvram Ed1Sw1 256 
+Jun 20 18:03:39.608 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 18:03:39.609 HYPERVISOR: exec_cmd: vm slot_add_binding Ed1Sw1 1 0 NM-16ESW 
+Jun 20 18:03:39.610 HYPERVISOR: exec_cmd: c3745 set_mac_addr Ed1Sw1 c40c.b60d.0000 
+Jun 20 18:03:39.616 HYPERVISOR: exec_cmd: vm set_config Ed1Sw1 configs/i12_startup-config.cfg 
+Jun 20 18:03:49.225 HYPERVISOR: exec_cmd: nio create_udp udp-92cf3f23-e31c-473b-9d16-c0324065b139 10032 127.0.0.1 10033 
+Jun 20 18:03:49.226 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 3 udp-92cf3f23-e31c-473b-9d16-c0324065b139 
+Jun 20 18:03:49.227 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 18:03:51.083 HYPERVISOR: exec_cmd: nio create_udp udp-759c9206-6c74-40c1-b319-98f2f27b94bb 10046 127.0.0.1 10047 
+Jun 20 18:03:51.086 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 1 udp-759c9206-6c74-40c1-b319-98f2f27b94bb 
+Jun 20 18:03:51.087 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 18:03:51.742 HYPERVISOR: exec_cmd: nio create_udp udp-c12d67fa-0858-4e97-af9f-868ccf648ad2 10051 127.0.0.1 10050 
+Jun 20 18:03:51.743 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 2 udp-c12d67fa-0858-4e97-af9f-868ccf648ad2 
+Jun 20 18:03:51.744 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 18:03:54.018 HYPERVISOR: exec_cmd: nio create_udp udp-40326530-4f02-49b7-b741-f2dedf5a12fa 10069 127.0.0.1 10068 
+Jun 20 18:03:54.020 HYPERVISOR: exec_cmd: vm slot_add_nio_binding Ed1Sw1 1 0 udp-40326530-4f02-49b7-b741-f2dedf5a12fa 
+Jun 20 18:03:54.021 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 18:04:03.190 HYPERVISOR: exec_cmd: vm set_ghost_status Ed1Sw1 2 
+Jun 20 18:04:03.191 HYPERVISOR: exec_cmd: vm set_ghost_file Ed1Sw1 /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
+Jun 20 18:04:03.192 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 18:04:03.193 HYPERVISOR: exec_cmd: vm start Ed1Sw1 
+Jun 20 18:04:33.423 HYPERVISOR: exec_cmd: vm extract_config Ed1Sw1 
+Jun 20 18:04:33.428 HYPERVISOR: exec_cmd: vm extract_config Ed1Sw1 
+Jun 20 18:12:49.075 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 18:12:49.080 HYPERVISOR: exec_cmd: vm stop Ed1Sw1 
+Jun 20 18:12:49.210 VM: VM Ed1Sw1 shutdown.
+Jun 20 18:12:49.213 HYPERVISOR: exec_cmd: vm extract_config Ed1Sw1 
+Jun 20 18:12:58.292 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 18:12:58.297 HYPERVISOR: exec_cmd: vm extract_config Ed1Sw1 
+Jun 20 18:12:58.426 HYPERVISOR: exec_cmd: vm get_status Ed1Sw1 
+Jun 20 18:12:58.452 HYPERVISOR: exec_cmd: vm extract_config Ed1Sw1 
+Jun 20 18:12:58.480 HYPERVISOR: exec_cmd: vm delete Ed1Sw1 
+Jun 20 18:12:58.480 VM: VM Ed1Sw1 destroyed.
+Jun 20 18:12:58.513 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 20 18:12:58.886 HYPERVISOR: Stopped.
+Jun 20 18:12:58.886 GENERAL: reset done.
