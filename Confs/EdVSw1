@@ -1,11 +1,16 @@
+vlan database
+vlan 103
+
+exit
+
 conf t
 
 ip routing
 
 interface f 1/0
-no switchport
-ip address 192.168.100.1 255.255.255.0
-ip ospf 10 area 0
+switchport
+switchport mode trunk
+switchport trunk allowed vlan 1,103,1002-1005
 no shutdown
 
 interface f 1/2
@@ -16,7 +21,6 @@ no shutdown
 
 interface range f 1/1
 switchport mode trunk
-switchport trunk allowed vlan 1,103,1002-1005
 switchport trunk encapsulation dot1q
 no shutdown
 
@@ -25,11 +29,11 @@ ip address 192.168.0.1 255.255.252.0
 ip ospf 10 area 0
 no shutdown
 
-int vlan 103
-ip address 192.168.1.11 255.255.252.0
+interface vlan 103
+ip address 192.0.0.11 255.255.255.0
+ip ospf mtu-ignore
 ip ospf 10 area 0
 no shutdown
-
 
 ip route 0.0.0.0 0.0.0.0 192.168.100.2
 
