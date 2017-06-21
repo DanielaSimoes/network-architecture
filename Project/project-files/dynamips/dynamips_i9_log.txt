@@ -1,0 +1,51 @@
+Jun 21 11:32:54.585 HYPERVISOR: Release 0.2.16-amd64/Darwin (tag 2015060118)
+Jun 21 11:32:54.585 HYPERVISOR: Started on IP = 127.0.0.1, TCP port = 61931.
+Jun 21 11:32:54.607 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 21 11:32:54.608 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips 
+Jun 21 11:32:54.608 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips
+Jun 21 11:32:54.614 HYPERVISOR: exec_cmd: hypervisor working_dir /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/33e5fa6e-01ae-455a-9f67-b41bd2214699 
+Jun 21 11:32:54.614 GENERAL: working_dir=/Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/33e5fa6e-01ae-455a-9f67-b41bd2214699
+Jun 21 11:32:54.614 HYPERVISOR: exec_cmd: vm create R1 3 c3745 
+Jun 21 11:32:54.617 VM: VM R1 created.
+Jun 21 11:32:54.619 HYPERVISOR: exec_cmd: vm set_con_tcp_port R1 5024 
+Jun 21 11:32:54.620 HYPERVISOR: exec_cmd: c3745 get_mac_addr R1 
+Jun 21 11:32:54.621 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 21 11:32:54.621 HYPERVISOR: exec_cmd: vm set_idle_pc R1 0x60ba7598 
+Jun 21 11:32:54.623 HYPERVISOR: exec_cmd: vm set_ram R1 256 
+Jun 21 11:32:54.624 HYPERVISOR: exec_cmd: vm set_nvram R1 256 
+Jun 21 11:32:54.625 HYPERVISOR: exec_cmd: vm set_ios R1 /Users/Daniela/GNS3/images/IOS/c3745-advipservicesk9-mz.124-15.T6.image 
+Jun 21 11:32:54.627 HYPERVISOR: exec_cmd: c3745 set_mac_addr R1 c403.a1a7.0000 
+Jun 21 11:32:54.629 HYPERVISOR: exec_cmd: vm set_disk0 R1 0 
+Jun 21 11:32:54.630 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 21 11:32:54.632 HYPERVISOR: exec_cmd: vm slot_add_binding R1 1 0 NM-16ESW 
+Jun 21 11:32:54.634 HYPERVISOR: exec_cmd: vm set_config R1 configs/i3_startup-config.cfg 
+Jun 21 11:32:54.636 HYPERVISOR: exec_cmd: vm set_config R1 configs/i3_startup-config.cfg configs/i3_private-config.cfg 
+Jun 21 11:32:57.949 HYPERVISOR: exec_cmd: nio create_udp udp-ffa850ce-13de-439f-a90a-2119a3f8a80b 10020 127.0.0.1 10021 
+Jun 21 11:32:57.950 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 0 udp-ffa850ce-13de-439f-a90a-2119a3f8a80b 
+Jun 21 11:32:57.952 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 21 11:32:58.398 HYPERVISOR: exec_cmd: nio create_udp udp-0af733b5-e101-4e04-9ff5-6fc7f6b40bc3 10025 127.0.0.1 10024 
+Jun 21 11:32:58.400 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 0 udp-0af733b5-e101-4e04-9ff5-6fc7f6b40bc3 
+Jun 21 11:32:58.402 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 21 11:32:58.606 HYPERVISOR: exec_cmd: nio create_udp udp-e12dd51d-39eb-40a9-bcf2-2e1f9cb1767f 10027 127.0.0.1 10026 
+Jun 21 11:32:58.607 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 0 1 udp-e12dd51d-39eb-40a9-bcf2-2e1f9cb1767f 
+Jun 21 11:32:58.608 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 21 11:33:04.265 HYPERVISOR: exec_cmd: nio create_udp udp-714468cd-b261-4995-8e47-3fdb4808224c 10074 127.0.0.1 10075 
+Jun 21 11:33:04.268 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R1 1 1 udp-714468cd-b261-4995-8e47-3fdb4808224c 
+Jun 21 11:33:04.269 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 21 11:33:28.163 HYPERVISOR: exec_cmd: vm set_ghost_status R1 2 
+Jun 21 11:33:28.165 HYPERVISOR: exec_cmd: vm set_ghost_file R1 /Users/Daniela/Desktop/UA/3ano/2semestre/AR/Project_Part2/Project/project-files/dynamips/c3745-advipservicesk9-mz.124-15.T6.image-256.ghost 
+Jun 21 11:33:28.166 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 21 11:33:28.167 HYPERVISOR: exec_cmd: vm start R1 
+Jun 21 11:34:58.442 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jun 21 11:34:58.449 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jun 21 11:46:54.375 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 21 11:46:54.387 HYPERVISOR: exec_cmd: vm stop R1 
+Jun 21 11:46:54.545 VM: VM R1 shutdown.
+Jun 21 11:46:54.572 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jun 21 11:46:55.694 HYPERVISOR: exec_cmd: vm get_status R1 
+Jun 21 11:46:55.754 HYPERVISOR: exec_cmd: vm extract_config R1 
+Jun 21 11:46:55.831 HYPERVISOR: exec_cmd: vm delete R1 
+Jun 21 11:46:55.831 VM: VM R1 destroyed.
+Jun 21 11:46:55.890 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 21 11:46:56.322 HYPERVISOR: Stopped.
+Jun 21 11:46:56.322 GENERAL: reset done.

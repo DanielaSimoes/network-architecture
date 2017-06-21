@@ -1,0 +1,1 @@
+Jun 21 11:46:55.835 VM: trying to shutdown an inactive VM.
