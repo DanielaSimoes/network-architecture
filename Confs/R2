@@ -96,7 +96,6 @@ tunnel destination 200.1.0.193
 tunnel mode ipsec ipv4
 tunnel protection ipsec profile ARipsec2
 ip route 10.3.20.0 255.255.255.0 Tunnel 2 200.1.0.193
-ip route 200.1.0.192 255.255.255.192 200.1.1.193
 
 ipv6 route 2002:A:A:6::/64 Tunnel 1
 

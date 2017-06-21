@@ -10,8 +10,8 @@ no shutdown
 
 exit
 
-ip route 200.1.0.0 255.255.254.0 200.1.1.193
-ip route 200.1.0.192 255.255.255.192 200.1.0.129
+ip route 200.1.1.0 255.255.255.0 200.1.1.193 ! rota para Aveiro
+ip route 200.1.0.128 255.255.255.128 200.1.0.129 ! rota Chicago
 
 end
 wr

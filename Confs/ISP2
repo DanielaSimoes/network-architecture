@@ -8,8 +8,8 @@ interface FastEthernet 0/1
 ip address 200.1.0.194 255.255.255.192
 no shutdown
 
-ip route 200.1.1.0 255.255.255.0 200.1.1.194
-ip route 200.1.0.128 255.255.255.192 200.1.0.193
+ip route 200.1.1.0 255.255.255.0 200.1.1.194 ! rota para Aveiro
+ip route 200.1.0.128 255.255.255.128 200.1.0.193 ! rota Chicago
 
 end
 wr
